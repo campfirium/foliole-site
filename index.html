@@ -3,19 +3,133 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Foliole</title>
-    <meta name="description" content="Foliole">
+    <title>Foliole - Make reading actually complete</title>
+    <meta
+      name="description"
+      content="Foliole is an approachable incremental reading app for reading, cloze creation, review, and local-first knowledge work."
+    >
     <meta property="og:title" content="Foliole">
-    <meta property="og:description" content="Foliole">
+    <meta property="og:description" content="Make reading actually complete.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/brand/foliole-app-icon.svg">
+    <meta property="og:url" content="https://foliole.app">
+    <meta property="og:image" content="https://foliole.app/assets/brand/foliole-app-icon.svg">
+    <link rel="canonical" href="https://foliole.app">
     <link rel="icon" href="assets/brand/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="splash" aria-label="Foliole">
-      <img src="assets/brand/foliole-app-icon.svg" alt="" width="72" height="72">
-      <h1>Foliole</h1>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Foliole home">
+        <img src="assets/brand/foliole-app-icon.svg" alt="" width="36" height="36">
+        <span>Foliole</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#principles">Principles</a>
+        <a href="#features">Features</a>
+        <a href="#acknowledgements">Acknowledgements</a>
+        <a href="https://github.com/campfirium/foliole">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">An approachable incremental reading app</p>
+          <h1 id="hero-title">Foliole</h1>
+          <p class="slogan">Make reading actually complete.</p>
+          <p class="hero-text">
+            Read deeply, extract passages, create clozes, review with FSRS, and keep
+            refining your material in a local-first workspace.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/campfirium/foliole">View on GitHub</a>
+            <a class="button secondary" href="#features">Explore features</a>
+          </div>
+        </div>
+
+        <div class="status-panel" aria-label="Platform status">
+          <h2>Alpha status</h2>
+          <dl>
+            <div>
+              <dt>Windows</dt>
+              <dd>Alpha open for testing</dd>
+            </div>
+            <div>
+              <dt>Android</dt>
+              <dd>Alpha expected around July</dd>
+            </div>
+            <div>
+              <dt>macOS and iOS</dt>
+              <dd>Alpha builds expected around August</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="principles" class="section" aria-labelledby="principles-title">
+        <div class="section-heading">
+          <p class="eyebrow">Design principles</p>
+          <h2 id="principles-title">Open code, open data, local-first ownership.</h2>
+        </div>
+        <div class="grid three">
+          <article>
+            <h3>Open source</h3>
+            <p>The code is open source, so anyone can review, build, and improve the tool.</p>
+          </article>
+          <article>
+            <h3>Open data</h3>
+            <p>Foliole uses SQLite and provides a Markdown mirror for reading, migration, and reuse.</p>
+          </article>
+          <article>
+            <h3>Local first</h3>
+            <p>No account system. No central cloud sync. Your devices sync over the local network.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Core features</p>
+          <h2 id="features-title">Built for the whole reading loop.</h2>
+        </div>
+        <div class="grid features">
+          <article>
+            <h3>Native incremental reading</h3>
+            <p>Extract passages, create cloze deletions, and refine material without leaving the reading flow.</p>
+          </article>
+          <article>
+            <h3>Integrated FSRS scheduling</h3>
+            <p>Review items are scheduled with FSRS, an open and efficient spaced repetition scheduler.</p>
+          </article>
+          <article>
+            <h3>Bring sources together</h3>
+            <p>Work with local files, web documents, Obsidian notes, and Readwise Reader exports.</p>
+          </article>
+          <article>
+            <h3>Index external documents</h3>
+            <p>Search and view local folders without copying or moving the original files.</p>
+          </article>
+          <article>
+            <h3>Complex content support</h3>
+            <p>Read Markdown, PDF, EPUB, LaTeX math, code blocks, and other structured content.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="acknowledgements" class="section acknowledgements" aria-labelledby="acknowledgements-title">
+        <div>
+          <p class="eyebrow">Acknowledgements</p>
+          <h2 id="acknowledgements-title">Built on ideas and tools that made this possible.</h2>
+        </div>
+        <p>
+          Special thanks to Piotr Wozniak and Jarrett Ye. Without SuperMemo, incremental reading,
+          and FSRS, Foliole would not exist.
+        </p>
+        <p class="components">
+          Many thanks to better-sqlite3, Capacitor, CodeMirror 6, Drizzle ORM, Electron,
+          React, SQLite, TypeScript, and Vite.
+        </p>
+      </section>
     </main>
   </body>
 </html>
