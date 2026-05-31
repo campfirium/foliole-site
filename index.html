@@ -18,118 +18,169 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="Foliole home">
-        <img src="assets/brand/foliole-app-icon.svg" alt="" width="36" height="36">
-        <span>Foliole</span>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="#principles">Principles</a>
-        <a href="#features">Features</a>
-        <a href="#acknowledgements">Acknowledgements</a>
-        <a href="https://github.com/campfirium/foliole">GitHub</a>
-      </nav>
-    </header>
-
     <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">An approachable incremental reading app</p>
-          <h1 id="hero-title">Foliole</h1>
-          <p class="slogan">Make reading actually complete.</p>
-          <p class="hero-text">
-            Read deeply, extract passages, create clozes, review with FSRS, and keep
-            refining your material in a local-first workspace.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="https://github.com/campfirium/foliole">View on GitHub</a>
-            <a class="button secondary" href="#features">Explore features</a>
+
+      <!-- 1 · Hero -->
+      <section class="panel hero-panel" aria-labelledby="hero-title">
+        <div class="hero-shell">
+          <header class="site-header">
+            <div class="header-left">
+              <a class="brand" href="/" aria-label="Foliole home">
+                <img src="assets/brand/foliole-app-icon.svg" alt="" class="brand-icon">
+                <span>Foliole</span>
+              </a>
+              <nav class="primary-nav" aria-label="Main navigation">
+                <a href="https://github.com/campfirium/foliole/releases">Download</a>
+                <a href="https://github.com/campfirium/foliole">GitHub</a>
+              </nav>
+            </div>
+            <nav class="utility-nav" aria-label="Utility navigation">
+              <label class="language-picker" aria-label="Language">
+                <svg class="language-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M2 12h20"></path>
+                  <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+                  <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+                </svg>
+                <select class="language-select">
+                  <option value="en">English</option>
+                  <option value="zh">中文</option>
+                </select>
+              </label>
+            </nav>
+          </header>
+          <div class="hero-copy">
+            <h1 id="hero-title">Make reading actually complete.</h1>
+            <p class="hero-subtitle">An approachable incremental reading app</p>
+            <div class="hero-actions" aria-label="Download and source links">
+              <a class="button primary" href="https://github.com/campfirium/foliole/releases">Download Windows Alpha</a>
+              <div class="release-note" aria-label="Upcoming platform availability">
+                <span class="release-kicker">Coming next</span>
+                <span class="release-platform">Android <span>around July</span></span>
+                <span class="release-platform">macOS / iOS <span>around August</span></span>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="status-panel" aria-label="Platform status">
-          <h2>Alpha status</h2>
-          <dl>
-            <div>
-              <dt>Windows</dt>
-              <dd>Alpha open for testing</dd>
-            </div>
-            <div>
-              <dt>Android</dt>
-              <dd>Alpha expected around July</dd>
-            </div>
-            <div>
-              <dt>macOS and iOS</dt>
-              <dd>Alpha builds expected around August</dd>
-            </div>
-          </dl>
+          <figure class="hero-shot">
+            <img
+              src="assets/screenshots/foliole-desktop.png"
+              alt="Foliole desktop app showing a document library, reading pane, and scheduling panel."
+              width="3840"
+              height="2080"
+            >
+          </figure>
         </div>
       </section>
 
-      <section id="principles" class="section" aria-labelledby="principles-title">
-        <div class="section-heading">
-          <p class="eyebrow">Design principles</p>
-          <h2 id="principles-title">Open code, open data, local-first ownership.</h2>
-        </div>
-        <div class="grid three">
-          <article>
-            <h3>Open source</h3>
-            <p>The code is open source, so anyone can review, build, and improve the tool.</p>
-          </article>
-          <article>
-            <h3>Open data</h3>
-            <p>Foliole uses SQLite and provides a Markdown mirror for reading, migration, and reuse.</p>
-          </article>
-          <article>
-            <h3>Local first</h3>
-            <p>No account system. No central cloud sync. Your devices sync over the local network.</p>
-          </article>
-        </div>
-      </section>
+      <div class="lower-stage">
+        <section id="principles" class="split-section reveal">
+          <div class="split-copy">
+            <h2>Open Source</h2>
+            <p>The code is open source. Anyone can review the implementation, build it from source, or contribute improvements.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole desktop interface preview." width="3840" height="2080">
+          </figure>
+        </section>
 
-      <section id="features" class="section" aria-labelledby="features-title">
-        <div class="section-heading">
-          <p class="eyebrow">Core features</p>
-          <h2 id="features-title">Built for the whole reading loop.</h2>
-        </div>
-        <div class="grid features">
-          <article>
-            <h3>Native incremental reading</h3>
-            <p>Extract passages, create cloze deletions, and refine material without leaving the reading flow.</p>
-          </article>
-          <article>
-            <h3>Integrated FSRS scheduling</h3>
-            <p>Review items are scheduled with FSRS, an open and efficient spaced repetition scheduler.</p>
-          </article>
-          <article>
-            <h3>Bring sources together</h3>
-            <p>Work with local files, web documents, Obsidian notes, and Readwise Reader exports.</p>
-          </article>
-          <article>
-            <h3>Index external documents</h3>
-            <p>Search and view local folders without copying or moving the original files.</p>
-          </article>
-          <article>
-            <h3>Complex content support</h3>
-            <p>Read Markdown, PDF, EPUB, LaTeX math, code blocks, and other structured content.</p>
-          </article>
-        </div>
-      </section>
+        <section class="split-section reveal">
+          <div class="split-copy">
+            <h2>Open Data</h2>
+            <p>Uses a SQLite database and provides a Markdown mirror, making materials easier to read, migrate, and reuse.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole document library and reading workspace." width="3840" height="2080">
+          </figure>
+        </section>
 
-      <section id="acknowledgements" class="section acknowledgements" aria-labelledby="acknowledgements-title">
-        <div>
-          <p class="eyebrow">Acknowledgements</p>
-          <h2 id="acknowledgements-title">Built on ideas and tools that made this possible.</h2>
-        </div>
-        <p>
-          Special thanks to Piotr Wozniak and Jarrett Ye. Without SuperMemo, incremental reading,
-          and FSRS, Foliole would not exist.
-        </p>
-        <p class="components">
-          Many thanks to better-sqlite3, Capacitor, CodeMirror 6, Drizzle ORM, Electron,
-          React, SQLite, TypeScript, and Vite.
-        </p>
-      </section>
+        <section class="split-section reveal">
+          <div class="split-copy">
+            <h2>Local First</h2>
+            <p>No account system. No central cloud sync. All data stays on your personal devices; devices sync over the local network.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole local reading workspace." width="3840" height="2080">
+          </figure>
+        </section>
+
+        <section id="features" class="split-section reveal reveal-d1">
+          <div class="split-copy">
+            <h2>Native Incremental Reading</h2>
+            <p>Built around Piotr Woźniak's incremental reading ideas, with a native workflow for extracting passages, creating cloze deletions, and refining materials without leaving the reading flow.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole reading pane with extracted notes." width="3840" height="2080">
+          </figure>
+        </section>
+
+        <section class="split-section reveal reveal-d1">
+          <div class="split-copy">
+            <h2>Integrated FSRS Scheduling</h2>
+            <p>Integrates FSRS (Free Spaced Repetition Scheduler), an open and efficient review scheduling algorithm.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole scheduling panel in the desktop app." width="3840" height="2080">
+          </figure>
+        </section>
+
+        <section class="split-section reveal reveal-d1">
+          <div class="split-copy">
+            <h2>Bring Reading Materials Together</h2>
+            <p>Handles reading materials from different sources, whether local files, web documents, notes managed in Obsidian, or materials exported from Readwise Reader.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole document list and reading sources." width="3840" height="2080">
+          </figure>
+        </section>
+
+        <section class="split-section reveal reveal-d1">
+          <div class="split-copy">
+            <h2>Index External Documents</h2>
+            <p>Index other local folders on your computer without copying or moving the original files, creating an external document library that can be searched, viewed, and used across supported clients.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole document navigation and indexed folders." width="3840" height="2080">
+          </figure>
+        </section>
+
+        <section class="split-section reveal reveal-d1">
+          <div class="split-copy">
+            <h2>Complex Content Support</h2>
+            <p>Supports Markdown, PDF, EPUB, LaTeX math, code blocks, and other content rendering needs.</p>
+          </div>
+          <figure class="split-visual">
+            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole complex content reading view." width="3840" height="2080">
+          </figure>
+        </section>
+
+        <!-- 9 · Acknowledgements -->
+        <section id="acknowledgements" class="lower-section lower-ack" aria-labelledby="acknowledgements-title">
+          <p class="ack-label reveal">Acknowledgements</p>
+          <p class="ack-category reveal">Special thanks</p>
+          <h2 class="ack-names reveal" id="acknowledgements-title">
+            <span>Piotr Woźniak</span>
+            <span>Jarrett Ye</span>
+          </h2>
+          <p class="ack-sub reveal reveal-d1">Without SuperMemo, incremental reading, and FSRS, Foliole would not exist.</p>
+          <p class="ack-thanks-label reveal reveal-d2">Many thanks to</p>
+          <p class="ack-stack reveal reveal-d2">better-sqlite3 · Capacitor · CodeMirror 6 · Drizzle ORM · Electron · React · SQLite · TypeScript · Vite</p>
+        </section>
+      </div>
+
     </main>
+
+    <script>
+      (function () {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-visible');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>
