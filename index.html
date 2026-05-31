@@ -35,18 +35,23 @@
               </nav>
             </div>
             <nav class="utility-nav" aria-label="Utility navigation">
-              <label class="language-picker" aria-label="Language">
-                <svg class="language-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <div class="language-picker">
+                <button class="language-button" type="button" aria-label="Language" aria-expanded="false" aria-controls="language-menu">
+                  <svg class="language-icon" viewBox="0 0 24 24" aria-hidden="true">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M2 12h20"></path>
                   <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
                   <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
-                </svg>
-                <select class="language-select">
-                  <option value="en">English</option>
-                  <option value="zh">中文</option>
-                </select>
-              </label>
+                  </svg>
+                  <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+                <div class="language-menu" id="language-menu" role="menu" hidden>
+                  <button type="button" role="menuitemradio" aria-checked="true" data-lang="en">English</button>
+                  <button type="button" role="menuitemradio" aria-checked="false" data-lang="zh">中文</button>
+                </div>
+              </div>
             </nav>
           </header>
           <div class="hero-copy">
@@ -79,7 +84,7 @@
             <p>The code is open source. Anyone can review the implementation, build it from source, or contribute improvements.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole desktop interface preview." width="3840" height="2080">
+            <img src="assets/screenshots/Open Source.png" alt="Foliole desktop interface preview." width="3840" height="1906">
           </figure>
         </section>
 
@@ -89,7 +94,7 @@
             <p>Uses a SQLite database and provides a Markdown mirror, making materials easier to read, migrate, and reuse.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole document library and reading workspace." width="3840" height="2080">
+            <img src="assets/screenshots/Open Data.png" alt="Foliole document library and reading workspace." width="1937" height="1602">
           </figure>
         </section>
 
@@ -99,7 +104,7 @@
             <p>No account system. No central cloud sync. All data stays on your personal devices; devices sync over the local network.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole local reading workspace." width="3840" height="2080">
+            <img src="assets/screenshots/Local First.png" alt="Foliole local reading workspace." width="1936" height="1582">
           </figure>
         </section>
 
@@ -109,7 +114,7 @@
             <p>Built around Piotr Woźniak's incremental reading ideas, with a native workflow for extracting passages, creating cloze deletions, and refining materials without leaving the reading flow.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole reading pane with extracted notes." width="3840" height="2080">
+            <img src="assets/screenshots/Native Incremental Reading.png" alt="Foliole reading pane with extracted notes." width="2046" height="1558">
           </figure>
         </section>
 
@@ -119,7 +124,7 @@
             <p>Integrates FSRS (Free Spaced Repetition Scheduler), an open and efficient review scheduling algorithm.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole scheduling panel in the desktop app." width="3840" height="2080">
+            <img src="assets/screenshots/Integrated FSRS Scheduling.png" alt="Foliole scheduling panel in the desktop app." width="1943" height="1582">
           </figure>
         </section>
 
@@ -129,7 +134,7 @@
             <p>Handles reading materials from different sources, whether local files, web documents, notes managed in Obsidian, or materials exported from Readwise Reader.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole document list and reading sources." width="3840" height="2080">
+            <img src="assets/screenshots/Bring Reading Materials Together.png" alt="Foliole document list and reading sources." width="1954" height="1585">
           </figure>
         </section>
 
@@ -139,7 +144,7 @@
             <p>Index other local folders on your computer without copying or moving the original files, creating an external document library that can be searched, viewed, and used across supported clients.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole document navigation and indexed folders." width="3840" height="2080">
+            <img src="assets/screenshots/Index External Documents.png" alt="Foliole document navigation and indexed folders." width="1946" height="1586">
           </figure>
         </section>
 
@@ -149,7 +154,7 @@
             <p>Supports Markdown, PDF, EPUB, LaTeX math, code blocks, and other content rendering needs.</p>
           </div>
           <figure class="split-visual">
-            <img src="assets/screenshots/foliole-desktop.png" alt="Foliole complex content reading view." width="3840" height="2080">
+            <img src="assets/screenshots/Complex Content Support.png" alt="Foliole complex content reading view." width="1932" height="1515">
           </figure>
         </section>
 
@@ -180,6 +185,40 @@
           });
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+      })();
+
+      (function () {
+        var picker = document.querySelector('.language-picker');
+        if (!picker) return;
+
+        var button = picker.querySelector('.language-button');
+        var menu = picker.querySelector('.language-menu');
+        var items = picker.querySelectorAll('[data-lang]');
+
+        function setOpen(open) {
+          picker.classList.toggle('is-open', open);
+          button.setAttribute('aria-expanded', String(open));
+          menu.hidden = !open;
+        }
+
+        button.addEventListener('click', function () {
+          setOpen(menu.hidden);
+        });
+
+        items.forEach(function (item) {
+          item.addEventListener('click', function () {
+            items.forEach(function (x) { x.setAttribute('aria-checked', String(x === item)); });
+            setOpen(false);
+          });
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!picker.contains(event.target)) setOpen(false);
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') setOpen(false);
+        });
       })();
     </script>
   </body>
