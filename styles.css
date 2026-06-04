@@ -399,8 +399,8 @@ h1 {
 
 .hero-play-button {
   position: absolute;
-  left: clamp(16px, 2.1vw, 30px);
-  bottom: clamp(16px, 2.1vw, 30px);
+  left: 50%;
+  bottom: clamp(18px, 2.35vw, 36px);
   z-index: 2;
   min-height: clamp(42px, 3.6vw, 52px);
   display: flex;
@@ -416,7 +416,7 @@ h1 {
   font-size: clamp(0.86rem, 0.92vw, 1rem);
   font-weight: 700;
   line-height: 1;
-  transform: none;
+  transform: translateX(-50%);
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -437,7 +437,20 @@ h1 {
 .hero-video-link:focus-visible .hero-play-button {
   background: rgba(251, 251, 248, 0.96);
   box-shadow: 0 14px 36px rgba(31, 48, 39, 0.24);
-  transform: translateY(-1px);
+  transform: translateX(-50%) translateY(-1px);
+}
+
+:root[data-theme="dark"] .hero-play-button {
+  border-color: rgba(252, 246, 225, 0.2);
+  background: rgba(20, 59, 68, 0.9);
+  color: #fcf6e1;
+  box-shadow: 0 14px 34px rgba(0, 20, 26, 0.34);
+}
+
+:root[data-theme="dark"] .hero-video-link:hover .hero-play-button,
+:root[data-theme="dark"] .hero-video-link:focus-visible .hero-play-button {
+  background: rgba(33, 69, 78, 0.94);
+  box-shadow: 0 16px 38px rgba(0, 20, 26, 0.4);
 }
 
 /* ===== PANEL LABEL (small section titles) ===== */
