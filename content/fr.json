@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - Faire que la lecture aille vraiment jusqu'au bout",
+    "description": "Foliole est une application accessible de lecture incrémentale pour lire, créer des textes à trous, réviser et travailler localement avec ses connaissances.",
+    "ogDescription": "Faire que la lecture aille vraiment jusqu'au bout"
+  },
+  "nav": {
+    "mainLabel": "Navigation principale",
+    "utilityLabel": "Navigation utilitaire",
+    "languageLabel": "Langue",
+    "download": "Télécharger"
+  },
+  "hero": {
+    "title": "Faire que la lecture aille vraiment jusqu'au bout",
+    "subtitle": "Une application accessible de lecture incrémentale",
+    "cta": "Télécharger l'alpha Windows",
+    "actionsLabel": "Liens de téléchargement et de code source",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "Disponibilité prévue des plateformes",
+    "windows": "L'alpha Windows est ouverte aux tests",
+    "android": "L'alpha Android est attendue autour de juillet",
+    "apple": "Les builds alpha pour macOS et iOS sont attendues autour d'août"
+  },
+  "video": {
+    "demo": "Démo",
+    "aria": "Voir la démo sur YouTube"
+  },
+  "principles": {
+    "openSource": {
+      "title": "Open source",
+      "body": "Le code est open source. Chacun peut examiner l'implémentation, compiler Foliole depuis les sources ou contribuer des améliorations",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "Données ouvertes",
+      "body": "Foliole utilise une base de données SQLite et fournit un miroir Markdown, afin de rendre les contenus plus faciles à lire, migrer et réutiliser",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "Local first",
+      "body": "Pas de système de compte. Pas de synchronisation cloud centralisée. Toutes les données restent sur vos appareils personnels ; les appareils se synchronisent sur le réseau local",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "Lecture incrémentale native",
+      "body": "Foliole s'appuie sur les idées de lecture incrémentale de Piotr Woźniak, avec un flux natif pour extraire des passages, créer des textes à trous et retravailler les contenus sans quitter le fil de lecture",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "Planification FSRS intégrée",
+      "body": "Foliole intègre FSRS (Free Spaced Repetition Scheduler), un algorithme ouvert et efficace de planification des révisions",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "Rassembler les supports de lecture",
+      "body": "Foliole gère des supports de lecture provenant de sources variées, qu'il s'agisse de fichiers locaux, de documents web, de notes gérées dans Obsidian ou de contenus exportés depuis Readwise Reader",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "Indexer des documents externes",
+      "body": "Foliole indexe d'autres dossiers locaux sur votre ordinateur sans copier ni déplacer les fichiers originaux, créant une bibliothèque externe consultable, recherchable et utilisable sur les clients compatibles",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "Prise en charge des contenus complexes",
+      "body": "Foliole prend en charge Markdown, PDF, EPUB, les formules LaTeX, les blocs de code et d'autres besoins de rendu de contenu",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "Remerciements",
+    "category": "Merci tout particulièrement",
+    "sub": "Merci tout particulièrement à Piotr Woźniak et Jarrett Ye. Sans SuperMemo, la lecture incrémentale et FSRS, Foliole n'existerait pas",
+    "thanks": "Merci également aux projets et composants open source suivants :"
+  },
+  "theme": {
+    "system": "Thème : suivre le système",
+    "light": "Thème : clair",
+    "dark": "Thème : sombre"
+  }
+}

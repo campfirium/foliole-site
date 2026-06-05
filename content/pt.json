@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - Faça a leitura realmente chegar ao fim",
+    "description": "Foliole é uma aplicação acessível de leitura incremental para ler, criar clozes, rever e trabalhar com conhecimento local-first.",
+    "ogDescription": "Faça a leitura realmente chegar ao fim"
+  },
+  "nav": {
+    "mainLabel": "Navegação principal",
+    "utilityLabel": "Navegação utilitária",
+    "languageLabel": "Idioma",
+    "download": "Transferir"
+  },
+  "hero": {
+    "title": "Faça a leitura realmente chegar ao fim",
+    "subtitle": "Um app acessível de leitura incremental",
+    "cta": "Transferir alfa para Windows",
+    "actionsLabel": "Links de download e código-fonte",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "Disponibilidade prevista por plataforma",
+    "windows": "A alpha para Windows está aberta para testes",
+    "android": "A alpha para Android é esperada por volta de julho",
+    "apple": "As builds alpha para macOS e iOS são esperadas por volta de agosto"
+  },
+  "video": {
+    "demo": "Demo",
+    "aria": "Assista à demo no YouTube"
+  },
+  "principles": {
+    "openSource": {
+      "title": "Código aberto",
+      "body": "O código é aberto. Qualquer pessoa pode revisar a implementação, compilar o Foliole a partir do código-fonte ou contribuir com melhorias",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "Dados abertos",
+      "body": "O Foliole usa um banco de dados SQLite e fornece um espelho em Markdown, tornando os materiais mais fáceis de ler, migrar e reutilizar",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "Local first",
+      "body": "Sem sistema de contas. Sem sincronização central na nuvem. Todos os dados permanecem nos seus dispositivos pessoais; os dispositivos sincronizam pela rede local",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "Leitura incremental nativa",
+      "body": "O Foliole é construído em torno das ideias de leitura incremental de Piotr Woźniak, com um fluxo nativo para extrair trechos, criar cloze deletions e refinar materiais sem sair do fluxo de leitura",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "Agendamento FSRS integrado",
+      "body": "O Foliole integra o FSRS (Free Spaced Repetition Scheduler), um algoritmo aberto e eficiente de agendamento de revisões",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "Reúna materiais de leitura",
+      "body": "O Foliole lida com materiais de leitura de diferentes fontes, sejam arquivos locais, documentos da web, notas gerenciadas no Obsidian ou materiais exportados do Readwise Reader",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "Indexe documentos externos",
+      "body": "O Foliole indexa outras pastas locais no seu computador sem copiar ou mover os arquivos originais, criando uma biblioteca externa de documentos que pode ser pesquisada, visualizada e usada nos clientes compatíveis",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "Suporte a conteúdo complexo",
+      "body": "O Foliole oferece suporte a Markdown, PDF, EPUB, fórmulas LaTeX, blocos de código e outras necessidades de renderização de conteúdo",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "Agradecimentos",
+    "category": "Agradecimento especial",
+    "sub": "Agradecimentos especiais a Piotr Woźniak e Jarrett Ye. Sem o SuperMemo, a leitura incremental e o FSRS, o Foliole não existiria",
+    "thanks": "Muito obrigado também aos seguintes projetos e componentes open source:"
+  },
+  "theme": {
+    "system": "Tema: seguir o sistema",
+    "light": "Tema: claro",
+    "dark": "Tema: escuro"
+  }
+}

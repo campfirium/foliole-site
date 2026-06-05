@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - Make reading actually complete",
+    "description": "Foliole is an approachable incremental reading app for reading, cloze creation, review, and local-first knowledge work.",
+    "ogDescription": "Make reading actually complete"
+  },
+  "nav": {
+    "mainLabel": "Main navigation",
+    "utilityLabel": "Utility navigation",
+    "languageLabel": "Language",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Make reading actually complete",
+    "subtitle": "An approachable incremental reading app",
+    "cta": "Download Windows Alpha",
+    "actionsLabel": "Download and source links",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "Upcoming platform availability",
+    "windows": "Windows alpha is open for testing",
+    "android": "Android alpha is expected around July",
+    "apple": "macOS and iOS alpha builds are expected around August"
+  },
+  "video": {
+    "demo": "Demo Clip",
+    "aria": "Watch the demo clip on YouTube"
+  },
+  "principles": {
+    "openSource": {
+      "title": "Open Source",
+      "body": "The code is open source. Anyone can review the implementation, build it from source, or contribute improvements",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "Open Data",
+      "body": "Uses a SQLite database and provides a Markdown mirror, making materials easier to read, migrate, and reuse",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "Local First",
+      "body": "No account system. No central cloud sync. All data stays on your personal devices; devices sync over the local network",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "Native Incremental Reading",
+      "body": "Built around Piotr Woźniak’s incremental reading ideas, with a native workflow for extracting passages, creating cloze deletions, and refining materials without leaving the reading flow",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "Integrated FSRS Scheduling",
+      "body": "Integrates FSRS (Free Spaced Repetition Scheduler), an open and efficient review scheduling algorithm",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "Bring Reading Materials Together",
+      "body": "Handles reading materials from different sources, whether local files, web documents, notes managed in Obsidian, or materials exported from Readwise Reader",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "Index External Documents",
+      "body": "Indexes other local folders on your computer without copying or moving the original files, creating an external document library that can be searched, viewed, and used across supported clients",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "Complex Content Support",
+      "body": "Supports Markdown, PDF, EPUB, LaTeX math, code blocks, and other content rendering needs",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "Acknowledgements",
+    "category": "Special thanks",
+    "sub": "Special thanks to Piotr Woźniak and Jarrett Ye. Without SuperMemo, incremental reading, and FSRS, Foliole would not exist",
+    "thanks": "Many thanks to the following open-source projects and components:"
+  },
+  "theme": {
+    "system": "Theme: follow browser",
+    "light": "Theme: light",
+    "dark": "Theme: dark"
+  }
+}

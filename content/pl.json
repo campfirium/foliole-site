@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - Spraw, aby czytanie naprawdę prowadziło do ukończenia",
+    "description": "Foliole to przystępna aplikacja do czytania inkrementalnego, tworzenia cloze, powtórek i lokalnej pracy z wiedzą.",
+    "ogDescription": "Spraw, aby czytanie naprawdę prowadziło do ukończenia"
+  },
+  "nav": {
+    "mainLabel": "Nawigacja główna",
+    "utilityLabel": "Nawigacja pomocnicza",
+    "languageLabel": "Język",
+    "download": "Pobierz"
+  },
+  "hero": {
+    "title": "Spraw, aby czytanie naprawdę prowadziło do ukończenia",
+    "subtitle": "Przystępna aplikacja do czytania inkrementalnego",
+    "cta": "Pobierz wersję alfa Windows",
+    "actionsLabel": "Linki do pobrania i kodu źródłowego",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "Planowana dostępność platform",
+    "windows": "Alpha dla Windows jest otwarta do testów",
+    "android": "Alpha dla Androida jest planowana około lipca",
+    "apple": "Buildy alpha dla macOS i iOS są planowane około sierpnia"
+  },
+  "video": {
+    "demo": "Demo",
+    "aria": "Obejrzyj demo na YouTube"
+  },
+  "principles": {
+    "openSource": {
+      "title": "Open source",
+      "body": "Kod jest open source. Każdy może przejrzeć implementację, zbudować Foliole ze źródeł albo wnieść własne usprawnienia",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "Otwarte dane",
+      "body": "Foliole używa bazy SQLite i udostępnia lustrzaną wersję Markdown, dzięki czemu materiały łatwiej czytać, przenosić i wykorzystywać ponownie",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "Local first",
+      "body": "Bez systemu kont. Bez centralnej synchronizacji w chmurze. Wszystkie dane pozostają na twoich osobistych urządzeniach; urządzenia synchronizują się przez sieć lokalną",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "Natywne czytanie inkrementalne",
+      "body": "Foliole opiera się na ideach czytania inkrementalnego Piotra Woźniaka i oferuje natywny przepływ pracy do wyodrębniania fragmentów, tworzenia cloze deletions oraz stopniowego dopracowywania materiałów bez opuszczania toku lektury",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "Zintegrowane planowanie FSRS",
+      "body": "Foliole integruje FSRS (Free Spaced Repetition Scheduler), otwarty i wydajny algorytm planowania powtórek",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "Materiały do czytania w jednym miejscu",
+      "body": "Foliole obsługuje materiały do czytania z różnych źródeł: pliki lokalne, dokumenty webowe, notatki zarządzane w Obsidianie oraz materiały eksportowane z Readwise Reader",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "Indeksowanie dokumentów zewnętrznych",
+      "body": "Foliole indeksuje inne lokalne foldery na komputerze bez kopiowania lub przenoszenia oryginalnych plików, tworząc zewnętrzną bibliotekę dokumentów, którą można przeszukiwać, przeglądać i wykorzystywać na obsługiwanych klientach",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "Obsługa złożonych treści",
+      "body": "Foliole obsługuje Markdown, PDF, EPUB, formuły LaTeX, bloki kodu i inne potrzeby związane z renderowaniem treści",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "Podziękowania",
+    "category": "Szczególne podziękowania",
+    "sub": "Szczególne podziękowania dla Piotra Woźniaka i Jarretta Ye. Bez SuperMemo, czytania inkrementalnego i FSRS Foliole by nie powstało.\n\nDziękujemy również następującym projektom i komponentom open source:\n\n- better-sqlite3\n- Capacitor\n- CodeMirror 6\n- Drizzle ORM\n- Electron\n- React\n- SQLite\n- TypeScript\n- Vite",
+    "thanks": "Wielkie podziękowania także dla następujących projektów i komponentów open source:"
+  },
+  "theme": {
+    "system": "Motyw: zgodnie z systemem",
+    "light": "Motyw: jasny",
+    "dark": "Motyw: ciemny"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - Lesen wirklich abschließen",
+    "description": "Foliole ist eine zugängliche App für inkrementelles Lesen, Lückentexte, Wiederholung und lokal orientierte Wissensarbeit.",
+    "ogDescription": "Lesen wirklich abschließen"
+  },
+  "nav": {
+    "mainLabel": "Hauptnavigation",
+    "utilityLabel": "Hilfsnavigation",
+    "languageLabel": "Sprache",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Lesen wirklich abschließen",
+    "subtitle": "Eine zugängliche App für inkrementelles Lesen",
+    "cta": "Windows Alpha herunterladen",
+    "actionsLabel": "Download- und Quellcode-Links",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "Geplante Plattformverfügbarkeit",
+    "windows": "Die Windows-Alpha ist zum Testen geöffnet",
+    "android": "Die Android-Alpha wird etwa im Juli erwartet",
+    "apple": "Alpha-Builds für macOS und iOS werden etwa im August erwartet"
+  },
+  "video": {
+    "demo": "Demo-Clip",
+    "aria": "Demo-Clip auf YouTube ansehen"
+  },
+  "principles": {
+    "openSource": {
+      "title": "Open Source",
+      "body": "Der Code ist quelloffen. Jede Person kann die Implementierung prüfen, Foliole aus dem Quellcode bauen oder Verbesserungen beitragen",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "Offene Daten",
+      "body": "Foliole nutzt eine SQLite-Datenbank und stellt einen Markdown-Spiegel bereit, damit Materialien leichter gelesen, migriert und weiterverwendet werden können",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "Local First",
+      "body": "Kein Kontosystem. Keine zentrale Cloud-Synchronisierung. Alle Daten bleiben auf deinen persönlichen Geräten; Geräte synchronisieren sich über das lokale Netzwerk",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "Natives inkrementelles Lesen",
+      "body": "Foliole baut auf Piotr Woźniaks Ideen zum inkrementellen Lesen auf, mit einem nativen Workflow zum Extrahieren von Passagen, Erstellen von Cloze-Deletions und fortlaufenden Überarbeiten von Materialien, ohne den Lesefluss zu verlassen",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "Integrierte FSRS-Planung",
+      "body": "Foliole integriert FSRS (Free Spaced Repetition Scheduler), einen offenen und effizienten Algorithmus für Wiederholungsplanung",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "Lesematerialien zusammenführen",
+      "body": "Foliole verarbeitet Lesematerialien aus unterschiedlichen Quellen zentral, ob lokale Dateien, Webdokumente, in Obsidian verwaltete Notizen oder aus Readwise Reader exportierte Materialien",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "Externe Dokumente indexieren",
+      "body": "Foliole indexiert andere lokale Ordner auf deinem Computer, ohne Originaldateien zu kopieren oder zu verschieben. So entsteht eine externe Dokumentbibliothek, die durchsucht, angezeigt und auf unterstützten Clients genutzt werden kann",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "Unterstützung für komplexe Inhalte",
+      "body": "Foliole unterstützt Markdown, PDF, EPUB, LaTeX-Formeln, Codeblöcke und weitere Anforderungen an die Inhaltsdarstellung",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "Acknowledgements",
+    "category": "Besonderer Dank",
+    "sub": "Besonderer Dank gilt Piotr Woźniak und Jarrett Ye. Ohne SuperMemo, inkrementelles Lesen und FSRS gäbe es Foliole nicht",
+    "thanks": "Vielen Dank auch an die folgenden Open-Source-Projekte und -Komponenten:"
+  },
+  "theme": {
+    "system": "Design: Systemeinstellung",
+    "light": "Design: hell",
+    "dark": "Design: dunkel"
+  }
+}

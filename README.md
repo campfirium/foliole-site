@@ -4,11 +4,18 @@ Official static homepage for Foliole, a local-first incremental reading workspac
 
 ## Local preview
 
-Open `index.html` directly, or serve the directory:
+Build the static pages, then serve the repository root:
 
 ```sh
+npm run build
 python3 -m http.server 4173
 ```
+
+Open `http://localhost:4173/`. The site uses root-relative asset URLs so language subpages resolve consistently under the local server and on GitHub Pages.
+
+## Localization
+
+Website copy lives in `content/*.json`. `content/en.json` defines the required key structure; `npm run build` fails if another locale is missing a key. English is published at `/`, and other languages are generated into locale subdirectories such as `/fr/`, `/ja/`, `/zh-hans/`, and `/zh-hant/`.
 
 ## GitHub Pages
 

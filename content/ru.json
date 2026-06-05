@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - Доводите чтение до настоящего завершения",
+    "description": "Foliole — доступное приложение для инкрементального чтения, создания cloze, повторения и локальной работы со знаниями.",
+    "ogDescription": "Доводите чтение до настоящего завершения"
+  },
+  "nav": {
+    "mainLabel": "Основная навигация",
+    "utilityLabel": "Служебная навигация",
+    "languageLabel": "Язык",
+    "download": "Скачать"
+  },
+  "hero": {
+    "title": "Доводите чтение до настоящего завершения",
+    "subtitle": "Доступное приложение для инкрементального чтения",
+    "cta": "Скачать альфа-версию для Windows",
+    "actionsLabel": "Ссылки для загрузки и исходного кода",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "Ожидаемая доступность платформ",
+    "windows": "Windows alpha открыта для тестирования",
+    "android": "Android alpha ожидается примерно в июле",
+    "apple": "Alpha-сборки для macOS и iOS ожидаются примерно в августе"
+  },
+  "video": {
+    "demo": "Демо",
+    "aria": "Посмотреть демо на YouTube"
+  },
+  "principles": {
+    "openSource": {
+      "title": "Открытый исходный код",
+      "body": "Код открыт. Любой может изучить реализацию, собрать Foliole из исходников или предложить улучшения",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "Открытые данные",
+      "body": "Foliole использует базу данных SQLite и предоставляет Markdown-зеркало, чтобы материалы было проще читать, переносить и повторно использовать",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "Local first",
+      "body": "Без системы аккаунтов. Без централизованной облачной синхронизации. Все данные остаются на ваших личных устройствах; устройства синхронизируются по локальной сети",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "Нативное инкрементальное чтение",
+      "body": "Foliole построен вокруг идей инкрементального чтения Петра Возняка и предлагает нативный рабочий процесс для извлечения фрагментов, создания cloze deletions и постепенной доработки материалов без выхода из потока чтения",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "Встроенное планирование FSRS",
+      "body": "Foliole интегрирует FSRS (Free Spaced Repetition Scheduler), открытый и эффективный алгоритм планирования повторений",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "Собирайте материалы для чтения вместе",
+      "body": "Foliole работает с материалами из разных источников: локальными файлами, веб-документами, заметками из Obsidian и материалами, экспортированными из Readwise Reader",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "Индексируйте внешние документы",
+      "body": "Foliole индексирует другие локальные папки на вашем компьютере, не копируя и не перемещая исходные файлы. Так создается внешняя библиотека документов, которую можно искать, просматривать и использовать на поддерживаемых клиентах",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "Поддержка сложного контента",
+      "body": "Foliole поддерживает Markdown, PDF, EPUB, формулы LaTeX, блоки кода и другие задачи отображения контента",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "Благодарности",
+    "category": "Особая благодарность",
+    "sub": "Особая благодарность Петру Возняку и Jarrett Ye. Без SuperMemo, инкрементального чтения и FSRS Foliole не существовал бы.\n\nСпасибо следующим open-source проектам и компонентам:\n\n- better-sqlite3\n- Capacitor\n- CodeMirror 6\n- Drizzle ORM\n- Electron\n- React\n- SQLite\n- TypeScript\n- Vite",
+    "thanks": "Большое спасибо также следующим open source-проектам и компонентам:"
+  },
+  "theme": {
+    "system": "Тема: как в системе",
+    "light": "Тема: светлая",
+    "dark": "Тема: тёмная"
+  }
+}

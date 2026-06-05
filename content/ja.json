@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - 読書を本当に完了できるものにする。",
+    "description": "Foliole は、読書、穴埋め作成、復習、ローカルファーストな知識作業のための親しみやすいインクリメンタルリーディングアプリです。",
+    "ogDescription": "読書を本当に完了できるものにする。"
+  },
+  "nav": {
+    "mainLabel": "メインナビゲーション",
+    "utilityLabel": "ユーティリティナビゲーション",
+    "languageLabel": "言語",
+    "download": "ダウンロード"
+  },
+  "hero": {
+    "title": "読書を本当に完了できるものにする。",
+    "subtitle": "親しみやすいインクリメンタルリーディングアプリです。",
+    "cta": "Windows Alpha をダウンロード",
+    "actionsLabel": "ダウンロードとソースへのリンク",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "今後のプラットフォーム提供予定",
+    "windows": "Windows alpha はテスト公開中です。",
+    "android": "Android alpha は 7 月頃に公開予定です。",
+    "apple": "macOS と iOS の alpha ビルドは 8 月頃に公開予定です。"
+  },
+  "video": {
+    "demo": "デモ",
+    "aria": "YouTube でデモを見る"
+  },
+  "principles": {
+    "openSource": {
+      "title": "オープンソース",
+      "body": "コードはオープンソースです。誰でも実装を確認し、ソースからビルドし、改善に参加できます。",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "オープンデータ",
+      "body": "SQLite データベースを使用し、Markdown ミラーを提供します。これにより、素材の閲覧、移行、再利用がしやすくなります。",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "ローカルファースト",
+      "body": "アカウントシステムはありません。中央集権的なクラウド同期もありません。すべてのデータは個人のデバイス上に残り、デバイス間の同期はローカルネットワークで行います。",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "ネイティブなインクリメンタルリーディング",
+      "body": "Foliole は Piotr Woźniak のインクリメンタルリーディングの考え方を基盤にしています。読書の流れを離れずに、文章の抜き出し、穴埋め問題の作成、素材の継続的な整理ができるネイティブなワークフローを備えています。",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "FSRS スケジューリング統合",
+      "body": "Foliole は、オープンで効率的な復習スケジューリングアルゴリズムである FSRS（Free Spaced Repetition Scheduler）を統合しています。",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "読書素材をひとつに集約",
+      "body": "ローカルファイル、Web ドキュメント、Obsidian で管理しているノート、Readwise Reader からエクスポートした素材など、さまざまな出所の読書素材をまとめて扱えます。",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "外部ドキュメントのインデックス化",
+      "body": "元のファイルをコピーまたは移動せずに、コンピューター上の他のローカルフォルダをインデックス化します。対応クライアントから検索、表示、利用できる外部ドキュメントライブラリを作成できます。",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "複雑なコンテンツへの対応",
+      "body": "Markdown、PDF、EPUB、LaTeX 数式、コードブロックなど、さまざまなコンテンツ表示の要件に対応します。",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "謝辞",
+    "category": "特別な感謝",
+    "sub": "Piotr Woźniak と Jarrett Ye に特別な感謝を捧げます。SuperMemo、インクリメンタルリーディング、FSRS がなければ、Foliole は存在しませんでした。\n\n以下のオープンソースプロジェクトおよびコンポーネントにも感謝します。\n\n- better-sqlite3\n- Capacitor\n- CodeMirror 6\n- Drizzle ORM\n- Electron\n- React\n- SQLite\n- TypeScript\n- Vite",
+    "thanks": "以下のオープンソースプロジェクトとコンポーネントにも感謝します:"
+  },
+  "theme": {
+    "system": "テーマ: システムに従う",
+    "light": "テーマ: ライト",
+    "dark": "テーマ: ダーク"
+  }
+}

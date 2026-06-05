@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Foliole - 让阅读真正完成。",
+    "description": "Foliole 是一款易上手的渐进阅读应用，用于阅读、挖空、复习和本地优先的知识工作。",
+    "ogDescription": "让阅读真正完成。"
+  },
+  "nav": {
+    "mainLabel": "主导航",
+    "utilityLabel": "辅助导航",
+    "languageLabel": "语言",
+    "download": "下载"
+  },
+  "hero": {
+    "title": "让阅读真正完成。",
+    "subtitle": "一款现代的渐进阅读软件。",
+    "cta": "下载 Windows Alpha",
+    "actionsLabel": "下载与源码链接",
+    "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
+  },
+  "release": {
+    "label": "即将支持的平台",
+    "windows": "Windows alpha 已开放测试。",
+    "android": "Android alpha 预计在 7 月左右发布。",
+    "apple": "macOS 和 iOS alpha 预计在 8 月左右发布。"
+  },
+  "video": {
+    "demo": "演示视频",
+    "aria": "在 YouTube 上观看演示视频"
+  },
+  "principles": {
+    "openSource": {
+      "title": "代码开源",
+      "body": "代码完全开源，任何人都可以审查实现、自行构建或参与改进。",
+      "imageAlt": "Foliole desktop interface preview."
+    },
+    "openData": {
+      "title": "数据开放",
+      "body": "使用 SQLite 数据库并提供 Markdown 镜像，方便资料的读取、迁移和调用。",
+      "imageAlt": "Foliole document library and reading workspace."
+    },
+    "localFirst": {
+      "title": "本地优先",
+      "body": "没有账号和中心云同步系统。所有数据都保存在个人设备上；多设备之间通过局域网同步。",
+      "imageAlt": "Foliole local reading workspace."
+    }
+  },
+  "features": {
+    "incremental": {
+      "title": "原生支持渐进阅读",
+      "body": "践行 Piotr Woźniak 的渐进阅读理念，支持在深度阅读中无缝摘录、流畅挖空、持续重构。",
+      "imageAlt": "Foliole reading pane with extracted notes."
+    },
+    "fsrs": {
+      "title": "集成 FSRS 调度",
+      "body": "集成 FSRS（Free Spaced Repetition Scheduler），采用开源高效的复习调度算法。",
+      "imageAlt": "Foliole scheduling panel in the desktop app."
+    },
+    "materials": {
+      "title": "汇聚阅读材料",
+      "body": "可集中处理各种来源的阅读材料，无论是本地文件、网页文档，还是 Obsidian 管理的笔记、Readwise Reader 导出的材料。",
+      "imageAlt": "Foliole document list and reading sources."
+    },
+    "external": {
+      "title": "索引外部文档",
+      "body": "无需复制或移动原文件，即可索引电脑上的其他本地文件夹，建立可在各平台客户端查阅和调用的外部文档库。",
+      "imageAlt": "Foliole document navigation and indexed folders."
+    },
+    "complex": {
+      "title": "支持复杂材料",
+      "body": "支持 Markdown、PDF、EPUB 等文件格式，以及数学公式（LaTeX）、代码块等内容渲染。",
+      "imageAlt": "Foliole complex content reading view."
+    }
+  },
+  "ack": {
+    "label": "致谢",
+    "category": "特别感谢",
+    "sub": "特别感谢 Piotr Woźniak 和 Jarrett Ye。没有 SuperMemo、渐进阅读和 FSRS，就没有 Foliole。",
+    "thanks": "也非常感谢以下优秀的开源项目和组件："
+  },
+  "theme": {
+    "system": "主题：跟随系统",
+    "light": "主题：浅色",
+    "dark": "主题：深色"
+  }
+}
