@@ -762,12 +762,14 @@ h1 {
   right: 0;
   z-index: 1000;
   pointer-events: auto;
-  width: min(220px, calc(100vw - 2rem));
+  width: max-content;
+  min-width: 160px;
+  max-width: calc(100vw - 2rem);
   display: flex;
   flex-direction: column;
   gap: 2px;
   overflow: visible;
-  padding: 7px;
+  padding: 6px;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--menu-bg);
@@ -781,7 +783,7 @@ h1 {
 .language-menu a,
 .language-menu button {
   width: 100%;
-  min-height: 32px;
+  min-height: 31px;
   display: flex;
   align-items: center;
   flex: 0 0 auto;
@@ -793,7 +795,7 @@ h1 {
   text-align: left;
   text-decoration: none;
   white-space: nowrap;
-  padding: 0 0.75rem;
+  padding: 0 0.65rem;
   cursor: pointer;
 }
 
