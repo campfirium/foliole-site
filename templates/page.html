@@ -14,7 +14,7 @@
     <link rel="canonical" href="{{page.url}}">
     {{{page.alternates}}}
     <link rel="icon" href="/assets/brand/favicon.png" type="image/png">
-    <link rel="stylesheet" href="/styles.css?v=000009">
+    <link rel="stylesheet" href="/styles.css?v=000011">
   </head>
   <body>
     <main>
@@ -243,8 +243,8 @@
 
         if (button) {
           button.addEventListener('click', function () {
-            var current = storedTheme();
-            var next = themeModes[(themeModes.indexOf(current) + 1) % themeModes.length];
+            var current = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+            var next = current === 'dark' ? 'light' : 'dark';
             window.setFolioleTheme(next, true);
           });
         }
@@ -278,15 +278,28 @@
 
         var button = picker.querySelector('.language-button');
         var menu = picker.querySelector('.language-menu');
+        var links = picker.querySelectorAll('.language-menu a');
 
         function setOpen(open) {
           picker.classList.toggle('is-open', open);
           button.setAttribute('aria-expanded', String(open));
+          if (open) {
+            var rect = button.getBoundingClientRect();
+            menu.style.top = rect.bottom + 8 + 'px';
+            menu.style.right = Math.max(16, window.innerWidth - rect.right) + 'px';
+          }
           menu.hidden = !open;
         }
 
         button.addEventListener('click', function () {
           setOpen(menu.hidden);
+        });
+
+        links.forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            if (link.getAttribute('aria-current') === 'page') event.preventDefault();
+            setOpen(false);
+          });
         });
 
         document.addEventListener('click', function (event) {
