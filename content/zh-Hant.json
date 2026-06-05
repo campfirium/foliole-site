@@ -72,10 +72,10 @@
     }
   },
   "ack": {
-    "label": "致謝",
+    "label": "Acknowledgements",
     "category": "特別感謝",
-    "sub": "特別感謝 Piotr Woźniak 和 Jarrett Ye。沒有 SuperMemo、漸進閱讀和 FSRS，就沒有 Foliole。",
-    "thanks": "也非常感謝以下優秀的開源專案與元件："
+    "sub": "沒有 SuperMemo、漸進閱讀和 FSRS，就沒有 Foliole",
+    "thanks": "也非常感謝以下優秀的開源專案與元件"
   },
   "theme": {
     "system": "主題：跟隨系統",

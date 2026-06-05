@@ -72,10 +72,10 @@
     }
   },
   "ack": {
-    "label": "謝辞",
+    "label": "Acknowledgements",
     "category": "特別な感謝",
-    "sub": "Piotr Woźniak と Jarrett Ye に特別な感謝を捧げます。SuperMemo、インクリメンタルリーディング、FSRS がなければ、Foliole は存在しませんでした。\n\n以下のオープンソースプロジェクトおよびコンポーネントにも感謝します。\n\n- better-sqlite3\n- Capacitor\n- CodeMirror 6\n- Drizzle ORM\n- Electron\n- React\n- SQLite\n- TypeScript\n- Vite",
-    "thanks": "以下のオープンソースプロジェクトとコンポーネントにも感謝します:"
+    "sub": "SuperMemo、インクリメンタルリーディング、FSRS がなければ、Foliole は存在しませんでした。",
+    "thanks": "以下のオープンソースプロジェクトとコンポーネントにも感謝します"
   },
   "theme": {
     "system": "テーマ: システムに従う",

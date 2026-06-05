@@ -72,10 +72,10 @@
     }
   },
   "ack": {
-    "label": "Благодарности",
+    "label": "Acknowledgements",
     "category": "Особая благодарность",
-    "sub": "Особая благодарность Петру Возняку и Jarrett Ye. Без SuperMemo, инкрементального чтения и FSRS Foliole не существовал бы.\n\nСпасибо следующим open-source проектам и компонентам:\n\n- better-sqlite3\n- Capacitor\n- CodeMirror 6\n- Drizzle ORM\n- Electron\n- React\n- SQLite\n- TypeScript\n- Vite",
-    "thanks": "Большое спасибо также следующим open source-проектам и компонентам:"
+    "sub": "Без SuperMemo, инкрементального чтения и FSRS Foliole не существовал бы",
+    "thanks": "Большое спасибо также следующим open source-проектам и компонентам"
   },
   "theme": {
     "system": "Тема: как в системе",

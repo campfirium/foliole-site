@@ -72,10 +72,10 @@
     }
   },
   "ack": {
-    "label": "Agradecimientos",
+    "label": "Acknowledgements",
     "category": "Agradecimiento especial",
-    "sub": "Gracias especialmente a Piotr Woźniak y Jarrett Ye. Sin SuperMemo, la lectura incremental y FSRS, Foliole no existiría",
-    "thanks": "Muchas gracias también a los siguientes proyectos y componentes open source:"
+    "sub": "Sin SuperMemo, la lectura incremental y FSRS, Foliole no existiría",
+    "thanks": "Muchas gracias también a los siguientes proyectos y componentes open source"
   },
   "theme": {
     "system": "Tema: seguir el sistema",

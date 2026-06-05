@@ -74,8 +74,8 @@
   "ack": {
     "label": "Acknowledgements",
     "category": "Besonderer Dank",
-    "sub": "Besonderer Dank gilt Piotr Woźniak und Jarrett Ye. Ohne SuperMemo, inkrementelles Lesen und FSRS gäbe es Foliole nicht",
-    "thanks": "Vielen Dank auch an die folgenden Open-Source-Projekte und -Komponenten:"
+    "sub": "Ohne SuperMemo, inkrementelles Lesen und FSRS gäbe es Foliole nicht",
+    "thanks": "Vielen Dank auch an die folgenden Open-Source-Projekte und -Komponenten"
   },
   "theme": {
     "system": "Design: Systemeinstellung",

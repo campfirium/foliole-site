@@ -72,10 +72,10 @@
     }
   },
   "ack": {
-    "label": "Podziękowania",
+    "label": "Acknowledgements",
     "category": "Szczególne podziękowania",
-    "sub": "Szczególne podziękowania dla Piotra Woźniaka i Jarretta Ye. Bez SuperMemo, czytania inkrementalnego i FSRS Foliole by nie powstało.\n\nDziękujemy również następującym projektom i komponentom open source:\n\n- better-sqlite3\n- Capacitor\n- CodeMirror 6\n- Drizzle ORM\n- Electron\n- React\n- SQLite\n- TypeScript\n- Vite",
-    "thanks": "Wielkie podziękowania także dla następujących projektów i komponentów open source:"
+    "sub": "Bez SuperMemo, czytania inkrementalnego i FSRS Foliole by nie powstało",
+    "thanks": "Wielkie podziękowania także dla następujących projektów i komponentów open source"
   },
   "theme": {
     "system": "Motyw: zgodnie z systemem",

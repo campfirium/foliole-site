@@ -74,8 +74,8 @@
   "ack": {
     "label": "Acknowledgements",
     "category": "Special thanks",
-    "sub": "Special thanks to Piotr Woźniak and Jarrett Ye. Without SuperMemo, incremental reading, and FSRS, Foliole would not exist",
-    "thanks": "Many thanks to the following open-source projects and components:"
+    "sub": "Without SuperMemo, incremental reading, and FSRS, Foliole would not exist",
+    "thanks": "Many thanks to the following open-source projects and components"
   },
   "theme": {
     "system": "Theme: follow browser",
