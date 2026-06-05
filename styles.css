@@ -299,11 +299,11 @@ h1 {
 
 .release-note {
   min-height: clamp(44px, 3.25vw, 58px);
-  max-width: 560px;
+  max-width: 640px;
   margin: 0;
   display: flex;
   align-items: center;
-  gap: clamp(0.55rem, 0.85vw, 0.85rem);
+  gap: clamp(0.8rem, 1vw, 1rem);
   padding: 0.45rem 0;
   color: var(--muted);
   font-size: clamp(0.82rem, 0.84vw, 0.94rem);
@@ -315,11 +315,18 @@ h1 {
   min-height: 2.15rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  border-left: 1px solid var(--line);
-  padding-left: clamp(0.55rem, 0.85vw, 0.85rem);
+  gap: clamp(0.8rem, 1vw, 1rem);
   color: var(--ink);
   white-space: nowrap;
+}
+
+.release-platform + .release-platform::before {
+  content: "";
+  width: 1px;
+  height: 1.35rem;
+  display: block;
+  background: var(--line);
+  flex: 0 0 auto;
 }
 
 .release-platform span {
@@ -911,10 +918,14 @@ h1 {
     min-height: auto;
     justify-content: space-between;
     gap: 1rem;
-    border-left: 0;
-    border-top: 1px solid var(--line);
-    padding: 0.52rem 0 0;
+    padding: 0;
     white-space: normal;
+  }
+
+  .release-platform + .release-platform::before {
+    width: 2.25rem;
+    height: 1px;
+    margin-right: auto;
   }
 
   .hero-shot {
