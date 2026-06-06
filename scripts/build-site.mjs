@@ -21,6 +21,7 @@ const locales = [
 ];
 
 const localeById = new Map(locales.map((locale) => [locale.id, locale]));
+const languagePreferenceKey = 'foliole-language-manual';
 
 function pageUrl(locale) {
   return locale.path ? `${siteUrl}/${locale.path}/` : `${siteUrl}/`;
@@ -82,6 +83,55 @@ function renderThemeConfig(content) {
   return `<script>window.FOLIOLE_PAGE_COPY=${JSON.stringify({ theme: content.theme })};</script>`;
 }
 
+function renderLocaleRedirectScript(locale) {
+  if (locale.id !== 'en') return '';
+  const targets = {
+    de: '/de/',
+    es: '/es/',
+    fr: '/fr/',
+    it: '/it/',
+    ja: '/ja/',
+    ko: '/ko/',
+    pl: '/pl/',
+    pt: '/pt/',
+    ru: '/ru/',
+    'zh-hans': '/zh-hans/',
+    'zh-hant': '/zh-hant/'
+  };
+  return `<script>
+      (function () {
+        var manualKey = ${JSON.stringify(languagePreferenceKey)};
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('lang') === 'manual') {
+          localStorage.setItem(manualKey, '1');
+          return;
+        }
+        if (localStorage.getItem(manualKey)) return;
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') return;
+
+        var targets = ${JSON.stringify(targets)};
+        var languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+        for (var i = 0; i < languages.length; i += 1) {
+          var language = String(languages[i]).toLowerCase();
+          if (!language) continue;
+          if (language.indexOf('zh-hant') === 0 || language.indexOf('zh-tw') === 0 || language.indexOf('zh-hk') === 0 || language.indexOf('zh-mo') === 0) {
+            window.location.replace(targets['zh-hant']);
+            return;
+          }
+          if (language.indexOf('zh') === 0) {
+            window.location.replace(targets['zh-hans']);
+            return;
+          }
+          var base = language.split('-')[0];
+          if (targets[base]) {
+            window.location.replace(targets[base]);
+            return;
+          }
+        }
+      })();
+    </script>`;
+}
+
 function renderTemplate(template, values) {
   return template
     .replace(/\{\{\{\s*([\w.]+)\s*\}\}\}/g, (_, key) => {
@@ -105,6 +155,7 @@ async function writePage(template, locale, content) {
       ogLocale: locale.ogLocale,
       alternates: renderAlternateLinks(),
       languageMenu: renderLanguageMenu(locale),
+      localeRedirectScript: renderLocaleRedirectScript(locale),
       themeConfig: renderThemeConfig(content)
     }
   });

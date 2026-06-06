@@ -15,6 +15,7 @@
     {{{page.alternates}}}
     <link rel="icon" href="/assets/brand/favicon.png" type="image/png">
     <link rel="stylesheet" href="/styles.css?v=000013">
+{{{page.localeRedirectScript}}}
   </head>
   <body>
     <main>
@@ -297,6 +298,7 @@
 
         links.forEach(function (link) {
           link.addEventListener('click', function (event) {
+            localStorage.setItem('foliole-language-manual', '1');
             if (link.getAttribute('aria-current') === 'page') event.preventDefault();
             setOpen(false);
           });

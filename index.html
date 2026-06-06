@@ -27,6 +27,38 @@
     <link rel="alternate" hreflang="x-default" href="https://foliole.app/">
     <link rel="icon" href="/assets/brand/favicon.png" type="image/png">
     <link rel="stylesheet" href="/styles.css?v=000013">
+<script>
+      (function () {
+        var manualKey = "foliole-language-manual";
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('lang') === 'manual') {
+          localStorage.setItem(manualKey, '1');
+          return;
+        }
+        if (localStorage.getItem(manualKey)) return;
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') return;
+
+        var targets = {"de":"/de/","es":"/es/","fr":"/fr/","it":"/it/","ja":"/ja/","ko":"/ko/","pl":"/pl/","pt":"/pt/","ru":"/ru/","zh-hans":"/zh-hans/","zh-hant":"/zh-hant/"};
+        var languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+        for (var i = 0; i < languages.length; i += 1) {
+          var language = String(languages[i]).toLowerCase();
+          if (!language) continue;
+          if (language.indexOf('zh-hant') === 0 || language.indexOf('zh-tw') === 0 || language.indexOf('zh-hk') === 0 || language.indexOf('zh-mo') === 0) {
+            window.location.replace(targets['zh-hant']);
+            return;
+          }
+          if (language.indexOf('zh') === 0) {
+            window.location.replace(targets['zh-hans']);
+            return;
+          }
+          var base = language.split('-')[0];
+          if (targets[base]) {
+            window.location.replace(targets[base]);
+            return;
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <main>
@@ -320,6 +352,7 @@
 
         links.forEach(function (link) {
           link.addEventListener('click', function (event) {
+            localStorage.setItem('foliole-language-manual', '1');
             if (link.getAttribute('aria-current') === 'page') event.preventDefault();
             setOpen(false);
           });
