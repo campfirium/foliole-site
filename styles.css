@@ -24,7 +24,7 @@
   --hero-x: clamp(2rem, 8.5vw, 12rem);
   --content-w: 1500px;
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 }
 
@@ -791,7 +791,7 @@ h1 {
   border-radius: 7px;
   background: transparent;
   color: var(--ink);
-  font: 400 0.96rem/1.2 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font: 400 0.96rem/1.2 "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-align: left;
   text-decoration: none;
   white-space: nowrap;
