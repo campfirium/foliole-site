@@ -21,20 +21,18 @@ const currentEntry = allEntries.find((entry) => entry.id === currentId);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=000019">
+    <link rel="stylesheet" href="/styles.css?v=000020">
   </head>
   <body class="guide-body">
-    <main aria-label="Foliole Guides" class="foliole-guides-replica">
-      <img
-        class="foliole-guides-replica-image"
-        src="/assets/screenshots/foliole-desktop.png"
-        alt="Foliole desktop workspace interface"
-        width="3840"
-        height="2158"
-      >
+    <main aria-label="Foliole Guides" class="foliole-guides-runtime">
+      <iframe
+        class="foliole-guides-runtime-frame"
+        src="/guides-runtime/index.html"
+        title="Foliole Guides workspace"
+      ></iframe>
       <section class="foliole-guides-seo" aria-labelledby="guide-title">
         <h1 id="guide-title">{currentEntry?.data.title ?? 'Foliole Guides'}</h1>
-        <p>Static Guides view based on the actual Foliole workspace interface. This page is documentation, not the Foliole app.</p>
+        <p>Static Guides view rendered by the Foliole workspace runtime. This page is documentation, not the Foliole app.</p>
         <slot />
       </section>
     </main>
