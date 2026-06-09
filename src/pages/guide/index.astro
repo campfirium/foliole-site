@@ -1,11 +1,17 @@
 ---
-import GuideShell from '../../layouts/GuideShell.astro';
+const target = '/guides/';
 ---
 
-<GuideShell
-  title="Guide"
-  description="Foliole Guide"
-  entries={[]}
->
-  <h1 id="guide-title" class="sr-only">Guide</h1>
-</GuideShell>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content={`0;url=${target}`}>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href={new URL(target, Astro.site).toString()}>
+    <title>Redirecting to Foliole Guides</title>
+  </head>
+  <body>
+    <a href={target}>Guides</a>
+  </body>
+</html>

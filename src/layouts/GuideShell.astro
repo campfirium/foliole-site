@@ -20,9 +20,9 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{title} - Foliole Guide</title>
+    <title>{title} - Foliole Guides</title>
     <meta name="description" content={description}>
-    <meta property="og:title" content={`${title} - Foliole Guide`}>
+    <meta property="og:title" content={`${title} - Foliole Guides`}>
     <meta property="og:description" content={description}>
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://foliole.app/assets/brand/foliole-app-icon.svg">
@@ -36,16 +36,16 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
   </head>
   <body class="guide-body">
     <div class="guide-app">
-      <aside class="guide-rail" aria-label="Guide sections">
+      <aside class="guide-rail" aria-label="Guides sections">
         <a class="guide-home-mark" href="/" aria-label="Foliole home">
           <img src="/assets/brand/foliole-app-icon.svg" alt="">
         </a>
-        <a class="guide-rail-button is-active" href="/guide/" aria-label="Guide">
+        <a class="guide-rail-button is-active" href="/guides/" aria-label="Guides">
           <span>G</span>
         </a>
       </aside>
 
-      <aside class="guide-library" aria-label="Guide categories">
+      <aside class="guide-library" aria-label="Guides categories">
         <a class="guide-brand" href="/">
           <img src="/assets/brand/foliole-app-icon.svg" alt="">
           <span>Foliole</span>
@@ -53,7 +53,7 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
         {categories.length > 0 && (
           <nav class="guide-category-list">
             {categories.map((category) => (
-              <a class={allEntries.some((entry) => entry.id === currentId && entry.data.category === category) ? 'is-active' : ''} href={`/guide/#${category.toLowerCase().replaceAll(' ', '-')}`}>
+              <a class={allEntries.some((entry) => entry.id === currentId && entry.data.category === category) ? 'is-active' : ''} href={`/guides/#${category.toLowerCase().replaceAll(' ', '-')}`}>
                 <span>{category}</span>
                 <small>{allEntries.filter((entry) => entry.data.category === category).length}</small>
               </a>
@@ -63,15 +63,15 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
         <a class="guide-download" href="https://github.com/campfirium/foliole/releases">Download</a>
       </aside>
 
-      <aside class="guide-list" aria-label="Guide articles">
+      <aside class="guide-list" aria-label="Guides articles">
         <div class="guide-list-header">
-          <a href="/guide/">Guide</a>
+          <a href="/guides/">Guides</a>
           <span>{allEntries.length}</span>
         </div>
         {allEntries.length > 0 && (
           <nav>
             {allEntries.map((entry) => (
-              <a class={entry.id === currentId ? 'is-active' : ''} href={`/guide/${entry.id}/`}>
+              <a class={entry.id === currentId ? 'is-active' : ''} href={`/guides/${entry.id}/`}>
                 <span>{entry.data.title}</span>
                 <small>{entry.data.category}</small>
               </a>
@@ -85,7 +85,7 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
           <nav aria-label="Breadcrumb">
             <a href="/">Foliole</a>
             <span>/</span>
-            <a href="/guide/">Guide</a>
+            <a href="/guides/">Guides</a>
           </nav>
           <button class="theme-button guide-theme-button" type="button" aria-label="Theme: follow browser" title="Theme: follow browser" data-theme-toggle>
             <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
@@ -114,13 +114,13 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
         </article>
         {(previous || next) && (
           <nav class="guide-next-links" aria-label="Adjacent guide articles">
-            {previous && <a href={`/guide/${previous.id}/`}>Previous: {previous.data.title}</a>}
-            {next && <a href={`/guide/${next.id}/`}>Next: {next.data.title}</a>}
+            {previous && <a href={`/guides/${previous.id}/`}>Previous: {previous.data.title}</a>}
+            {next && <a href={`/guides/${next.id}/`}>Next: {next.data.title}</a>}
           </nav>
         )}
       </main>
 
-      <aside class="guide-flow" aria-label="Guide flow">
+      <aside class="guide-flow" aria-label="Guides flow">
         {flow.length > 0 && (
           <>
             <h2>Flow</h2>
