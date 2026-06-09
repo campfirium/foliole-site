@@ -2,7 +2,6 @@
 const { title, description, entries, currentId } = Astro.props;
 
 const allEntries = entries ?? [];
-const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
 ---
 
 <!doctype html>
@@ -21,8 +20,7 @@ const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=000015">
-    <script is:inline>window.FOLIOLE_PAGE_COPY={"theme":{"system":"Theme: follow browser","light":"Theme: light","dark":"Theme: dark"}};</script>
+    <link rel="stylesheet" href="/styles.css?v=000016">
   </head>
   <body class="guide-body">
     <div class="guide-app">
@@ -39,34 +37,39 @@ const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
       </header>
 
       <aside class="guide-rail" aria-label="Guides sections">
-        <a class="guide-home-mark" href="/" aria-label="Foliole home">
+        <span class="guide-rail-mark" aria-hidden="true">
           <img src="/assets/brand/foliole-app-icon.svg" alt="">
-        </a>
-        <a class="guide-rail-button is-active" href="/guides/" aria-label="Guides">
+        </span>
+        <span class="guide-rail-button" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 4.5h12v15H6z"></path>
+            <path d="M9 8h6"></path>
+            <path d="M9 12h6"></path>
+          </svg>
+        </span>
+        <span class="guide-rail-button is-active" aria-hidden="true">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M7 5.5h10"></path>
             <path d="M7 12h10"></path>
             <path d="M7 18.5h10"></path>
           </svg>
-        </a>
+        </span>
         <span class="guide-rail-spacer"></span>
-        <button class="guide-rail-button" type="button" aria-label="Theme: follow browser" title="Theme: follow browser" data-theme-toggle>
-          <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="3" y="4" width="18" height="13" rx="2"></rect>
-            <path d="M8 21h8"></path>
-            <path d="M12 17v4"></path>
-          </svg>
-          <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2"></path>
-            <path d="M12 20v2"></path>
-            <path d="M2 12h2"></path>
-            <path d="M20 12h2"></path>
-          </svg>
-          <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true">
+        <span class="guide-rail-button" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
             <path d="M12 3a6.8 6.8 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
           </svg>
-        </button>
+        </span>
+        <span class="guide-rail-button" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 21v-7"></path>
+            <path d="M4 10V3"></path>
+            <path d="M12 21v-9"></path>
+            <path d="M12 8V3"></path>
+            <path d="M20 21v-5"></path>
+            <path d="M20 12V3"></path>
+          </svg>
+        </span>
       </aside>
 
       <aside class="guide-directory" aria-label="Guides directory">
@@ -74,28 +77,18 @@ const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
           <span></span>
           <span></span>
         </div>
-        <nav class="guide-directory-list">
-          <a href="/" class="guide-directory-row">
+        <div class="guide-directory-list">
+          <div class="guide-directory-row">
             <span class="guide-row-caret">⌄</span>
             <span>Home</span>
             <small>0</small>
-          </a>
-          <a href="/guides/" class="guide-directory-row is-active">
+          </div>
+          <div class="guide-directory-row is-active">
             <span class="guide-row-caret"></span>
             <span>Guides</span>
             <small>{allEntries.length}</small>
-          </a>
-        </nav>
-        {categories.length > 0 && (
-          <nav class="guide-category-list">
-            {categories.map((category) => (
-              <a class={allEntries.some((entry) => entry.id === currentId && entry.data.category === category) ? 'is-active' : ''} href={`/guides/#${category.toLowerCase().replaceAll(' ', '-')}`}>
-                <span>{category}</span>
-                <small>{allEntries.filter((entry) => entry.data.category === category).length}</small>
-              </a>
-            ))}
-          </nav>
-        )}
+          </div>
+        </div>
       </aside>
 
       <aside class="guide-list" aria-label="Guides articles">
@@ -134,9 +127,9 @@ const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
             <span>›</span>
           </div>
           <nav class="guide-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Foliole</a>
+            <span>Foliole</span>
             <span>/</span>
-            <a href="/guides/">Guides</a>
+            <span>Guides</span>
           </nav>
           <span class="guide-reader-page">P1</span>
         </header>
@@ -146,62 +139,8 @@ const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
       </main>
 
       <footer class="guide-status">
-        <span>Static website page - not the Foliole app.</span>
+        <span>Static Guides view - not the Foliole app.</span>
       </footer>
     </div>
-    <script is:inline>
-      (function () {
-        var themeModes = ['system', 'light', 'dark'];
-        var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
-        var button = document.querySelector('[data-theme-toggle]');
-        var pageCopy = window.FOLIOLE_PAGE_COPY || {};
-        var themeCopy = pageCopy.theme || {};
-
-        function storedTheme() {
-          var saved = localStorage.getItem('foliole-theme');
-          return themeModes.indexOf(saved) >= 0 ? saved : 'system';
-        }
-
-        function themeLabel(mode) {
-          if (mode === 'light') return themeCopy.light || 'Theme: light';
-          if (mode === 'dark') return themeCopy.dark || 'Theme: dark';
-          return themeCopy.system || 'Theme: follow browser';
-        }
-
-        function applyTheme(mode) {
-          var effective = mode === 'system' && media && media.matches ? 'dark' : mode === 'dark' ? 'dark' : 'light';
-          document.documentElement.dataset.themeMode = mode;
-          document.documentElement.dataset.theme = effective;
-          if (button) {
-            button.setAttribute('aria-label', themeLabel(mode));
-            button.setAttribute('title', themeLabel(mode));
-          }
-        }
-
-        window.setFolioleTheme = function (mode, persist) {
-          var next = themeModes.indexOf(mode) >= 0 ? mode : 'system';
-          applyTheme(next);
-          if (persist) localStorage.setItem('foliole-theme', next);
-        };
-
-        if (button) {
-          button.addEventListener('click', function () {
-            var current = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
-            var next = current === 'dark' ? 'light' : 'dark';
-            window.setFolioleTheme(next, true);
-          });
-        }
-
-        if (media) {
-          var onChange = function () {
-            if (storedTheme() === 'system') applyTheme('system');
-          };
-          if (media.addEventListener) media.addEventListener('change', onChange);
-          else if (media.addListener) media.addListener(onChange);
-        }
-
-        applyTheme(storedTheme());
-      })();
-    </script>
   </body>
 </html>
