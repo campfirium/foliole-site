@@ -1,18 +1,8 @@
 ---
-const {
-  title,
-  description,
-  entries,
-  currentId,
-  headings = [],
-  flow = []
-} = Astro.props;
+const { title, description, entries, currentId } = Astro.props;
 
 const allEntries = entries ?? [];
 const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
-const currentIndex = allEntries.findIndex((entry) => entry.id === currentId);
-const previous = currentIndex > 0 ? allEntries[currentIndex - 1] : null;
-const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntries[currentIndex + 1] : null;
 ---
 
 <!doctype html>
@@ -36,20 +26,66 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
   </head>
   <body class="guide-body">
     <div class="guide-app">
+      <header class="guide-titlebar" aria-label="Window title">
+        <div class="guide-titlebar-left">
+          <span class="guide-titlebar-icon" aria-hidden="true"></span>
+        </div>
+        <div class="guide-titlebar-title">Foliole Guides</div>
+        <div class="guide-titlebar-controls" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
       <aside class="guide-rail" aria-label="Guides sections">
         <a class="guide-home-mark" href="/" aria-label="Foliole home">
           <img src="/assets/brand/foliole-app-icon.svg" alt="">
         </a>
         <a class="guide-rail-button is-active" href="/guides/" aria-label="Guides">
-          <span>G</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 5.5h10"></path>
+            <path d="M7 12h10"></path>
+            <path d="M7 18.5h10"></path>
+          </svg>
         </a>
+        <span class="guide-rail-spacer"></span>
+        <button class="guide-rail-button" type="button" aria-label="Theme: follow browser" title="Theme: follow browser" data-theme-toggle>
+          <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="13" rx="2"></rect>
+            <path d="M8 21h8"></path>
+            <path d="M12 17v4"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a6.8 6.8 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
       </aside>
 
-      <aside class="guide-library" aria-label="Guides categories">
-        <a class="guide-brand" href="/">
-          <img src="/assets/brand/foliole-app-icon.svg" alt="">
-          <span>Foliole</span>
-        </a>
+      <aside class="guide-directory" aria-label="Guides directory">
+        <div class="guide-directory-tools" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="guide-directory-list">
+          <a href="/" class="guide-directory-row">
+            <span class="guide-row-caret">⌄</span>
+            <span>Home</span>
+            <small>0</small>
+          </a>
+          <a href="/guides/" class="guide-directory-row is-active">
+            <span class="guide-row-caret"></span>
+            <span>Guides</span>
+            <small>{allEntries.length}</small>
+          </a>
+        </nav>
         {categories.length > 0 && (
           <nav class="guide-category-list">
             {categories.map((category) => (
@@ -60,12 +96,23 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
             ))}
           </nav>
         )}
-        <a class="guide-download" href="https://github.com/campfirium/foliole/releases">Download</a>
       </aside>
 
       <aside class="guide-list" aria-label="Guides articles">
+        <div class="guide-list-tools" aria-label="Article list tools">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="5"></circle><path d="m15 15 4 4"></path></svg>
+          </span>
+          <span class="guide-list-tool-spacer"></span>
+          <span aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 7h8"></path><path d="M8 12h6"></path><path d="M8 17h4"></path></svg>
+          </span>
+          <span aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m7 10 5-5 5 5"></path><path d="m7 14 5 5 5-5"></path></svg>
+          </span>
+        </div>
         <div class="guide-list-header">
-          <a href="/guides/">Guides</a>
+          <span>Guides</span>
           <span>{allEntries.length}</span>
         </div>
         {allEntries.length > 0 && (
@@ -82,62 +129,25 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
 
       <main class="guide-reader" aria-labelledby="guide-title">
         <header class="guide-reader-top">
-          <nav aria-label="Breadcrumb">
+          <div class="guide-reader-history" aria-hidden="true">
+            <span>‹</span>
+            <span>›</span>
+          </div>
+          <nav class="guide-breadcrumb" aria-label="Breadcrumb">
             <a href="/">Foliole</a>
             <span>/</span>
             <a href="/guides/">Guides</a>
           </nav>
-          <button class="theme-button guide-theme-button" type="button" aria-label="Theme: follow browser" title="Theme: follow browser" data-theme-toggle>
-            <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="13" rx="2"></rect>
-              <path d="M8 21h8"></path>
-              <path d="M12 17v4"></path>
-            </svg>
-            <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2"></path>
-              <path d="M12 20v2"></path>
-              <path d="m4.93 4.93 1.41 1.41"></path>
-              <path d="m17.66 17.66 1.41 1.41"></path>
-              <path d="M2 12h2"></path>
-              <path d="M20 12h2"></path>
-              <path d="m6.34 17.66-1.41 1.41"></path>
-              <path d="m19.07 4.93-1.41 1.41"></path>
-            </svg>
-            <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 3a6.8 6.8 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-            </svg>
-          </button>
+          <span class="guide-reader-page">P1</span>
         </header>
         <article class="guide-article">
           <slot />
         </article>
-        {(previous || next) && (
-          <nav class="guide-next-links" aria-label="Adjacent guide articles">
-            {previous && <a href={`/guides/${previous.id}/`}>Previous: {previous.data.title}</a>}
-            {next && <a href={`/guides/${next.id}/`}>Next: {next.data.title}</a>}
-          </nav>
-        )}
       </main>
 
-      <aside class="guide-flow" aria-label="Guides flow">
-        {flow.length > 0 && (
-          <>
-            <h2>Flow</h2>
-            <ol>
-              {flow.map((item) => <li>{item}</li>)}
-            </ol>
-          </>
-        )}
-        {headings.length > 0 && (
-          <nav aria-label="On this page">
-            <h2>On This Page</h2>
-            {headings.filter((heading) => heading.depth === 2).map((heading) => (
-              <a href={`#${heading.slug}`}>{heading.text}</a>
-            ))}
-          </nav>
-        )}
-      </aside>
+      <footer class="guide-status">
+        <span>Static website page - not the Foliole app.</span>
+      </footer>
     </div>
     <script is:inline>
       (function () {
