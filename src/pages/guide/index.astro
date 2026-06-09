@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import GuideShell from '../../layouts/GuideShell.astro';
+
+const entries = (await getCollection('guide')).sort((a, b) => a.data.order - b.data.order);
+const first = entries[0];
+---
+
+<GuideShell
+  title="Guide"
+  description="A Foliole guide workspace for incremental reading, scheduling, and local-first reading systems."
+  entries={entries}
+  currentId={first?.id}
+  flow={['Start with the core concepts.', 'Open an article as a static page.', 'Follow related guide links when they are available.']}
+>
+  <h1 id="guide-title">Guide</h1>
+  <p class="guide-kicker">A static documentation workspace shaped like Foliole.</p>
+  <p>
+    The Guide explains Foliole concepts through the same reading model as the product:
+    library, flow, reading pane, and context. It is documentation, not an online Foliole app.
+  </p>
+  <div class="guide-index-grid">
+    {entries.map((entry) => (
+      <a href={`/guide/${entry.id}/`}>
+        <small>{entry.data.category}</small>
+        <strong>{entry.data.title}</strong>
+        <span>{entry.data.description}</span>
+      </a>
+    ))}
+  </div>
+</GuideShell>

@@ -1,0 +1,7 @@
+---
+import { renderHomePage } from '../lib/home-renderer.mjs';
+
+const html = await renderHomePage('en');
+---
+
+<Fragment set:html={html} />

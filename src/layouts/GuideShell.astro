@@ -1,0 +1,191 @@
+---
+import { getCollection } from 'astro:content';
+
+const {
+  title,
+  description,
+  entries,
+  currentId,
+  headings = [],
+  flow = []
+} = Astro.props;
+
+const allEntries = entries ?? (await getCollection('guide')).sort((a, b) => a.data.order - b.data.order);
+const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
+const currentIndex = allEntries.findIndex((entry) => entry.id === currentId);
+const previous = currentIndex > 0 ? allEntries[currentIndex - 1] : null;
+const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntries[currentIndex + 1] : null;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title} - Foliole Guide</title>
+    <meta name="description" content={description}>
+    <meta property="og:title" content={`${title} - Foliole Guide`}>
+    <meta property="og:description" content={description}>
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://foliole.app/assets/brand/foliole-app-icon.svg">
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).toString()}>
+    <link rel="icon" href="/assets/brand/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="/styles.css?v=000015">
+    <script is:inline>window.FOLIOLE_PAGE_COPY={"theme":{"system":"Theme: follow browser","light":"Theme: light","dark":"Theme: dark"}};</script>
+  </head>
+  <body class="guide-body">
+    <div class="guide-app">
+      <aside class="guide-rail" aria-label="Guide sections">
+        <a class="guide-home-mark" href="/" aria-label="Foliole home">
+          <img src="/assets/brand/foliole-app-icon.svg" alt="">
+        </a>
+        <a class="guide-rail-button is-active" href="/guide/" aria-label="Guide">
+          <span>G</span>
+        </a>
+      </aside>
+
+      <aside class="guide-library" aria-label="Guide categories">
+        <a class="guide-brand" href="/">
+          <img src="/assets/brand/foliole-app-icon.svg" alt="">
+          <span>Foliole</span>
+        </a>
+        <nav class="guide-category-list">
+          {categories.map((category) => (
+            <a class={allEntries.some((entry) => entry.id === currentId && entry.data.category === category) ? 'is-active' : ''} href={`/guide/#${category.toLowerCase().replaceAll(' ', '-')}`}>
+              <span>{category}</span>
+              <small>{allEntries.filter((entry) => entry.data.category === category).length}</small>
+            </a>
+          ))}
+        </nav>
+        <a class="guide-download" href="https://github.com/campfirium/foliole/releases">Download</a>
+      </aside>
+
+      <aside class="guide-list" aria-label="Guide articles">
+        <div class="guide-list-header">
+          <a href="/guide/">Guide</a>
+          <span>{allEntries.length}</span>
+        </div>
+        <nav>
+          {allEntries.map((entry) => (
+            <a class={entry.id === currentId ? 'is-active' : ''} href={`/guide/${entry.id}/`}>
+              <span>{entry.data.title}</span>
+              <small>{entry.data.category}</small>
+            </a>
+          ))}
+        </nav>
+      </aside>
+
+      <main class="guide-reader" aria-labelledby="guide-title">
+        <header class="guide-reader-top">
+          <nav aria-label="Breadcrumb">
+            <a href="/">Foliole</a>
+            <span>/</span>
+            <a href="/guide/">Guide</a>
+          </nav>
+          <button class="theme-button guide-theme-button" type="button" aria-label="Theme: follow browser" title="Theme: follow browser" data-theme-toggle>
+            <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="13" rx="2"></rect>
+              <path d="M8 21h8"></path>
+              <path d="M12 17v4"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3a6.8 6.8 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+        </header>
+        <article class="guide-article">
+          <slot />
+        </article>
+        <nav class="guide-next-links" aria-label="Adjacent guide articles">
+          {previous && <a href={`/guide/${previous.id}/`}>Previous: {previous.data.title}</a>}
+          {next && <a href={`/guide/${next.id}/`}>Next: {next.data.title}</a>}
+        </nav>
+      </main>
+
+      <aside class="guide-flow" aria-label="Guide flow">
+        <h2>Flow</h2>
+        {flow.length > 0 && (
+          <ol>
+            {flow.map((item) => <li>{item}</li>)}
+          </ol>
+        )}
+        {headings.length > 0 && (
+          <nav aria-label="On this page">
+            <h2>On This Page</h2>
+            {headings.filter((heading) => heading.depth === 2).map((heading) => (
+              <a href={`#${heading.slug}`}>{heading.text}</a>
+            ))}
+          </nav>
+        )}
+      </aside>
+    </div>
+    <script is:inline>
+      (function () {
+        var themeModes = ['system', 'light', 'dark'];
+        var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+        var button = document.querySelector('[data-theme-toggle]');
+        var pageCopy = window.FOLIOLE_PAGE_COPY || {};
+        var themeCopy = pageCopy.theme || {};
+
+        function storedTheme() {
+          var saved = localStorage.getItem('foliole-theme');
+          return themeModes.indexOf(saved) >= 0 ? saved : 'system';
+        }
+
+        function themeLabel(mode) {
+          if (mode === 'light') return themeCopy.light || 'Theme: light';
+          if (mode === 'dark') return themeCopy.dark || 'Theme: dark';
+          return themeCopy.system || 'Theme: follow browser';
+        }
+
+        function applyTheme(mode) {
+          var effective = mode === 'system' && media && media.matches ? 'dark' : mode === 'dark' ? 'dark' : 'light';
+          document.documentElement.dataset.themeMode = mode;
+          document.documentElement.dataset.theme = effective;
+          if (button) {
+            button.setAttribute('aria-label', themeLabel(mode));
+            button.setAttribute('title', themeLabel(mode));
+          }
+        }
+
+        window.setFolioleTheme = function (mode, persist) {
+          var next = themeModes.indexOf(mode) >= 0 ? mode : 'system';
+          applyTheme(next);
+          if (persist) localStorage.setItem('foliole-theme', next);
+        };
+
+        if (button) {
+          button.addEventListener('click', function () {
+            var current = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+            var next = current === 'dark' ? 'light' : 'dark';
+            window.setFolioleTheme(next, true);
+          });
+        }
+
+        if (media) {
+          var onChange = function () {
+            if (storedTheme() === 'system') applyTheme('system');
+          };
+          if (media.addEventListener) media.addEventListener('change', onChange);
+          else if (media.addListener) media.addListener(onChange);
+        }
+
+        applyTheme(storedTheme());
+      })();
+    </script>
+  </body>
+</html>
