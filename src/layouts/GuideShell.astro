@@ -1,6 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-
 const {
   title,
   description,
@@ -10,7 +8,7 @@ const {
   flow = []
 } = Astro.props;
 
-const allEntries = entries ?? (await getCollection('guide')).sort((a, b) => a.data.order - b.data.order);
+const allEntries = entries ?? [];
 const categories = [...new Set(allEntries.map((entry) => entry.data.category))];
 const currentIndex = allEntries.findIndex((entry) => entry.id === currentId);
 const previous = currentIndex > 0 ? allEntries[currentIndex - 1] : null;
@@ -52,14 +50,16 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
           <img src="/assets/brand/foliole-app-icon.svg" alt="">
           <span>Foliole</span>
         </a>
-        <nav class="guide-category-list">
-          {categories.map((category) => (
-            <a class={allEntries.some((entry) => entry.id === currentId && entry.data.category === category) ? 'is-active' : ''} href={`/guide/#${category.toLowerCase().replaceAll(' ', '-')}`}>
-              <span>{category}</span>
-              <small>{allEntries.filter((entry) => entry.data.category === category).length}</small>
-            </a>
-          ))}
-        </nav>
+        {categories.length > 0 && (
+          <nav class="guide-category-list">
+            {categories.map((category) => (
+              <a class={allEntries.some((entry) => entry.id === currentId && entry.data.category === category) ? 'is-active' : ''} href={`/guide/#${category.toLowerCase().replaceAll(' ', '-')}`}>
+                <span>{category}</span>
+                <small>{allEntries.filter((entry) => entry.data.category === category).length}</small>
+              </a>
+            ))}
+          </nav>
+        )}
         <a class="guide-download" href="https://github.com/campfirium/foliole/releases">Download</a>
       </aside>
 
@@ -68,14 +68,16 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
           <a href="/guide/">Guide</a>
           <span>{allEntries.length}</span>
         </div>
-        <nav>
-          {allEntries.map((entry) => (
-            <a class={entry.id === currentId ? 'is-active' : ''} href={`/guide/${entry.id}/`}>
-              <span>{entry.data.title}</span>
-              <small>{entry.data.category}</small>
-            </a>
-          ))}
-        </nav>
+        {allEntries.length > 0 && (
+          <nav>
+            {allEntries.map((entry) => (
+              <a class={entry.id === currentId ? 'is-active' : ''} href={`/guide/${entry.id}/`}>
+                <span>{entry.data.title}</span>
+                <small>{entry.data.category}</small>
+              </a>
+            ))}
+          </nav>
+        )}
       </aside>
 
       <main class="guide-reader" aria-labelledby="guide-title">
@@ -110,18 +112,22 @@ const next = currentIndex >= 0 && currentIndex < allEntries.length - 1 ? allEntr
         <article class="guide-article">
           <slot />
         </article>
-        <nav class="guide-next-links" aria-label="Adjacent guide articles">
-          {previous && <a href={`/guide/${previous.id}/`}>Previous: {previous.data.title}</a>}
-          {next && <a href={`/guide/${next.id}/`}>Next: {next.data.title}</a>}
-        </nav>
+        {(previous || next) && (
+          <nav class="guide-next-links" aria-label="Adjacent guide articles">
+            {previous && <a href={`/guide/${previous.id}/`}>Previous: {previous.data.title}</a>}
+            {next && <a href={`/guide/${next.id}/`}>Next: {next.data.title}</a>}
+          </nav>
+        )}
       </main>
 
       <aside class="guide-flow" aria-label="Guide flow">
-        <h2>Flow</h2>
         {flow.length > 0 && (
-          <ol>
-            {flow.map((item) => <li>{item}</li>)}
-          </ol>
+          <>
+            <h2>Flow</h2>
+            <ol>
+              {flow.map((item) => <li>{item}</li>)}
+            </ol>
+          </>
         )}
         {headings.length > 0 && (
           <nav aria-label="On this page">
