@@ -1,0 +1,22 @@
+---
+import GuideShell from '../../layouts/GuideShell.astro';
+import { getGuidesManifest } from '../../lib/guides-manifest.mjs';
+
+export async function getStaticPaths() {
+  const manifest = await getGuidesManifest();
+  return manifest.guides.map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide, manifest }
+  }));
+}
+
+const { guide, manifest } = Astro.props;
+---
+
+<GuideShell
+  title={guide.title}
+  description={guide.description}
+  guides={manifest.guides}
+  guide={guide}
+  runtime={manifest.runtime}
+/>

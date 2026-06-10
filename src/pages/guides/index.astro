@@ -1,9 +1,16 @@
 ---
 import GuideShell from '../../layouts/GuideShell.astro';
+import { getGuidesManifest } from '../../lib/guides-manifest.mjs';
+
+const manifest = await getGuidesManifest();
+const defaultGuide = manifest.guides[0];
 ---
 
 <GuideShell
-  title="Guides"
-  description="Foliole Guides"
-  entries={[]}
+  title="Foliole Guides"
+  description="Practical guides for reading, organizing, and reviewing with Foliole."
+  guides={manifest.guides}
+  guide={defaultGuide}
+  runtime={manifest.runtime}
+  canonicalPath="/guides/"
 />
