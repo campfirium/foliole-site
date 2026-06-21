@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run guides:sync && astro build",
-    "guides:sync": "node scripts/sync-guides-runtime.mjs"
+    "build": "node scripts/sync-demo-assets.mjs && astro build",
+    "demo:sync": "node scripts/sync-demo-assets.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

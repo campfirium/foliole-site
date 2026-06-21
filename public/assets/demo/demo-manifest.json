@@ -1,0 +1,1174 @@
+{
+  "contractVersion": 3,
+  "generatedAt": "2026-06-21T08:57:17.134Z",
+  "buildHash": "sha256:79a13a02f35b1f251333f9cbd27c61d64974d5d45bfd01d1e3f82ce07c611286",
+  "publishedLocales": [
+    {
+      "locale": "en",
+      "hreflang": "en"
+    },
+    {
+      "locale": "zh-hans",
+      "hreflang": "zh-Hans"
+    },
+    {
+      "locale": "zh-hant",
+      "hreflang": "zh-Hant"
+    },
+    {
+      "locale": "ja",
+      "hreflang": "ja"
+    }
+  ],
+  "localePublishPacks": [
+    {
+      "locale": "en",
+      "hreflang": "en",
+      "topics": [
+        {
+          "slug": "focused-reading-review",
+          "title": "Focused reading and review",
+          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
+          "canonicalPath": "/en/demo/focused-reading-review/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/focused-reading-review/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/focused-reading-review/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [
+            {
+              "id": "focused-reading-review-item-1",
+              "title": "One clear recall",
+              "kind": "item",
+              "prompt": "What should a steady review queue help you return to?",
+              "answer": "Important ideas that remain connected to the source topic."
+            }
+          ],
+          "runtime": {
+            "state": "topic",
+            "topicId": "focused-reading-review"
+          },
+          "sections": [
+            {
+              "heading": "Start with one source topic",
+              "body": [
+                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
+                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
+              ]
+            },
+            {
+              "heading": "Keep review material small",
+              "body": [
+                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
+                "A steady review queue should help you return to important ideas, not become another inbox to sort."
+              ]
+            },
+            {
+              "heading": "Return to the source",
+              "body": [
+                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
+              ]
+            }
+          ],
+          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
+        },
+        {
+          "slug": "organize-source-topics",
+          "title": "Organize source topics",
+          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
+          "canonicalPath": "/en/demo/organize-source-topics/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/organize-source-topics/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/organize-source-topics/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "organize-source-topics"
+          },
+          "sections": [
+            {
+              "heading": "Use folders for stable context",
+              "body": [
+                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
+                "When a topic no longer belongs in its first place, move it once the better home is clear."
+              ]
+            },
+            {
+              "heading": "Keep the inbox small",
+              "body": [
+                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
+                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+              ]
+            }
+          ],
+          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+        }
+      ]
+    },
+    {
+      "locale": "zh-hans",
+      "hreflang": "zh-Hans",
+      "topics": [
+        {
+          "slug": "focused-reading-review",
+          "title": "Focused reading and review",
+          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
+          "canonicalPath": "/zh-hans/demo/focused-reading-review/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/focused-reading-review/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/focused-reading-review/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [
+            {
+              "id": "focused-reading-review-item-1",
+              "title": "One clear recall",
+              "kind": "item",
+              "prompt": "What should a steady review queue help you return to?",
+              "answer": "Important ideas that remain connected to the source topic."
+            }
+          ],
+          "runtime": {
+            "state": "topic",
+            "topicId": "focused-reading-review"
+          },
+          "sections": [
+            {
+              "heading": "Start with one source topic",
+              "body": [
+                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
+                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
+              ]
+            },
+            {
+              "heading": "Keep review material small",
+              "body": [
+                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
+                "A steady review queue should help you return to important ideas, not become another inbox to sort."
+              ]
+            },
+            {
+              "heading": "Return to the source",
+              "body": [
+                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
+              ]
+            }
+          ],
+          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
+        },
+        {
+          "slug": "organize-source-topics",
+          "title": "Organize source topics",
+          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
+          "canonicalPath": "/zh-hans/demo/organize-source-topics/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/organize-source-topics/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/organize-source-topics/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "organize-source-topics"
+          },
+          "sections": [
+            {
+              "heading": "Use folders for stable context",
+              "body": [
+                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
+                "When a topic no longer belongs in its first place, move it once the better home is clear."
+              ]
+            },
+            {
+              "heading": "Keep the inbox small",
+              "body": [
+                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
+                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+              ]
+            }
+          ],
+          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+        }
+      ]
+    },
+    {
+      "locale": "zh-hant",
+      "hreflang": "zh-Hant",
+      "topics": [
+        {
+          "slug": "focused-reading-review",
+          "title": "Focused reading and review",
+          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
+          "canonicalPath": "/zh-hant/demo/focused-reading-review/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/focused-reading-review/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/focused-reading-review/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [
+            {
+              "id": "focused-reading-review-item-1",
+              "title": "One clear recall",
+              "kind": "item",
+              "prompt": "What should a steady review queue help you return to?",
+              "answer": "Important ideas that remain connected to the source topic."
+            }
+          ],
+          "runtime": {
+            "state": "topic",
+            "topicId": "focused-reading-review"
+          },
+          "sections": [
+            {
+              "heading": "Start with one source topic",
+              "body": [
+                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
+                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
+              ]
+            },
+            {
+              "heading": "Keep review material small",
+              "body": [
+                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
+                "A steady review queue should help you return to important ideas, not become another inbox to sort."
+              ]
+            },
+            {
+              "heading": "Return to the source",
+              "body": [
+                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
+              ]
+            }
+          ],
+          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
+        },
+        {
+          "slug": "organize-source-topics",
+          "title": "Organize source topics",
+          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
+          "canonicalPath": "/zh-hant/demo/organize-source-topics/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/organize-source-topics/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/organize-source-topics/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "organize-source-topics"
+          },
+          "sections": [
+            {
+              "heading": "Use folders for stable context",
+              "body": [
+                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
+                "When a topic no longer belongs in its first place, move it once the better home is clear."
+              ]
+            },
+            {
+              "heading": "Keep the inbox small",
+              "body": [
+                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
+                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+              ]
+            }
+          ],
+          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+        }
+      ]
+    },
+    {
+      "locale": "ja",
+      "hreflang": "ja",
+      "topics": [
+        {
+          "slug": "focused-reading-review",
+          "title": "Focused reading and review",
+          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
+          "canonicalPath": "/ja/demo/focused-reading-review/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/focused-reading-review/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/focused-reading-review/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/focused-reading-review/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [
+            {
+              "id": "focused-reading-review-item-1",
+              "title": "One clear recall",
+              "kind": "item",
+              "prompt": "What should a steady review queue help you return to?",
+              "answer": "Important ideas that remain connected to the source topic."
+            }
+          ],
+          "runtime": {
+            "state": "topic",
+            "topicId": "focused-reading-review"
+          },
+          "sections": [
+            {
+              "heading": "Start with one source topic",
+              "body": [
+                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
+                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
+              ]
+            },
+            {
+              "heading": "Keep review material small",
+              "body": [
+                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
+                "A steady review queue should help you return to important ideas, not become another inbox to sort."
+              ]
+            },
+            {
+              "heading": "Return to the source",
+              "body": [
+                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
+              ]
+            }
+          ],
+          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
+        },
+        {
+          "slug": "organize-source-topics",
+          "title": "Organize source topics",
+          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
+          "canonicalPath": "/ja/demo/organize-source-topics/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/demo/organize-source-topics/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/demo/organize-source-topics/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/demo/organize-source-topics/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "organize-source-topics"
+          },
+          "sections": [
+            {
+              "heading": "Use folders for stable context",
+              "body": [
+                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
+                "When a topic no longer belongs in its first place, move it once the better home is clear."
+              ]
+            },
+            {
+              "heading": "Keep the inbox small",
+              "body": [
+                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
+                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+              ]
+            }
+          ],
+          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
+          "xDefaultPath": "/demo/",
+          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+        }
+      ]
+    }
+  ],
+  "runtime": {
+    "entry": "index.html",
+    "assets": [
+      {
+        "path": "assets/anchorNavigation-Cv4rMVcK.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/App-CubrzGnd.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/appRuntimeCommandRepository-CvGBSK5t.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/arc-CuHXSNPr.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/architecture-7EHR7CIX-BQpCYB3J.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/architectureDiagram-3BPJPVTR-2na1HSDe.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/array-BifhSqXX.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/assetMarkdownUrl-gpVeURdz.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/attachmentResources-SoFZHgYN.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/blockDiagram-GPEHLZMM-Zg4mxyr1.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/c4Diagram-AAUBKEIU-B6cYzaBR.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/channel-Dmf59dqH.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-2J33WTMH-BeVV7TEF.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-3OPIFGDE-CQP9MyY0.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-4BX2VUAB-Cm_joMnW.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-4EGX6M5U-BfCFom1o.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-55IACEB6-3SHGdLmP.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-5DO6E6H7-DP8QnaJj.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-5ZQYHXKU-UcJAdg5A.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-727SXJPM-hNIwGamx.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-AQP2D5EJ-DkCXkBih.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-BR22UD5L-CT6fcRkN.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-BSJP7CBP-D8Ua6mpo.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-CSCIHK7Q-B6u-K9zU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-FHYWG6QK-Ce318laP.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-FMBD7UC4-BIVMROIT.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-KSCS5N6A-CD_r41r3.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-L5ZTLDWV-CcEgaNik.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-LZXEDZCA-Cyr62Y6Q.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-MPE355IW-C_vkbqLj.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-MZUSXYTE-BnVcgphH.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-N66VUXT2-B6CG-CnY.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-ND2GUHAM-CP6McSc8.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-NNHCCRGN-DlpIbxXb.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-NZK2D7GU-DUaR6vgh.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-O5CBEL6O-Bpa5WJmg.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-PUPMXCY4-BZ88kQjK.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-QTnfLwEv.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-QZHKN3VN-CzDVfGGc.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-UIBZB4QT-r8p3pBHw.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-WCWK7LTN-DrKYkgXF.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-WU5MYG2G-B3kBt8_i.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/chunk-XPW4576I--tKc05Vl.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/classDiagram-4FO5ZUOK-BHhWpqbx.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/classDiagram-v2-Q7XG4LA2-BHhWpqbx.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/CommandPalette-C_I06osN.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/cose-bilkent-S5V4N54A-b5Sz331q.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/cytoscape.esm-FqbQrHcz.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/dagre-BM42HDAG-Dgc4nM40.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/dagre-Bx709z4p.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/defaultLocale-C8Fc0cco.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoRuntime-DJZiNi99.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/DemoSettingsPreviewOverlay-CJXASr3g.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/diagram-2AECGRRQ-DKT54arN.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/diagram-5GNKFQAL-B_K2iprv.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/diagram-KO2AKTUF-CdNhlXBU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/diagram-LMA3HP47-QobvC8yU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/diagram-OG6HWLK6-Cn-AYchr.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/dist-lRkD-JPF.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/DocumentOutlineLayerModel-BYcHvlQC.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/en-DVLvF9-s.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/erDiagram-TEJ5UH35-C4vJJIr_.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/eventmodeling-FCH6USID-D-VxYsbw.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/externalSourceSettingsRepository-BXVNIoeS.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/FeedbackDialog-DYW_yLA7.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/flowDiagram-I6XJVG4X-DDvMAyed.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/folderTopicItemCommands-DfXGzOvz.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/ganttDiagram-6RSMTGT7-E7b8ZLoV.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/gitGraph-WXDBUCRP-CRS5XD98.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/gitGraphDiagram-PVQCEYII-F1U9v_0A.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/GoToNodePalette-3qQ6QQse.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/graphlib-B8gBHxth.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/HelpSearch-DfaiaN5d.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/ImportSourceWorkspaceDetails-ybU7cQum.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/importSourceWorkspaceSettings-CTPvqg5C.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/index-Cz73rdcY.css",
+        "type": "style"
+      },
+      {
+        "path": "assets/index-DPTPsTeU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/info-J43DQDTF-CdrjkAmK.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/infoDiagram-5YYISTIA-BkquhIij.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/init-D6jRqBbL.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/ishikawaDiagram-YF4QCWOH-TEbhzoNU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/journeyDiagram-JHISSGLW-DEhdnhOS.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/kanban-definition-UN3LZRKU-CE_sGmCX.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/katex-Vhh-h91d.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/libraryPathsRuntimeRepository-CnqLXrLw.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/line-CeIohZTi.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/linear-ZuTeoKKA.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/linkPanelViewport-CeRU-ecB.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/linkPanelViewport-DS9MGdSF.css",
+        "type": "style"
+      },
+      {
+        "path": "assets/LocalizationProvider-C_VDsjBf.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/markdownImageReferences-C2xO3xmy.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/markdownInlineLinkProjection-BlftK_Kh.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/markdownInlineProjection-7zzgVwQC.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/mermaid-parser.core-BU_iGg8H.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/mindmap-definition-RKZ34NQL-BHBHfJ2X.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/nodeBreadcrumbs-DDJwWRZC.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/nodeListContextActionHelp-sK_JgFMw.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/nodeListLabelProjection-C4dDgOAM.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/nodeReviewSettings-BU4K3hMt.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/nodeSourceRuntimeRepository-YQ5hFDOO.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/nodeTypes-B8F9QWdR.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/ordinal-hYBb2elL.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/packet-YPE3B663-r4oAflYS.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/path-BWPyau1x.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/PdfDocumentSurface-CAQIw8YH.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/PdfDocumentSurface-rptWOpCb.css",
+        "type": "style"
+      },
+      {
+        "path": "assets/pdfSystemRegistry-Co2-vwfr.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/pie-LRSECV5Y-DkaVktH1.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/pieDiagram-4H26LBE5-B-4o1A8z.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/preload-helper-_LrYLXGF.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/quadrantDiagram-W4KKPZXB-CQ6wi2Xr.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/radar-GUYGQ44K-Bjhhjq-k.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/requirementDiagram-4Y6WPE33-BxRndiV2.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/reviewItemKind-Ci3GGWq3.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/reviewSchedulerSettings-CHqBysqJ.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/ReviewSourceTopicDeleteDialog-CNgnoSXg.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/ReviewTopicDelayPanel-DxqlVuEd.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/rough.esm-CSKSodPl.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/runtimeLogging-DfkWYeOU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/sankeyDiagram-5OEKKPKP-CXrm0FDj.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/searchEnhancementSettings-RL3iQX62.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/SearchPalette-BCDNZwvU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/SearchResultPreviewPanel-D1trcSJN.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/sequenceDiagram-3UESZ5HK-bixP1BLR.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/SettingsPanel-u5KdO8wE.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/shortcuts-Dw-qJnFp.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/src-DWlNNfc5.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/stateDiagram-AJRCARHV-BGRRxOKc.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/stateDiagram-v2-BHNVJYJU-C4fHdnbA.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/timeline-definition-PNZ67QCA-DSxoU--J.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/topicPostponeDelay-BgAl7Yy2.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/treemap-LRROVOQU-DT4YRX1p.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/treeView-BLDUP644-DbX5QpdZ.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/ui-BOZm3y3t.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/updateCheck-B_3cJvKC.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/useFloatingPaletteEscape-BvpzqKty.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/useNodeBacklinks-CKTy7G4W.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/vennDiagram-CIIHVFJN-Bl27NLb2.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/wardley-L42UT6IY-Ba5lVG9E.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/wardleyDiagram-YWT4CUSO-rbV8brVc.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceEditorInputDiagnostics-DlEfULco.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceInputLagRenderDiagnostic-B02yummq.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceKeyboardTarget-BmlgjELd.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceListNode-BjsMlnra.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceRightSidebarBacklinksPanel-aomQFK6c.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceRightSidebarDevPanel-BFrQBvpa.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceRightSidebarHighlightsPanel-CvnibSGb.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceRightSidebarOutlinePanel-B7JC_Vft.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceRightSidebarPerformancePanel-C2HXQ8T8.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceRightSidebarReviewQueueDays-B8sLYifu.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceRightSidebarReviewQueuePanel-Bk5FNoQT.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceRuntimeMutationResults-BV2rYYlT.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceSettingsOverlayContent-CvPjQz2b.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceStore-CV1vvSJ_.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/xychartDiagram-2RQKCTM6-CD1rcvrq.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/zhHans-CUiG4hMw.js",
+        "type": "script"
+      }
+    ]
+  }
+}

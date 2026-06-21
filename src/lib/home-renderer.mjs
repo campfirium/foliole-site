@@ -4,6 +4,11 @@ import path from 'node:path';
 const root = process.cwd();
 const siteUrl = 'https://foliole.app';
 const languagePreferenceKey = 'foliole-language-manual';
+const demoManifestPath = path.join(root, 'public', 'assets', 'demo', 'demo-manifest.json');
+const demoFallbackLocale = 'en';
+const demoSiteLocaleMap = new Map([
+  ['zh-hans', 'zh-hans']
+]);
 
 export const locales = [
   { id: 'en', path: '', htmlLang: 'en', hreflang: 'en', ogLocale: 'en_US', name: 'English' },
@@ -61,6 +66,23 @@ function assertSameShape(reference, candidate, localeId, prefix = '') {
 async function readContent(locale) {
   const file = path.join(root, 'content', `${locale.id}.json`);
   return JSON.parse(await readFile(file, 'utf8'));
+}
+
+async function readDemoManifest() {
+  try {
+    return JSON.parse(await readFile(demoManifestPath, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+function demoLocale(locale) {
+  return demoSiteLocaleMap.get(locale.path) ?? demoFallbackLocale;
+}
+
+function demoHref(locale, manifest) {
+  const pack = manifest?.localePublishPacks?.find((entry) => entry.locale === demoLocale(locale));
+  return pack?.topics?.[0]?.canonicalPath ?? '/demo/';
 }
 
 function renderLanguageMenu(currentLocale) {
@@ -150,6 +172,7 @@ export async function renderHomePage(localeId) {
   if (!locale) throw new Error(`Unknown locale: ${localeId}`);
 
   const template = await readFile(path.join(root, 'templates', 'page.html'), 'utf8');
+  const demoManifest = await readDemoManifest();
   const contentEntries = await Promise.all(locales.map(async (entry) => [entry.id, await readContent(entry)]));
   const contents = Object.fromEntries(contentEntries);
   const reference = contents.en;
@@ -164,6 +187,7 @@ export async function renderHomePage(localeId) {
       htmlLang: locale.htmlLang,
       url: pageUrl(locale),
       ogLocale: locale.ogLocale,
+      demoHref: demoHref(locale, demoManifest),
       alternates: renderAlternateLinks(),
       languageMenu: renderLanguageMenu(locale),
       localeRedirectScript: renderLocaleRedirectScript(locale),

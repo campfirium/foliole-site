@@ -4,6 +4,11 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const siteUrl = 'https://foliole.app';
+const demoManifestPath = path.join(root, 'public', 'assets', 'demo', 'demo-manifest.json');
+const demoFallbackLocale = 'en';
+const demoSiteLocaleMap = new Map([
+  ['zh-hans', 'zh-hans']
+]);
 
 const locales = [
   { id: 'en', path: '', htmlLang: 'en', hreflang: 'en', ogLocale: 'en_US', name: 'English' },
@@ -62,6 +67,23 @@ function assertSameShape(reference, candidate, localeId, prefix = '') {
 async function readContent(locale) {
   const file = path.join(root, 'content', `${locale.id}.json`);
   return JSON.parse(await readFile(file, 'utf8'));
+}
+
+async function readDemoManifest() {
+  try {
+    return JSON.parse(await readFile(demoManifestPath, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+function demoLocale(locale) {
+  return demoSiteLocaleMap.get(locale.path) ?? demoFallbackLocale;
+}
+
+function demoHref(locale, manifest) {
+  const pack = manifest?.localePublishPacks?.find((entry) => entry.locale === demoLocale(locale));
+  return pack?.topics?.[0]?.canonicalPath ?? '/demo/';
 }
 
 function renderLanguageMenu(currentLocale) {
@@ -146,13 +168,14 @@ function renderTemplate(template, values) {
     });
 }
 
-async function writePage(template, locale, content) {
+async function writePage(template, locale, content, demoManifest) {
   const html = renderTemplate(template, {
     ...content,
     page: {
       htmlLang: locale.htmlLang,
       url: pageUrl(locale),
       ogLocale: locale.ogLocale,
+      demoHref: demoHref(locale, demoManifest),
       alternates: renderAlternateLinks(),
       languageMenu: renderLanguageMenu(locale),
       localeRedirectScript: renderLocaleRedirectScript(locale),
@@ -179,6 +202,7 @@ async function writeSitemap() {
 
 async function main() {
   const template = await readFile(path.join(root, 'templates', 'page.html'), 'utf8');
+  const demoManifest = await readDemoManifest();
   const contentEntries = await Promise.all(locales.map(async (locale) => [locale.id, await readContent(locale)]));
   const contents = Object.fromEntries(contentEntries);
   const reference = contents.en;
@@ -192,7 +216,7 @@ async function main() {
     recursive: true,
     force: true
   })));
-  await Promise.all(locales.map((locale) => writePage(template, locale, contents[locale.id])));
+  await Promise.all(locales.map((locale) => writePage(template, locale, contents[locale.id], demoManifest)));
   await writeSitemap();
 }
 

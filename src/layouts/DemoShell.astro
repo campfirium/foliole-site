@@ -1,0 +1,58 @@
+---
+const { title, description, topics, topic, runtime, canonicalPath, alternates, hreflang = 'en', pageKind = 'article' } = Astro.props;
+
+const allTopics = topics ?? [];
+const currentTopic = topic ?? allTopics[0];
+const pageTitle = title === 'Foliole Demo' ? title : `${title} - Foliole Demo`;
+const pageDescription = description ?? currentTopic?.description ?? 'Try Foliole with a guided Demo workspace.';
+const pagePath = canonicalPath ?? currentTopic?.canonicalPath ?? '/demo/';
+const canonicalUrl = new URL(pagePath, Astro.site).toString();
+const runtimeAssets = runtime?.assets ?? [];
+const styleAssets = runtimeAssets.filter((asset) => asset.type === 'style');
+const scriptAssets = runtimeAssets.filter((asset) => asset.type === 'script');
+const alternateLinks = alternates ?? currentTopic?.alternates ?? [];
+---
+
+<!doctype html>
+<html lang={hreflang}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription}>
+    <meta property="og:title" content={pageTitle}>
+    <meta property="og:description" content={pageDescription}>
+    <meta property="og:type" content={pageKind}>
+    <meta property="og:image" content="https://foliole.app/assets/brand/foliole-app-icon.svg">
+    <link rel="canonical" href={canonicalUrl}>
+    {alternateLinks.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={new URL(alternate.path, Astro.site).toString()} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL('/demo/', Astro.site).toString()}>
+    <link rel="icon" href="/assets/brand/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="/styles.css?v=000020">
+    {styleAssets.map((asset) => <link rel="stylesheet" href={`/assets/demo/${asset.path}`} />)}
+    {scriptAssets.map((asset) => <script type="module" src={`/assets/demo/${asset.path}`}></script>)}
+  </head>
+  <body class="demo-body">
+    <main aria-label="Foliole Demo" class="foliole-demo-runtime">
+      <div id="root">
+        <section class="foliole-demo-seo" aria-labelledby="demo-title">
+          <h1 id="demo-title">{currentTopic?.title ?? 'Foliole Demo'}</h1>
+          <p>{currentTopic?.description ?? pageDescription}</p>
+          {allTopics.length > 0 && (
+            <nav aria-label="Demo topics">
+              {allTopics.map((item) => (
+                <a href={item.canonicalPath} aria-current={item.slug === currentTopic?.slug && item.locale === currentTopic?.locale ? 'page' : undefined}>
+                  {item.title}
+                </a>
+              ))}
+            </nav>
+          )}
+          <slot />
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

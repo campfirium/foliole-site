@@ -1,0 +1,20 @@
+---
+import DemoShell from '../../layouts/DemoShell.astro';
+import { getDefaultDemoTopic, getDemoManifest } from '../../lib/demo-manifest.mjs';
+
+const manifest = await getDemoManifest();
+const defaultTopic = await getDefaultDemoTopic();
+const englishPack = manifest.localePublishPacks.find((pack) => pack.locale === 'en') ?? manifest.localePublishPacks[0];
+---
+
+<DemoShell
+  title="Foliole Demo"
+  description="Try Foliole with a guided Demo workspace for reading, organizing topics, and reviewing what matters."
+  topics={englishPack.topics}
+  topic={defaultTopic}
+  runtime={manifest.runtime}
+  canonicalPath="/demo/"
+  alternates={[]}
+  hreflang="en"
+  pageKind="website"
+/>
