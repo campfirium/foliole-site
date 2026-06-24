@@ -1,0 +1,32 @@
+---
+import DemoShell from '../../../layouts/DemoShell.astro';
+import { getDemoManifest, getDemoPath } from '../../../lib/demo-manifest.mjs';
+
+export function getStaticPaths() {
+  const supportedDemoLocales = ['en', 'zh-hans'];
+  return supportedDemoLocales.map((locale) => ({
+    params: { locale },
+    props: { locale }
+  }));
+}
+
+const manifest = await getDemoManifest();
+const { locale } = Astro.props;
+const supportedDemoLocales = ['en', 'zh-hans'];
+const localePack = manifest.localePublishPacks.find((pack) => pack.locale === locale);
+if (!localePack) throw new Error(`Missing Demo locale pack: ${locale}`);
+const defaultTopic = localePack.topics[0];
+---
+
+<DemoShell
+  title="Foliole Demo"
+  description="Try Foliole with a guided Demo workspace for reading, organizing topics, and reviewing what matters."
+  topics={localePack.topics}
+  topic={defaultTopic}
+  runtime={manifest.runtime}
+  canonicalPath={getDemoPath(locale)}
+  alternates={supportedDemoLocales.map((entry) => ({ locale: entry, hreflang: entry === 'zh-hans' ? 'zh-Hans' : 'en', path: getDemoPath(entry) }))}
+  xDefaultPath="/en/demo/"
+  hreflang={locale === 'zh-hans' ? 'zh-Hans' : 'en'}
+  pageKind="website"
+/>

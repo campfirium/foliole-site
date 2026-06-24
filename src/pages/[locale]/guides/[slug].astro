@@ -1,0 +1,30 @@
+---
+import DemoShell from '../../../layouts/DemoShell.astro';
+import { getDemoManifest, getDemoTopic, getDemoTopics, getSupportedDemoAlternates } from '../../../lib/demo-manifest.mjs';
+
+export async function getStaticPaths() {
+  const topics = await getDemoTopics();
+  return topics.map((topic) => ({
+    params: { locale: topic.locale, slug: topic.slug },
+    props: { topic }
+  }));
+}
+
+const manifest = await getDemoManifest();
+const { topic } = Astro.props;
+const localePack = manifest.localePublishPacks.find((pack) => pack.locale === topic.locale);
+const currentTopic = await getDemoTopic(topic.locale, topic.slug);
+if (!currentTopic || !localePack) throw new Error(`Missing Demo topic: ${topic.locale}/${topic.slug}`);
+---
+
+<DemoShell
+  title={currentTopic.title}
+  description={currentTopic.description}
+  topics={localePack.topics}
+  topic={currentTopic}
+  runtime={manifest.runtime}
+  canonicalPath={currentTopic.canonicalPath}
+  alternates={getSupportedDemoAlternates(currentTopic)}
+  xDefaultPath={currentTopic.xDefaultPath}
+  hreflang={currentTopic.hreflang}
+/>

@@ -1,0 +1,1 @@
+function e(e){return e+1}function t(t,n){return e(t)+Math.max(0,n)}function n(e,t){return t(`desktop.rightPanel.flow.demo.dayGroup`,{day:e})}export{t as n,e as r,n as t};

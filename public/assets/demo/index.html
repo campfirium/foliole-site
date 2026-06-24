@@ -7,30 +7,101 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <title>Foliole Demo</title>
-    <script type="module" crossorigin src="/assets/demo/assets/index-DPTPsTeU.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/chunk-QTnfLwEv.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/preload-helper-_LrYLXGF.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/markdownImageReferences-C2xO3xmy.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/markdownInlineProjection-7zzgVwQC.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/markdownInlineLinkProjection-BlftK_Kh.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/nodeListLabelProjection-C4dDgOAM.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/nodeTypes-B8F9QWdR.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/workspaceListNode-BjsMlnra.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/LocalizationProvider-C_VDsjBf.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/folderTopicItemCommands-DfXGzOvz.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/reviewSchedulerSettings-CHqBysqJ.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/nodeReviewSettings-BU4K3hMt.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/topicPostponeDelay-BgAl7Yy2.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/assetMarkdownUrl-gpVeURdz.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/reviewItemKind-Ci3GGWq3.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/runtimeLogging-DfkWYeOU.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/workspaceRuntimeMutationResults-BV2rYYlT.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/workspaceEditorInputDiagnostics-DlEfULco.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/workspaceStore-CV1vvSJ_.js">
-    <link rel="modulepreload" crossorigin href="/assets/demo/assets/demoRuntime-DJZiNi99.js">
-    <link rel="stylesheet" crossorigin href="/assets/demo/assets/index-Cz73rdcY.css">
+    <style>
+      :root {
+        --startup-rail-width: 40px;
+        --startup-list-current-width: 450px;
+        --startup-right-sidebar-current-width: 250px;
+        --startup-folder-column-width: 200px;
+        --startup-rail-bg: #b9b1a7;
+        --startup-folder-bg: #e7e3dd;
+        --startup-topic-bg: #f3eee8;
+        --startup-document-bg: #ffffff;
+        --startup-sidebar-bg: #fbf9f7;
+        --workspace-rail-width: var(--startup-rail-width);
+        --workspace-folder-column-width: var(--startup-folder-column-width);
+        --workspace-list-current-width: var(--startup-list-current-width);
+        --workspace-list-folder-current-width: min(var(--workspace-folder-column-width), var(--workspace-list-current-width));
+        --workspace-right-sidebar-current-width: var(--startup-right-sidebar-current-width);
+        --startup-region-main-rail-bg: var(--startup-rail-bg);
+        --startup-region-main-folder-bg: var(--startup-folder-bg);
+        --startup-region-main-topic-bg: var(--startup-topic-bg);
+        --startup-region-main-document-bg: var(--startup-document-bg);
+        --startup-region-main-sidebar-bg: var(--startup-sidebar-bg);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --startup-rail-bg: #171b1a;
+          --startup-folder-bg: #1a1f1e;
+          --startup-topic-bg: #1c2221;
+          --startup-document-bg: #161918;
+          --startup-sidebar-bg: #1a1f1e;
+        }
+      }
+
+      html,
+      body,
+      #root {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--startup-region-main-document-bg);
+      }
+
+      body[data-boot-skeleton='hidden'] #boot-skeleton {
+        display: none;
+      }
+
+      .startup-shell {
+        box-sizing: border-box;
+        display: grid;
+        position: fixed;
+        inset: 0;
+        min-height: 100%;
+        grid-template-columns:
+          var(--workspace-rail-width)
+          var(--workspace-list-folder-current-width)
+          minmax(0, calc(var(--workspace-list-current-width) - var(--workspace-list-folder-current-width)))
+          minmax(0, 1fr)
+          var(--workspace-right-sidebar-current-width);
+        background: var(--startup-document-bg);
+        overflow: hidden;
+        z-index: 2147483647;
+      }
+
+      .startup-shell__rail {
+        background: var(--startup-region-main-rail-bg);
+      }
+
+      .startup-shell__folder {
+        background: var(--startup-region-main-folder-bg);
+      }
+
+      .startup-shell__topic {
+        background: var(--startup-region-main-topic-bg);
+      }
+
+      .startup-shell__document {
+        background: var(--startup-region-main-document-bg);
+      }
+
+      .startup-shell__sidebar {
+        background: var(--startup-region-main-sidebar-bg);
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/demo/assets/index-D8D_4OF9.js"></script>
   </head>
   <body>
+    <section id="boot-skeleton" aria-hidden="true" class="startup-shell">
+      <div class="startup-shell__rail"></div>
+      <div class="startup-shell__folder"></div>
+      <div class="startup-shell__topic"></div>
+      <main class="startup-shell__document"></main>
+      <aside class="startup-shell__sidebar"></aside>
+    </section>
     <div id="root"></div>
   </body>
 </html>

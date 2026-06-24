@@ -35,16 +35,21 @@ function assertTopic(topic, pack) {
   assertString(topic?.title, 'topics[].title');
   assertString(topic?.description, 'topics[].description');
   assertString(topic?.canonicalPath, 'topics[].canonicalPath');
+  assertString(topic?.demoPath, 'topics[].demoPath');
   assertString(topic?.contentHash, 'topics[].contentHash');
   if (topic.locale !== pack.locale || topic.hreflang !== pack.hreflang) {
     throw new Error(`Demo topic locale mismatch: ${topic.slug}`);
   }
-  const expectedPath = `/${pack.locale}/demo/${topic.slug}/`;
+  const expectedPath = `/${pack.locale}/guides/${topic.slug}/`;
   if (topic.canonicalPath !== expectedPath) {
-    throw new Error(`Demo canonicalPath must be ${expectedPath}: ${topic.canonicalPath}`);
+    throw new Error(`Guide canonicalPath must be ${expectedPath}: ${topic.canonicalPath}`);
   }
-  if (topic.xDefaultPath !== '/demo/') {
-    throw new Error(`Demo xDefaultPath must be /demo/: ${topic.xDefaultPath}`);
+  const expectedDemoPath = `/${pack.locale}/demo/`;
+  if (topic.demoPath !== expectedDemoPath) {
+    throw new Error(`Demo path must be ${expectedDemoPath}: ${topic.demoPath}`);
+  }
+  if (topic.xDefaultPath !== `/en/guides/${topic.slug}/`) {
+    throw new Error(`Guide xDefaultPath must be /en/guides/${topic.slug}/: ${topic.xDefaultPath}`);
   }
   if (!Array.isArray(topic.alternates) || topic.alternates.length === 0) {
     throw new Error(`Demo topic must include alternates: ${topic.slug}`);
@@ -100,6 +105,10 @@ export async function getDemoTopic(locale, slug) {
   if (!supportedDemoLocales.has(locale)) return undefined;
   const manifest = await getDemoManifest();
   return manifest.localePublishPacks.find((pack) => pack.locale === locale)?.topics.find((topic) => topic.slug === slug);
+}
+
+export function getDemoPath(locale) {
+  return supportedDemoLocales.has(locale) ? `/${locale}/demo/` : '/en/demo/';
 }
 
 export function getSupportedDemoAlternates(topic) {

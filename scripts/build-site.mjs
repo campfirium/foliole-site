@@ -82,8 +82,12 @@ function demoLocale(locale) {
 }
 
 function demoHref(locale, manifest) {
+  return `/${demoLocale(locale)}/demo/`;
+}
+
+function guidesHref(locale, manifest) {
   const pack = manifest?.localePublishPacks?.find((entry) => entry.locale === demoLocale(locale));
-  return pack?.topics?.[0]?.canonicalPath ?? '/demo/';
+  return pack?.topics?.[0]?.canonicalPath ?? `/${demoLocale(locale)}/guides/`;
 }
 
 function renderLanguageMenu(currentLocale) {
@@ -176,6 +180,7 @@ async function writePage(template, locale, content, demoManifest) {
       url: pageUrl(locale),
       ogLocale: locale.ogLocale,
       demoHref: demoHref(locale, demoManifest),
+      guidesHref: guidesHref(locale, demoManifest),
       alternates: renderAlternateLinks(),
       languageMenu: renderLanguageMenu(locale),
       localeRedirectScript: renderLocaleRedirectScript(locale),

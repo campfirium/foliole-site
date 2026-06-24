@@ -1,1 +1,0 @@
-function e(e){return e+1}function t(e){return e+1}function n(t,n){return n(`desktop.rightPanel.flow.demo.dayGroup`,{day:e(t)})}export{t as n,n as t};

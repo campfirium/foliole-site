@@ -1,7 +1,7 @@
 {
   "contractVersion": 3,
-  "generatedAt": "2026-06-21T08:57:17.134Z",
-  "buildHash": "sha256:79a13a02f35b1f251333f9cbd27c61d64974d5d45bfd01d1e3f82ce07c611286",
+  "generatedAt": "2026-06-24T02:59:52.176Z",
+  "buildHash": "sha256:f5a7bd6ac9a7470cbfc0f84367180a75453b23c4fd8e987c75f47fec2d0d8b92",
   "publishedLocales": [
     {
       "locale": "en",
@@ -26,99 +26,30 @@
       "hreflang": "en",
       "topics": [
         {
-          "slug": "focused-reading-review",
-          "title": "Focused reading and review",
-          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
-          "canonicalPath": "/en/demo/focused-reading-review/",
+          "slug": "welcome-to-foliole",
+          "title": "Welcome to Foliole",
+          "description": "Start by clicking Read in the bottom action bar, or press 3 or F.",
+          "canonicalPath": "/en/guides/welcome-to-foliole/",
           "alternates": [
             {
               "locale": "en",
               "hreflang": "en",
-              "path": "/en/demo/focused-reading-review/"
+              "path": "/en/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hans",
               "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/focused-reading-review/"
+              "path": "/zh-hans/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hant",
               "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/focused-reading-review/"
+              "path": "/zh-hant/guides/welcome-to-foliole/"
             },
             {
               "locale": "ja",
               "hreflang": "ja",
-              "path": "/ja/demo/focused-reading-review/"
-            }
-          ],
-          "hreflang": "en",
-          "highlights": [],
-          "locale": "en",
-          "reviewItems": [
-            {
-              "id": "focused-reading-review-item-1",
-              "title": "One clear recall",
-              "kind": "item",
-              "prompt": "What should a steady review queue help you return to?",
-              "answer": "Important ideas that remain connected to the source topic."
-            }
-          ],
-          "runtime": {
-            "state": "topic",
-            "topicId": "focused-reading-review"
-          },
-          "sections": [
-            {
-              "heading": "Start with one source topic",
-              "body": [
-                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
-                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
-              ]
-            },
-            {
-              "heading": "Keep review material small",
-              "body": [
-                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
-                "A steady review queue should help you return to important ideas, not become another inbox to sort."
-              ]
-            },
-            {
-              "heading": "Return to the source",
-              "body": [
-                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
-              ]
-            }
-          ],
-          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
-        },
-        {
-          "slug": "organize-source-topics",
-          "title": "Organize source topics",
-          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
-          "canonicalPath": "/en/demo/organize-source-topics/",
-          "alternates": [
-            {
-              "locale": "en",
-              "hreflang": "en",
-              "path": "/en/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hans",
-              "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hant",
-              "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/organize-source-topics/"
-            },
-            {
-              "locale": "ja",
-              "hreflang": "ja",
-              "path": "/ja/demo/organize-source-topics/"
+              "path": "/ja/guides/welcome-to-foliole/"
             }
           ],
           "hreflang": "en",
@@ -127,27 +58,404 @@
           "reviewItems": [],
           "runtime": {
             "state": "topic",
-            "topicId": "organize-source-topics"
+            "topicId": "welcome-to-foliole"
           },
           "sections": [
             {
-              "heading": "Use folders for stable context",
+              "heading": "Welcome to Foliole",
               "body": [
-                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
-                "When a topic no longer belongs in its first place, move it once the better home is clear."
-              ]
-            },
-            {
-              "heading": "Keep the inbox small",
-              "body": [
-                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
-                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+                "Start by clicking Read in the bottom action bar, or press 3 or F."
               ]
             }
           ],
-          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+          "summary": "Start by clicking Read in the bottom action bar, or press 3 or F.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole/",
+          "contentHash": "sha256:0b336fe3c3733470c81c1fca8ce464b61a89102e9c3b5418195b354c22e0d926"
+        },
+        {
+          "slug": "welcome-to-foliole.reading-break-the-whole-into-pieces",
+          "title": "Reading: Break the Whole into Pieces",
+          "description": "Reading does not need to be completed in one pass. You can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4).",
+          "canonicalPath": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.reading-break-the-whole-into-pieces"
+          },
+          "sections": [
+            {
+              "heading": "Reading: Break the Whole into Pieces",
+              "body": [
+                "Reading does not need to be completed in one pass.\nYou can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4)."
+              ]
+            }
+          ],
+          "summary": "Reading does not need to be completed in one pass. You can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4).",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "contentHash": "sha256:8979548baa4cf4f1645011092d8716a7141310a5599d009b52ca64189bdeea19"
+        },
+        {
+          "slug": "welcome-to-foliole.highlight-extract-the-essence",
+          "title": "Highlight: Extract the Essence",
+          "description": "Select the text you want to extract. The floating toolbar will appear.",
+          "canonicalPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.highlight-extract-the-essence"
+          },
+          "sections": [
+            {
+              "heading": "Highlight: Extract the Essence",
+              "body": [
+                "Select the text you want to extract. The floating toolbar will appear.\nUse Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
+              ]
+            }
+          ],
+          "summary": "Select the text you want to extract. The floating toolbar will appear.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "contentHash": "sha256:1298dc4e7468440c48ca0bf63324ef099190880aba06904d8df52726395f3de8"
+        },
+        {
+          "slug": "welcome-to-foliole.cloze-create-a-test-item",
+          "title": "Cloze: Create a Test Item",
+          "description": "Select the text you want to test. Use Cloze in the floating toolbar, or press Alt + X. Foliole creates an Item that asks you to remember the hidden part.",
+          "canonicalPath": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.cloze-create-a-test-item"
+          },
+          "sections": [
+            {
+              "heading": "Cloze: Create a Test Item",
+              "body": [
+                "Select the text you want to test.\nUse Cloze in the floating toolbar, or press Alt + X.\nFoliole creates an Item that asks you to remember the hidden part."
+              ]
+            }
+          ],
+          "summary": "Select the text you want to test. Use Cloze in the floating toolbar, or press Alt + X. Foliole creates an Item that asks you to remember the hidden part.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "contentHash": "sha256:e46eca969b065172bbca34e61a24ecf97ddef07dc44aad4de98e35ef76f50008"
+        },
+        {
+          "slug": "welcome-to-foliole.test-make-it-stick",
+          "title": "Test: Make It Stick",
+          "description": "When an Item created from a cloze appears, try to recall the answer first. Then grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4). Your grade affects when it appears again, and testing itself helps strengthen memory.",
+          "canonicalPath": "/en/guides/welcome-to-foliole.test-make-it-stick/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.test-make-it-stick/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.test-make-it-stick"
+          },
+          "sections": [
+            {
+              "heading": "Test: Make It Stick",
+              "body": [
+                "When an Item created from a cloze appears, try to recall the answer first.\nThen grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4).\nYour grade affects when it appears again, and testing itself helps strengthen memory."
+              ]
+            }
+          ],
+          "summary": "When an Item created from a cloze appears, try to recall the answer first. Then grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4). Your grade affects when it appears again, and testing itself helps strengthen memory.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.test-make-it-stick/",
+          "contentHash": "sha256:4037f0e1dcf86034765c7e1a88ab3e91f1b779c369d90675b4c2610747427348"
+        },
+        {
+          "slug": "welcome-to-foliole.rewrite-clarify-understanding",
+          "title": "Rewrite: Clarify Understanding",
+          "description": "During later reviews, you can keep rewriting the material, making it easier to understand and remember.",
+          "canonicalPath": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.rewrite-clarify-understanding"
+          },
+          "sections": [
+            {
+              "heading": "Rewrite: Clarify Understanding",
+              "body": [
+                "During later reviews, you can keep rewriting the material, making it easier to understand and remember."
+              ]
+            }
+          ],
+          "summary": "During later reviews, you can keep rewriting the material, making it easier to understand and remember.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "contentHash": "sha256:d367e58cc8641360ab5b9ea6993c72fc7e7bc7a9de462919c18cff3a55786a44"
+        },
+        {
+          "slug": "welcome-to-foliole.schedule-show-it-at-the-right-time",
+          "title": "Schedule: Show It at the Right Time",
+          "description": "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time.",
+          "canonicalPath": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.schedule-show-it-at-the-right-time"
+          },
+          "sections": [
+            {
+              "heading": "Schedule: Show It at the Right Time",
+              "body": [
+                "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time."
+              ]
+            }
+          ],
+          "summary": "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "contentHash": "sha256:d79884906de21e825e816e86468c90d8ea1702c3425e9a4dab5483f184ab9470"
+        },
+        {
+          "slug": "welcome-to-foliole.repeat-internalize-knowledge",
+          "title": "Repeat: Internalize Knowledge",
+          "description": "Spaced repetition internalizes knowledge step by step. Incremental reading makes reading actually complete. Foliole makes incremental reading smooth.",
+          "canonicalPath": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.repeat-internalize-knowledge"
+          },
+          "sections": [
+            {
+              "heading": "Repeat: Internalize Knowledge",
+              "body": [
+                "Spaced repetition internalizes knowledge step by step.\nIncremental reading makes reading actually complete.\nFoliole makes incremental reading smooth."
+              ]
+            }
+          ],
+          "summary": "Spaced repetition internalizes knowledge step by step. Incremental reading makes reading actually complete. Foliole makes incremental reading smooth.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "contentHash": "sha256:7720f2e07504941a17ae55a22490f475823806a4cd150f3e6d74219608cd00f0"
+        },
+        {
+          "slug": "what-the-foliole-demo-is-for",
+          "title": "What the Foliole Demo Is For",
+          "description": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+          "canonicalPath": "/en/guides/what-the-foliole-demo-is-for/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/what-the-foliole-demo-is-for/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "what-the-foliole-demo-is-for"
+          },
+          "sections": [
+            {
+              "heading": "What the Foliole Demo Is For",
+              "body": [
+                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.\nMaybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.\nMaybe you are new to incremental reading and still not sure whether it fits you.\nTo make Foliole easier to experience directly, we built this online demo.\nNo installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.\nThe online demo provides simulated dates so you can quickly experience Foliole's material scheduling. You can also open the settings panel to view the full desktop settings and understand the general shape of the complete app.\nThe online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.\nThe online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
+              ]
+            }
+          ],
+          "summary": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
+          "contentHash": "sha256:c719fbd87fac25fd7c35d27b406f26f88bb6f5d9862af9140b0c1c4e151e94e3"
         }
       ]
     },
@@ -156,99 +464,30 @@
       "hreflang": "zh-Hans",
       "topics": [
         {
-          "slug": "focused-reading-review",
-          "title": "Focused reading and review",
-          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
-          "canonicalPath": "/zh-hans/demo/focused-reading-review/",
+          "slug": "welcome-to-foliole",
+          "title": "欢迎使用 Foliole",
+          "description": "请先点击底部动作条里的 Read，或按 3 或 F。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole/",
           "alternates": [
             {
               "locale": "en",
               "hreflang": "en",
-              "path": "/en/demo/focused-reading-review/"
+              "path": "/en/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hans",
               "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/focused-reading-review/"
+              "path": "/zh-hans/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hant",
               "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/focused-reading-review/"
+              "path": "/zh-hant/guides/welcome-to-foliole/"
             },
             {
               "locale": "ja",
               "hreflang": "ja",
-              "path": "/ja/demo/focused-reading-review/"
-            }
-          ],
-          "hreflang": "zh-Hans",
-          "highlights": [],
-          "locale": "zh-hans",
-          "reviewItems": [
-            {
-              "id": "focused-reading-review-item-1",
-              "title": "One clear recall",
-              "kind": "item",
-              "prompt": "What should a steady review queue help you return to?",
-              "answer": "Important ideas that remain connected to the source topic."
-            }
-          ],
-          "runtime": {
-            "state": "topic",
-            "topicId": "focused-reading-review"
-          },
-          "sections": [
-            {
-              "heading": "Start with one source topic",
-              "body": [
-                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
-                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
-              ]
-            },
-            {
-              "heading": "Keep review material small",
-              "body": [
-                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
-                "A steady review queue should help you return to important ideas, not become another inbox to sort."
-              ]
-            },
-            {
-              "heading": "Return to the source",
-              "body": [
-                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
-              ]
-            }
-          ],
-          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
-        },
-        {
-          "slug": "organize-source-topics",
-          "title": "Organize source topics",
-          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
-          "canonicalPath": "/zh-hans/demo/organize-source-topics/",
-          "alternates": [
-            {
-              "locale": "en",
-              "hreflang": "en",
-              "path": "/en/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hans",
-              "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hant",
-              "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/organize-source-topics/"
-            },
-            {
-              "locale": "ja",
-              "hreflang": "ja",
-              "path": "/ja/demo/organize-source-topics/"
+              "path": "/ja/guides/welcome-to-foliole/"
             }
           ],
           "hreflang": "zh-Hans",
@@ -257,27 +496,404 @@
           "reviewItems": [],
           "runtime": {
             "state": "topic",
-            "topicId": "organize-source-topics"
+            "topicId": "welcome-to-foliole"
           },
           "sections": [
             {
-              "heading": "Use folders for stable context",
+              "heading": "欢迎使用 Foliole",
               "body": [
-                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
-                "When a topic no longer belongs in its first place, move it once the better home is clear."
-              ]
-            },
-            {
-              "heading": "Keep the inbox small",
-              "body": [
-                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
-                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+                "请先点击底部动作条里的 Read，或按 3 或 F。"
               ]
             }
           ],
-          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+          "summary": "请先点击底部动作条里的 Read，或按 3 或 F。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole/",
+          "contentHash": "sha256:918ed0c02a13a80d7206457fea1867bba64cd9a118f49b8cecf953980a0e1718"
+        },
+        {
+          "slug": "welcome-to-foliole.reading-break-the-whole-into-pieces",
+          "title": "阅读：化整为零",
+          "description": "在 Foliole 中，阅读不必一次完成。 可以根据具体情境，选择让当前内容稍后展现（底部动作条中的 Soon，或按 1）、以后展现（Later，或按 2）、读了一段后下次再展现（Read，或按 3），或者读完后不再自动展现（Dismiss，或按 4）。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.reading-break-the-whole-into-pieces"
+          },
+          "sections": [
+            {
+              "heading": "阅读：化整为零",
+              "body": [
+                "在 Foliole 中，阅读不必一次完成。\n可以根据具体情境，选择让当前内容稍后展现（底部动作条中的 Soon，或按 1）、以后展现（Later，或按 2）、读了一段后下次再展现（Read，或按 3），或者读完后不再自动展现（Dismiss，或按 4）。"
+              ]
+            }
+          ],
+          "summary": "在 Foliole 中，阅读不必一次完成。 可以根据具体情境，选择让当前内容稍后展现（底部动作条中的 Soon，或按 1）、以后展现（Later，或按 2）、读了一段后下次再展现（Read，或按 3），或者读完后不再自动展现（Dismiss，或按 4）。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "contentHash": "sha256:4bfb8334c56b5acd8f42a0701cd9aac1264cd5d0d97e48c857c2421172b02449"
+        },
+        {
+          "slug": "welcome-to-foliole.highlight-extract-the-essence",
+          "title": "高亮：摘录精华",
+          "description": "选中想摘录的文本后，会出现浮动工具条。点击其中的 Highlight，或按 Alt + Z，高亮这段内容，并生成一个新的子主题。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.highlight-extract-the-essence"
+          },
+          "sections": [
+            {
+              "heading": "高亮：摘录精华",
+              "body": [
+                "选中想摘录的文本后，会出现浮动工具条。点击其中的 Highlight，或按 Alt + Z，高亮这段内容，并生成一个新的子主题。"
+              ]
+            }
+          ],
+          "summary": "选中想摘录的文本后，会出现浮动工具条。点击其中的 Highlight，或按 Alt + Z，高亮这段内容，并生成一个新的子主题。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "contentHash": "sha256:67e8d97621606788fdaa56b9f725f1ff0d6f30a25202c002122d23e40b8a8a29"
+        },
+        {
+          "slug": "welcome-to-foliole.cloze-create-a-test-item",
+          "title": "挖空：生成检测",
+          "description": "选中想检测的内容后，点击浮动工具条里的 Cloze（或按 Alt + X），生成一个以挖空内容为答案的检测项。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.cloze-create-a-test-item"
+          },
+          "sections": [
+            {
+              "heading": "挖空：生成检测",
+              "body": [
+                "选中想检测的内容后，点击浮动工具条里的 Cloze（或按 Alt + X），生成一个以挖空内容为答案的检测项。"
+              ]
+            }
+          ],
+          "summary": "选中想检测的内容后，点击浮动工具条里的 Cloze（或按 Alt + X），生成一个以挖空内容为答案的检测项。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "contentHash": "sha256:fdc3c01bab880e40c659425f7f91989dc3079bb991a1df9cc2407d467d422eb8"
+        },
+        {
+          "slug": "welcome-to-foliole.test-make-it-stick",
+          "title": "检测：强化记忆",
+          "description": "挖空生成的检测项展现时，先尝试回想答案。 再在底部动作条中评分：不记得选 Again（或按 1），记得一些选 Hard（或按 2），记得选 Good（或按 3），太简单选 Easy（或按 4）。 评分会影响下次展现时间，检测本身也会强化记忆。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole.test-make-it-stick/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.test-make-it-stick/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.test-make-it-stick"
+          },
+          "sections": [
+            {
+              "heading": "检测：强化记忆",
+              "body": [
+                "挖空生成的检测项展现时，先尝试回想答案。\n再在底部动作条中评分：不记得选 Again（或按 1），记得一些选 Hard（或按 2），记得选 Good（或按 3），太简单选 Easy（或按 4）。\n评分会影响下次展现时间，检测本身也会强化记忆。"
+              ]
+            }
+          ],
+          "summary": "挖空生成的检测项展现时，先尝试回想答案。 再在底部动作条中评分：不记得选 Again（或按 1），记得一些选 Hard（或按 2），记得选 Good（或按 3），太简单选 Easy（或按 4）。 评分会影响下次展现时间，检测本身也会强化记忆。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.test-make-it-stick/",
+          "contentHash": "sha256:b1c430db7edd547aedc147c02cd83dcf506c37171f8a8d671f08b276e60f03ef"
+        },
+        {
+          "slug": "welcome-to-foliole.rewrite-clarify-understanding",
+          "title": "改写：澄清理解",
+          "description": "在后续的回顾过程中，可以持续改写材料，让它更容易理解和记忆。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.rewrite-clarify-understanding"
+          },
+          "sections": [
+            {
+              "heading": "改写：澄清理解",
+              "body": [
+                "在后续的回顾过程中，可以持续改写材料，让它更容易理解和记忆。"
+              ]
+            }
+          ],
+          "summary": "在后续的回顾过程中，可以持续改写材料，让它更容易理解和记忆。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "contentHash": "sha256:e231ce445fdd7b81e9f17d17a0a76dfe05143c7104fe67aa0797b7cf174a3483"
+        },
+        {
+          "slug": "welcome-to-foliole.schedule-show-it-at-the-right-time",
+          "title": "调度：适时展现",
+          "description": "材料优先级、阅读动作和检测评分会共同影响系统调度，让材料在合适的时候再次展现。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.schedule-show-it-at-the-right-time"
+          },
+          "sections": [
+            {
+              "heading": "调度：适时展现",
+              "body": [
+                "材料优先级、阅读动作和检测评分会共同影响系统调度，让材料在合适的时候再次展现。"
+              ]
+            }
+          ],
+          "summary": "材料优先级、阅读动作和检测评分会共同影响系统调度，让材料在合适的时候再次展现。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "contentHash": "sha256:14d16e719772f74c966261c09c201e596be7700ad44b69ee1ed30823b9eef74e"
+        },
+        {
+          "slug": "welcome-to-foliole.repeat-internalize-knowledge",
+          "title": "重复：内化知识",
+          "description": "间隔重复，让知识逐步内化。 渐进阅读，让阅读真正完成。 Foliole，让渐进阅读流畅发生。",
+          "canonicalPath": "/zh-hans/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.repeat-internalize-knowledge"
+          },
+          "sections": [
+            {
+              "heading": "重复：内化知识",
+              "body": [
+                "间隔重复，让知识逐步内化。\n渐进阅读，让阅读真正完成。\nFoliole，让渐进阅读流畅发生。"
+              ]
+            }
+          ],
+          "summary": "间隔重复，让知识逐步内化。 渐进阅读，让阅读真正完成。 Foliole，让渐进阅读流畅发生。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "contentHash": "sha256:4f8707c52e156273a29b11ca37ce02fa625f38b70a3c9f4ec8fe3a048cc176f1"
+        },
+        {
+          "slug": "what-the-foliole-demo-is-for",
+          "title": "在线体验 Foliole",
+          "description": "也许你是 SuperMemo 的老用户，想看看 Foliole 有什么不同。",
+          "canonicalPath": "/zh-hans/guides/what-the-foliole-demo-is-for/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/what-the-foliole-demo-is-for/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "what-the-foliole-demo-is-for"
+          },
+          "sections": [
+            {
+              "heading": "在线体验 Foliole",
+              "body": [
+                "也许你是 SuperMemo 的老用户，想看看 Foliole 有什么不同。\n也许你正重度使用 Obsidian 等阅读和笔记工具，希望材料不止于阅读和标注。\n也许你只是第一次听说渐进阅读，还不确定它适不适合自己。\n为了让你更直观地体验 Foliole，我们专门构建了这套在线体验版。\n无需安装，打开网页即可直接体验。你可以在这里阅读 Foliole Guides（后续会持续更新），也可以导入自己的 Markdown 文档，进行渐进阅读的核心流程操作。\n在线体验版提供了模拟日期功能，方便你快速体验 Foliole 的材料调度。你还可以在设置面板中查看桌面端的完整设置，了解完整应用的大致结构。\n在线体验版将数据保存在浏览器本地，请勿作为唯一备份。它也不具备桌面版的多项核心功能，包括 PDF / EPUB / 图片阅览、外部文档库、搜索增强、Obsidian 集成、Readwise Reader 集成、Markdown 镜像、局域网同步等。\n在线体验版会随着桌面端继续更新，也可能出现与桌面端不同的问题。可以通过左侧功能区入口直接提交反馈，也欢迎在 GitHub 关注项目进展、提交问题或参与交流。"
+              ]
+            }
+          ],
+          "summary": "也许你是 SuperMemo 的老用户，想看看 Foliole 有什么不同。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
+          "contentHash": "sha256:aa32a3a0d26ce32b694fcb5a7f47166f59322149e2a21ce03d40b3e7373fa3b5"
         }
       ]
     },
@@ -286,99 +902,30 @@
       "hreflang": "zh-Hant",
       "topics": [
         {
-          "slug": "focused-reading-review",
-          "title": "Focused reading and review",
-          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
-          "canonicalPath": "/zh-hant/demo/focused-reading-review/",
+          "slug": "welcome-to-foliole",
+          "title": "Welcome to Foliole",
+          "description": "Start by clicking Read in the bottom action bar, or press 3 or F.",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole/",
           "alternates": [
             {
               "locale": "en",
               "hreflang": "en",
-              "path": "/en/demo/focused-reading-review/"
+              "path": "/en/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hans",
               "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/focused-reading-review/"
+              "path": "/zh-hans/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hant",
               "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/focused-reading-review/"
+              "path": "/zh-hant/guides/welcome-to-foliole/"
             },
             {
               "locale": "ja",
               "hreflang": "ja",
-              "path": "/ja/demo/focused-reading-review/"
-            }
-          ],
-          "hreflang": "zh-Hant",
-          "highlights": [],
-          "locale": "zh-hant",
-          "reviewItems": [
-            {
-              "id": "focused-reading-review-item-1",
-              "title": "One clear recall",
-              "kind": "item",
-              "prompt": "What should a steady review queue help you return to?",
-              "answer": "Important ideas that remain connected to the source topic."
-            }
-          ],
-          "runtime": {
-            "state": "topic",
-            "topicId": "focused-reading-review"
-          },
-          "sections": [
-            {
-              "heading": "Start with one source topic",
-              "body": [
-                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
-                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
-              ]
-            },
-            {
-              "heading": "Keep review material small",
-              "body": [
-                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
-                "A steady review queue should help you return to important ideas, not become another inbox to sort."
-              ]
-            },
-            {
-              "heading": "Return to the source",
-              "body": [
-                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
-              ]
-            }
-          ],
-          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
-        },
-        {
-          "slug": "organize-source-topics",
-          "title": "Organize source topics",
-          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
-          "canonicalPath": "/zh-hant/demo/organize-source-topics/",
-          "alternates": [
-            {
-              "locale": "en",
-              "hreflang": "en",
-              "path": "/en/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hans",
-              "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hant",
-              "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/organize-source-topics/"
-            },
-            {
-              "locale": "ja",
-              "hreflang": "ja",
-              "path": "/ja/demo/organize-source-topics/"
+              "path": "/ja/guides/welcome-to-foliole/"
             }
           ],
           "hreflang": "zh-Hant",
@@ -387,27 +934,404 @@
           "reviewItems": [],
           "runtime": {
             "state": "topic",
-            "topicId": "organize-source-topics"
+            "topicId": "welcome-to-foliole"
           },
           "sections": [
             {
-              "heading": "Use folders for stable context",
+              "heading": "Welcome to Foliole",
               "body": [
-                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
-                "When a topic no longer belongs in its first place, move it once the better home is clear."
-              ]
-            },
-            {
-              "heading": "Keep the inbox small",
-              "body": [
-                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
-                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+                "Start by clicking Read in the bottom action bar, or press 3 or F."
               ]
             }
           ],
-          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+          "summary": "Start by clicking Read in the bottom action bar, or press 3 or F.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole/",
+          "contentHash": "sha256:0b336fe3c3733470c81c1fca8ce464b61a89102e9c3b5418195b354c22e0d926"
+        },
+        {
+          "slug": "welcome-to-foliole.reading-break-the-whole-into-pieces",
+          "title": "Reading: Break the Whole into Pieces",
+          "description": "Reading does not need to be completed in one pass. You can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4).",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.reading-break-the-whole-into-pieces"
+          },
+          "sections": [
+            {
+              "heading": "Reading: Break the Whole into Pieces",
+              "body": [
+                "Reading does not need to be completed in one pass.\nYou can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4)."
+              ]
+            }
+          ],
+          "summary": "Reading does not need to be completed in one pass. You can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4).",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "contentHash": "sha256:8979548baa4cf4f1645011092d8716a7141310a5599d009b52ca64189bdeea19"
+        },
+        {
+          "slug": "welcome-to-foliole.highlight-extract-the-essence",
+          "title": "Highlight: Extract the Essence",
+          "description": "Select the text you want to extract. The floating toolbar will appear.",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.highlight-extract-the-essence"
+          },
+          "sections": [
+            {
+              "heading": "Highlight: Extract the Essence",
+              "body": [
+                "Select the text you want to extract. The floating toolbar will appear.\nUse Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
+              ]
+            }
+          ],
+          "summary": "Select the text you want to extract. The floating toolbar will appear.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "contentHash": "sha256:1298dc4e7468440c48ca0bf63324ef099190880aba06904d8df52726395f3de8"
+        },
+        {
+          "slug": "welcome-to-foliole.cloze-create-a-test-item",
+          "title": "Cloze: Create a Test Item",
+          "description": "Select the text you want to test. Use Cloze in the floating toolbar, or press Alt + X. Foliole creates an Item that asks you to remember the hidden part.",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.cloze-create-a-test-item"
+          },
+          "sections": [
+            {
+              "heading": "Cloze: Create a Test Item",
+              "body": [
+                "Select the text you want to test.\nUse Cloze in the floating toolbar, or press Alt + X.\nFoliole creates an Item that asks you to remember the hidden part."
+              ]
+            }
+          ],
+          "summary": "Select the text you want to test. Use Cloze in the floating toolbar, or press Alt + X. Foliole creates an Item that asks you to remember the hidden part.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "contentHash": "sha256:e46eca969b065172bbca34e61a24ecf97ddef07dc44aad4de98e35ef76f50008"
+        },
+        {
+          "slug": "welcome-to-foliole.test-make-it-stick",
+          "title": "Test: Make It Stick",
+          "description": "When an Item created from a cloze appears, try to recall the answer first. Then grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4). Your grade affects when it appears again, and testing itself helps strengthen memory.",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole.test-make-it-stick/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.test-make-it-stick/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.test-make-it-stick"
+          },
+          "sections": [
+            {
+              "heading": "Test: Make It Stick",
+              "body": [
+                "When an Item created from a cloze appears, try to recall the answer first.\nThen grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4).\nYour grade affects when it appears again, and testing itself helps strengthen memory."
+              ]
+            }
+          ],
+          "summary": "When an Item created from a cloze appears, try to recall the answer first. Then grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4). Your grade affects when it appears again, and testing itself helps strengthen memory.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.test-make-it-stick/",
+          "contentHash": "sha256:4037f0e1dcf86034765c7e1a88ab3e91f1b779c369d90675b4c2610747427348"
+        },
+        {
+          "slug": "welcome-to-foliole.rewrite-clarify-understanding",
+          "title": "Rewrite: Clarify Understanding",
+          "description": "During later reviews, you can keep rewriting the material, making it easier to understand and remember.",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.rewrite-clarify-understanding"
+          },
+          "sections": [
+            {
+              "heading": "Rewrite: Clarify Understanding",
+              "body": [
+                "During later reviews, you can keep rewriting the material, making it easier to understand and remember."
+              ]
+            }
+          ],
+          "summary": "During later reviews, you can keep rewriting the material, making it easier to understand and remember.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "contentHash": "sha256:d367e58cc8641360ab5b9ea6993c72fc7e7bc7a9de462919c18cff3a55786a44"
+        },
+        {
+          "slug": "welcome-to-foliole.schedule-show-it-at-the-right-time",
+          "title": "Schedule: Show It at the Right Time",
+          "description": "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time.",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.schedule-show-it-at-the-right-time"
+          },
+          "sections": [
+            {
+              "heading": "Schedule: Show It at the Right Time",
+              "body": [
+                "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time."
+              ]
+            }
+          ],
+          "summary": "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "contentHash": "sha256:d79884906de21e825e816e86468c90d8ea1702c3425e9a4dab5483f184ab9470"
+        },
+        {
+          "slug": "welcome-to-foliole.repeat-internalize-knowledge",
+          "title": "Repeat: Internalize Knowledge",
+          "description": "Spaced repetition internalizes knowledge step by step. Incremental reading makes reading actually complete. Foliole makes incremental reading smooth.",
+          "canonicalPath": "/zh-hant/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.repeat-internalize-knowledge"
+          },
+          "sections": [
+            {
+              "heading": "Repeat: Internalize Knowledge",
+              "body": [
+                "Spaced repetition internalizes knowledge step by step.\nIncremental reading makes reading actually complete.\nFoliole makes incremental reading smooth."
+              ]
+            }
+          ],
+          "summary": "Spaced repetition internalizes knowledge step by step. Incremental reading makes reading actually complete. Foliole makes incremental reading smooth.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "contentHash": "sha256:7720f2e07504941a17ae55a22490f475823806a4cd150f3e6d74219608cd00f0"
+        },
+        {
+          "slug": "what-the-foliole-demo-is-for",
+          "title": "What the Foliole Demo Is For",
+          "description": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+          "canonicalPath": "/zh-hant/guides/what-the-foliole-demo-is-for/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/what-the-foliole-demo-is-for/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "what-the-foliole-demo-is-for"
+          },
+          "sections": [
+            {
+              "heading": "What the Foliole Demo Is For",
+              "body": [
+                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.\nMaybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.\nMaybe you are new to incremental reading and still not sure whether it fits you.\nTo make Foliole easier to experience directly, we built this online demo.\nNo installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.\nThe online demo provides simulated dates so you can quickly experience Foliole's material scheduling. You can also open the settings panel to view the full desktop settings and understand the general shape of the complete app.\nThe online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.\nThe online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
+              ]
+            }
+          ],
+          "summary": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
+          "contentHash": "sha256:c719fbd87fac25fd7c35d27b406f26f88bb6f5d9862af9140b0c1c4e151e94e3"
         }
       ]
     },
@@ -416,99 +1340,30 @@
       "hreflang": "ja",
       "topics": [
         {
-          "slug": "focused-reading-review",
-          "title": "Focused reading and review",
-          "description": "A practical Demo topic for reading, extracting, and reviewing topics in Foliole.",
-          "canonicalPath": "/ja/demo/focused-reading-review/",
+          "slug": "welcome-to-foliole",
+          "title": "Welcome to Foliole",
+          "description": "Start by clicking Read in the bottom action bar, or press 3 or F.",
+          "canonicalPath": "/ja/guides/welcome-to-foliole/",
           "alternates": [
             {
               "locale": "en",
               "hreflang": "en",
-              "path": "/en/demo/focused-reading-review/"
+              "path": "/en/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hans",
               "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/focused-reading-review/"
+              "path": "/zh-hans/guides/welcome-to-foliole/"
             },
             {
               "locale": "zh-hant",
               "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/focused-reading-review/"
+              "path": "/zh-hant/guides/welcome-to-foliole/"
             },
             {
               "locale": "ja",
               "hreflang": "ja",
-              "path": "/ja/demo/focused-reading-review/"
-            }
-          ],
-          "hreflang": "ja",
-          "highlights": [],
-          "locale": "ja",
-          "reviewItems": [
-            {
-              "id": "focused-reading-review-item-1",
-              "title": "One clear recall",
-              "kind": "item",
-              "prompt": "What should a steady review queue help you return to?",
-              "answer": "Important ideas that remain connected to the source topic."
-            }
-          ],
-          "runtime": {
-            "state": "topic",
-            "topicId": "focused-reading-review"
-          },
-          "sections": [
-            {
-              "heading": "Start with one source topic",
-              "body": [
-                "Choose one topic that is worth reading slowly. Keep the first pass simple: read for structure, mark what matters, and avoid reshaping the whole workspace too early.",
-                "When a passage needs its own follow-up, turn it into a focused excerpt instead of scattering related material across separate notes."
-              ]
-            },
-            {
-              "heading": "Keep review material small",
-              "body": [
-                "Review works best when each item asks for one clear recall. Use highlights and cloze prompts for precise checks, and keep longer explanations in the topic itself.",
-                "A steady review queue should help you return to important ideas, not become another inbox to sort."
-              ]
-            },
-            {
-              "heading": "Return to the source",
-              "body": [
-                "After review, revisit the source topic when an idea still feels unclear. The goal is not to memorize isolated fragments, but to keep reading and review connected."
-              ]
-            }
-          ],
-          "summary": "Build a quiet loop from reading to review without turning every thought into a task.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:d217a40f7257d1c9bf1634001dbf8cf85e2441deeb50c40ebcb32be443f42ae9"
-        },
-        {
-          "slug": "organize-source-topics",
-          "title": "Organize source topics",
-          "description": "A short Demo topic for keeping source topics easy to return to as a reading collection grows.",
-          "canonicalPath": "/ja/demo/organize-source-topics/",
-          "alternates": [
-            {
-              "locale": "en",
-              "hreflang": "en",
-              "path": "/en/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hans",
-              "hreflang": "zh-Hans",
-              "path": "/zh-hans/demo/organize-source-topics/"
-            },
-            {
-              "locale": "zh-hant",
-              "hreflang": "zh-Hant",
-              "path": "/zh-hant/demo/organize-source-topics/"
-            },
-            {
-              "locale": "ja",
-              "hreflang": "ja",
-              "path": "/ja/demo/organize-source-topics/"
+              "path": "/ja/guides/welcome-to-foliole/"
             }
           ],
           "hreflang": "ja",
@@ -517,27 +1372,404 @@
           "reviewItems": [],
           "runtime": {
             "state": "topic",
-            "topicId": "organize-source-topics"
+            "topicId": "welcome-to-foliole"
           },
           "sections": [
             {
-              "heading": "Use folders for stable context",
+              "heading": "Welcome to Foliole",
               "body": [
-                "Group topics by the context you expect to revisit. A folder should make the next topic easier to find, not become a second classification project.",
-                "When a topic no longer belongs in its first place, move it once the better home is clear."
-              ]
-            },
-            {
-              "heading": "Keep the inbox small",
-              "body": [
-                "Let the inbox collect new topics briefly, then move useful material into folders before the list becomes another reading burden.",
-                "If a topic is only a temporary reminder, decide whether it deserves a source topic before building review material from it."
+                "Start by clicking Read in the bottom action bar, or press 3 or F."
               ]
             }
           ],
-          "summary": "Keep folders and topics simple enough that the next reading step stays visible.",
-          "xDefaultPath": "/demo/",
-          "contentHash": "sha256:f4ddb496fbdffb556d2aedc8b824bc960d020a07035473ad9066d4dec2d76abd"
+          "summary": "Start by clicking Read in the bottom action bar, or press 3 or F.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole/",
+          "contentHash": "sha256:0b336fe3c3733470c81c1fca8ce464b61a89102e9c3b5418195b354c22e0d926"
+        },
+        {
+          "slug": "welcome-to-foliole.reading-break-the-whole-into-pieces",
+          "title": "Reading: Break the Whole into Pieces",
+          "description": "Reading does not need to be completed in one pass. You can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4).",
+          "canonicalPath": "/ja/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.reading-break-the-whole-into-pieces"
+          },
+          "sections": [
+            {
+              "heading": "Reading: Break the Whole into Pieces",
+              "body": [
+                "Reading does not need to be completed in one pass.\nYou can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4)."
+              ]
+            }
+          ],
+          "summary": "Reading does not need to be completed in one pass. You can choose by context: show the current content soon (Soon in the bottom action bar, or press 1), show it later (Later, or press 2), show it again after a reading pass (Read, or press 3), or stop showing it automatically when done (Dismiss, or press 4).",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.reading-break-the-whole-into-pieces/",
+          "contentHash": "sha256:8979548baa4cf4f1645011092d8716a7141310a5599d009b52ca64189bdeea19"
+        },
+        {
+          "slug": "welcome-to-foliole.highlight-extract-the-essence",
+          "title": "Highlight: Extract the Essence",
+          "description": "Select the text you want to extract. The floating toolbar will appear.",
+          "canonicalPath": "/ja/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.highlight-extract-the-essence/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.highlight-extract-the-essence"
+          },
+          "sections": [
+            {
+              "heading": "Highlight: Extract the Essence",
+              "body": [
+                "Select the text you want to extract. The floating toolbar will appear.\nUse Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
+              ]
+            }
+          ],
+          "summary": "Select the text you want to extract. The floating toolbar will appear.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
+          "contentHash": "sha256:1298dc4e7468440c48ca0bf63324ef099190880aba06904d8df52726395f3de8"
+        },
+        {
+          "slug": "welcome-to-foliole.cloze-create-a-test-item",
+          "title": "Cloze: Create a Test Item",
+          "description": "Select the text you want to test. Use Cloze in the floating toolbar, or press Alt + X. Foliole creates an Item that asks you to remember the hidden part.",
+          "canonicalPath": "/ja/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.cloze-create-a-test-item/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.cloze-create-a-test-item"
+          },
+          "sections": [
+            {
+              "heading": "Cloze: Create a Test Item",
+              "body": [
+                "Select the text you want to test.\nUse Cloze in the floating toolbar, or press Alt + X.\nFoliole creates an Item that asks you to remember the hidden part."
+              ]
+            }
+          ],
+          "summary": "Select the text you want to test. Use Cloze in the floating toolbar, or press Alt + X. Foliole creates an Item that asks you to remember the hidden part.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.cloze-create-a-test-item/",
+          "contentHash": "sha256:e46eca969b065172bbca34e61a24ecf97ddef07dc44aad4de98e35ef76f50008"
+        },
+        {
+          "slug": "welcome-to-foliole.test-make-it-stick",
+          "title": "Test: Make It Stick",
+          "description": "When an Item created from a cloze appears, try to recall the answer first. Then grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4). Your grade affects when it appears again, and testing itself helps strengthen memory.",
+          "canonicalPath": "/ja/guides/welcome-to-foliole.test-make-it-stick/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.test-make-it-stick/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.test-make-it-stick/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.test-make-it-stick"
+          },
+          "sections": [
+            {
+              "heading": "Test: Make It Stick",
+              "body": [
+                "When an Item created from a cloze appears, try to recall the answer first.\nThen grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4).\nYour grade affects when it appears again, and testing itself helps strengthen memory."
+              ]
+            }
+          ],
+          "summary": "When an Item created from a cloze appears, try to recall the answer first. Then grade it in the bottom action bar: choose Again if you missed it (or press 1), Hard if you partly remembered it (or press 2), Good if you remembered it (or press 3), and Easy if it was too easy (or press 4). Your grade affects when it appears again, and testing itself helps strengthen memory.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.test-make-it-stick/",
+          "contentHash": "sha256:4037f0e1dcf86034765c7e1a88ab3e91f1b779c369d90675b4c2610747427348"
+        },
+        {
+          "slug": "welcome-to-foliole.rewrite-clarify-understanding",
+          "title": "Rewrite: Clarify Understanding",
+          "description": "During later reviews, you can keep rewriting the material, making it easier to understand and remember.",
+          "canonicalPath": "/ja/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.rewrite-clarify-understanding/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.rewrite-clarify-understanding"
+          },
+          "sections": [
+            {
+              "heading": "Rewrite: Clarify Understanding",
+              "body": [
+                "During later reviews, you can keep rewriting the material, making it easier to understand and remember."
+              ]
+            }
+          ],
+          "summary": "During later reviews, you can keep rewriting the material, making it easier to understand and remember.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.rewrite-clarify-understanding/",
+          "contentHash": "sha256:d367e58cc8641360ab5b9ea6993c72fc7e7bc7a9de462919c18cff3a55786a44"
+        },
+        {
+          "slug": "welcome-to-foliole.schedule-show-it-at-the-right-time",
+          "title": "Schedule: Show It at the Right Time",
+          "description": "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time.",
+          "canonicalPath": "/ja/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.schedule-show-it-at-the-right-time"
+          },
+          "sections": [
+            {
+              "heading": "Schedule: Show It at the Right Time",
+              "body": [
+                "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time."
+              ]
+            }
+          ],
+          "summary": "Material priority, reading actions, and test grades all contribute to Foliole's schedule, helping material appear again at the right time.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.schedule-show-it-at-the-right-time/",
+          "contentHash": "sha256:d79884906de21e825e816e86468c90d8ea1702c3425e9a4dab5483f184ab9470"
+        },
+        {
+          "slug": "welcome-to-foliole.repeat-internalize-knowledge",
+          "title": "Repeat: Internalize Knowledge",
+          "description": "Spaced repetition internalizes knowledge step by step. Incremental reading makes reading actually complete. Foliole makes incremental reading smooth.",
+          "canonicalPath": "/ja/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/welcome-to-foliole.repeat-internalize-knowledge/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "welcome-to-foliole.repeat-internalize-knowledge"
+          },
+          "sections": [
+            {
+              "heading": "Repeat: Internalize Knowledge",
+              "body": [
+                "Spaced repetition internalizes knowledge step by step.\nIncremental reading makes reading actually complete.\nFoliole makes incremental reading smooth."
+              ]
+            }
+          ],
+          "summary": "Spaced repetition internalizes knowledge step by step. Incremental reading makes reading actually complete. Foliole makes incremental reading smooth.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/welcome-to-foliole.repeat-internalize-knowledge/",
+          "contentHash": "sha256:7720f2e07504941a17ae55a22490f475823806a4cd150f3e6d74219608cd00f0"
+        },
+        {
+          "slug": "what-the-foliole-demo-is-for",
+          "title": "What the Foliole Demo Is For",
+          "description": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+          "canonicalPath": "/ja/guides/what-the-foliole-demo-is-for/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/what-the-foliole-demo-is-for/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/what-the-foliole-demo-is-for/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "what-the-foliole-demo-is-for"
+          },
+          "sections": [
+            {
+              "heading": "What the Foliole Demo Is For",
+              "body": [
+                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.\nMaybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.\nMaybe you are new to incremental reading and still not sure whether it fits you.\nTo make Foliole easier to experience directly, we built this online demo.\nNo installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.\nThe online demo provides simulated dates so you can quickly experience Foliole's material scheduling. You can also open the settings panel to view the full desktop settings and understand the general shape of the complete app.\nThe online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.\nThe online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
+              ]
+            }
+          ],
+          "summary": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
+          "contentHash": "sha256:c719fbd87fac25fd7c35d27b406f26f88bb6f5d9862af9140b0c1c4e151e94e3"
         }
       ]
     }
@@ -550,11 +1782,15 @@
         "type": "script"
       },
       {
-        "path": "assets/App-CubrzGnd.js",
+        "path": "assets/App-4Q2oiBLH.js",
         "type": "script"
       },
       {
-        "path": "assets/appRuntimeCommandRepository-CvGBSK5t.js",
+        "path": "assets/appRuntimeCommandRepository-Bna3n4uR.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/appSettings-c1t7PvWq.js",
         "type": "script"
       },
       {
@@ -574,11 +1810,11 @@
         "type": "script"
       },
       {
-        "path": "assets/assetMarkdownUrl-gpVeURdz.js",
+        "path": "assets/assetMarkdownUrl-rZHPnmpg.js",
         "type": "script"
       },
       {
-        "path": "assets/attachmentResources-SoFZHgYN.js",
+        "path": "assets/attachmentResources-CQdHQNcF.js",
         "type": "script"
       },
       {
@@ -726,7 +1962,11 @@
         "type": "script"
       },
       {
-        "path": "assets/CommandPalette-C_I06osN.js",
+        "path": "assets/client-BW69omFX.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/CommandPalette-CKC2fAq-.js",
         "type": "script"
       },
       {
@@ -750,11 +1990,59 @@
         "type": "script"
       },
       {
-        "path": "assets/demoRuntime-DJZiNi99.js",
+        "path": "assets/definedProps-bj45ao0W.js",
         "type": "script"
       },
       {
-        "path": "assets/DemoSettingsPreviewOverlay-CJXASr3g.js",
+        "path": "assets/demoContent-D6lRcTCd.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoExternalFolderProvider-sY1DnsBD.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoLocalStorage-XMv4OpRU.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoMarkdownImport-04W-1S_v.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoRuntime-TRcN4NIc.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoRuntime-wk74kQFm.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoRuntimeController-BpIeL-cS.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/DemoSettingsPreviewOverlay-7lVx_nfI.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoUrlSync-cjJtVUnN.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoUrlSync-goMvUgtp.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/DemoUrlSyncBridge-CnO_Sp5f.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoWorkspaceSnapshot-CiwX6Ej4.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/demoWorkspaceSnapshot-Db8yi2Ug.js",
         "type": "script"
       },
       {
@@ -786,7 +2074,7 @@
         "type": "script"
       },
       {
-        "path": "assets/en-DVLvF9-s.js",
+        "path": "assets/en-DinZ7j0I.js",
         "type": "script"
       },
       {
@@ -798,11 +2086,19 @@
         "type": "script"
       },
       {
-        "path": "assets/externalSourceSettingsRepository-BXVNIoeS.js",
+        "path": "assets/externalFolderRuntime-B3_oLHr6.js",
         "type": "script"
       },
       {
-        "path": "assets/FeedbackDialog-DYW_yLA7.js",
+        "path": "assets/externalFolderRuntime-DY5On8Wi.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/externalSourceSettingsRepository-BhEuqyVy.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/FeedbackDialog-B0xsNKOj.js",
         "type": "script"
       },
       {
@@ -810,7 +2106,7 @@
         "type": "script"
       },
       {
-        "path": "assets/folderTopicItemCommands-DfXGzOvz.js",
+        "path": "assets/folderTopicItemCommands-DKIilrnP.js",
         "type": "script"
       },
       {
@@ -826,7 +2122,7 @@
         "type": "script"
       },
       {
-        "path": "assets/GoToNodePalette-3qQ6QQse.js",
+        "path": "assets/GoToNodePalette-DAIa-AOb.js",
         "type": "script"
       },
       {
@@ -834,7 +2130,11 @@
         "type": "script"
       },
       {
-        "path": "assets/HelpSearch-DfaiaN5d.js",
+        "path": "assets/guidedSampleContent-bBX6ruEn.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/HelpSearch-C8Q1jMW7.js",
         "type": "script"
       },
       {
@@ -842,15 +2142,11 @@
         "type": "script"
       },
       {
-        "path": "assets/importSourceWorkspaceSettings-CTPvqg5C.js",
+        "path": "assets/importSourceWorkspaceSettings-BVD0jauA.js",
         "type": "script"
       },
       {
-        "path": "assets/index-Cz73rdcY.css",
-        "type": "style"
-      },
-      {
-        "path": "assets/index-DPTPsTeU.js",
+        "path": "assets/index-D8D_4OF9.js",
         "type": "script"
       },
       {
@@ -882,7 +2178,7 @@
         "type": "script"
       },
       {
-        "path": "assets/libraryPathsRuntimeRepository-CnqLXrLw.js",
+        "path": "assets/libraryPathsRuntimeRepository-CvK-f5cB.js",
         "type": "script"
       },
       {
@@ -894,16 +2190,24 @@
         "type": "script"
       },
       {
-        "path": "assets/linkPanelViewport-CeRU-ecB.js",
+        "path": "assets/LinkPanelStack-DP2z-ykV.js",
         "type": "script"
       },
       {
-        "path": "assets/linkPanelViewport-DS9MGdSF.css",
+        "path": "assets/linkPanelViewport-VUJWIKGe.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/LocalizationProvider-nSFeIxRn.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/MarkdownEditor-BCGSp_PZ.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/MarkdownEditor-DS9MGdSF.css",
         "type": "style"
-      },
-      {
-        "path": "assets/LocalizationProvider-C_VDsjBf.js",
-        "type": "script"
       },
       {
         "path": "assets/markdownImageReferences-C2xO3xmy.js",
@@ -938,11 +2242,11 @@
         "type": "script"
       },
       {
-        "path": "assets/nodeReviewSettings-BU4K3hMt.js",
+        "path": "assets/nodeReviewSettings-DlN1rG1h.js",
         "type": "script"
       },
       {
-        "path": "assets/nodeSourceRuntimeRepository-YQ5hFDOO.js",
+        "path": "assets/nodeSourceRuntimeRepository-Cc506_49.js",
         "type": "script"
       },
       {
@@ -962,7 +2266,7 @@
         "type": "script"
       },
       {
-        "path": "assets/PdfDocumentSurface-CAQIw8YH.js",
+        "path": "assets/PdfDocumentSurface-BnsyNDgs.js",
         "type": "script"
       },
       {
@@ -970,7 +2274,7 @@
         "type": "style"
       },
       {
-        "path": "assets/pdfSystemRegistry-Co2-vwfr.js",
+        "path": "assets/pdfSystemRegistry-DDxF4WJl.js",
         "type": "script"
       },
       {
@@ -994,6 +2298,18 @@
         "type": "script"
       },
       {
+        "path": "assets/react-3y62w7UC.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/react-Dlm6W05j.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/react-dom-B5NynHRD.js",
+        "type": "script"
+      },
+      {
         "path": "assets/requirementDiagram-4Y6WPE33-BxRndiV2.js",
         "type": "script"
       },
@@ -1002,15 +2318,15 @@
         "type": "script"
       },
       {
-        "path": "assets/reviewSchedulerSettings-CHqBysqJ.js",
+        "path": "assets/reviewSchedulerSettings-C_4od2An.js",
         "type": "script"
       },
       {
-        "path": "assets/ReviewSourceTopicDeleteDialog-CNgnoSXg.js",
+        "path": "assets/ReviewSourceTopicDeleteDialog-lTZpwklJ.js",
         "type": "script"
       },
       {
-        "path": "assets/ReviewTopicDelayPanel-DxqlVuEd.js",
+        "path": "assets/ReviewTopicDelayPanel-D3tC2958.js",
         "type": "script"
       },
       {
@@ -1018,7 +2334,15 @@
         "type": "script"
       },
       {
-        "path": "assets/runtimeLogging-DfkWYeOU.js",
+        "path": "assets/runtimeExternalNavigation-eSdrCHxo.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/runtimeInvoke-Bu52-O3L.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/runtimeLogging-DfWkIUBa.js",
         "type": "script"
       },
       {
@@ -1026,15 +2350,15 @@
         "type": "script"
       },
       {
-        "path": "assets/searchEnhancementSettings-RL3iQX62.js",
+        "path": "assets/searchEnhancementSettings-B6mPIMp9.js",
         "type": "script"
       },
       {
-        "path": "assets/SearchPalette-BCDNZwvU.js",
+        "path": "assets/SearchPalette-C9_DXLxP.js",
         "type": "script"
       },
       {
-        "path": "assets/SearchResultPreviewPanel-D1trcSJN.js",
+        "path": "assets/SearchResultPreviewPanel-Dp0xiLwJ.js",
         "type": "script"
       },
       {
@@ -1042,7 +2366,7 @@
         "type": "script"
       },
       {
-        "path": "assets/SettingsPanel-u5KdO8wE.js",
+        "path": "assets/SettingsPanel-CWGzYoDz.js",
         "type": "script"
       },
       {
@@ -1062,6 +2386,10 @@
         "type": "script"
       },
       {
+        "path": "assets/styles-B0oWtn9g.css",
+        "type": "style"
+      },
+      {
         "path": "assets/timeline-definition-PNZ67QCA-DSxoU--J.js",
         "type": "script"
       },
@@ -1078,19 +2406,19 @@
         "type": "script"
       },
       {
-        "path": "assets/ui-BOZm3y3t.js",
+        "path": "assets/ui-CzMUFVk-.js",
         "type": "script"
       },
       {
-        "path": "assets/updateCheck-B_3cJvKC.js",
+        "path": "assets/updateCheck-Bya6xpcw.js",
         "type": "script"
       },
       {
-        "path": "assets/useFloatingPaletteEscape-BvpzqKty.js",
+        "path": "assets/useFloatingPaletteEscape-CyvTuMpY.js",
         "type": "script"
       },
       {
-        "path": "assets/useNodeBacklinks-CKTy7G4W.js",
+        "path": "assets/useNodeBacklinks-DEbvz6Gj.js",
         "type": "script"
       },
       {
@@ -1110,7 +2438,7 @@
         "type": "script"
       },
       {
-        "path": "assets/workspaceInputLagRenderDiagnostic-B02yummq.js",
+        "path": "assets/workspaceInputLagRenderDiagnostic-CJGLGEHN.js",
         "type": "script"
       },
       {
@@ -1122,43 +2450,55 @@
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarBacklinksPanel-aomQFK6c.js",
+        "path": "assets/workspaceMutationRepository-BYpCsAEb.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarDevPanel-BFrQBvpa.js",
+        "path": "assets/workspaceMutationRepository-DZwfHulA.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarHighlightsPanel-CvnibSGb.js",
+        "path": "assets/workspaceRendererBoundary-BfvatZR3.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarOutlinePanel-B7JC_Vft.js",
+        "path": "assets/WorkspaceRightSidebarBacklinksPanel-KxtMaseG.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarPerformancePanel-C2HXQ8T8.js",
+        "path": "assets/WorkspaceRightSidebarDevPanel-CXrkWVIY.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceRightSidebarReviewQueueDays-B8sLYifu.js",
+        "path": "assets/WorkspaceRightSidebarHighlightsPanel-BVGhopvN.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarReviewQueuePanel-Bk5FNoQT.js",
+        "path": "assets/WorkspaceRightSidebarOutlinePanel-CHBzb41K.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceRuntimeMutationResults-BV2rYYlT.js",
+        "path": "assets/WorkspaceRightSidebarPerformancePanel-w3uqXRGq.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceSettingsOverlayContent-CvPjQz2b.js",
+        "path": "assets/workspaceRightSidebarReviewQueueDays--dzv3YlL.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceStore-CV1vvSJ_.js",
+        "path": "assets/WorkspaceRightSidebarReviewQueuePanel-DY79n4W5.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceRuntimeMutationResults-CDOiEfwt.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceSettingsOverlayContent-CgiDq6nv.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceStore-zTapSFcI.js",
         "type": "script"
       },
       {
@@ -1166,7 +2506,7 @@
         "type": "script"
       },
       {
-        "path": "assets/zhHans-CUiG4hMw.js",
+        "path": "assets/zhHans-BeHnDcNQ.js",
         "type": "script"
       }
     ]

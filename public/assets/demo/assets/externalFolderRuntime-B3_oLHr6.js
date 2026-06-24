@@ -1,0 +1,1 @@
+import{n as e,r as t,t as n}from"./externalFolderRuntime-DY5On8Wi.js";export{n as getExternalFolderRuntimeProvider,e as installExternalFolderRuntimeProvider,t as resetExternalFolderRuntimeProviderForTest};

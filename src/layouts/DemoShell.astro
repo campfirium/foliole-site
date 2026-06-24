@@ -1,16 +1,21 @@
 ---
-const { title, description, topics, topic, runtime, canonicalPath, alternates, hreflang = 'en', pageKind = 'article' } = Astro.props;
+const { title, description, topics, topic, runtime, canonicalPath, alternates, xDefaultPath, hreflang = 'en', pageKind = 'article' } = Astro.props;
 
 const allTopics = topics ?? [];
 const currentTopic = topic ?? allTopics[0];
 const pageTitle = title === 'Foliole Demo' ? title : `${title} - Foliole Demo`;
 const pageDescription = description ?? currentTopic?.description ?? 'Try Foliole with a guided Demo workspace.';
-const pagePath = canonicalPath ?? currentTopic?.canonicalPath ?? '/demo/';
+const pagePath = canonicalPath ?? currentTopic?.canonicalPath ?? '/en/demo/';
 const canonicalUrl = new URL(pagePath, Astro.site).toString();
 const runtimeAssets = runtime?.assets ?? [];
 const styleAssets = runtimeAssets.filter((asset) => asset.type === 'style');
 const scriptAssets = runtimeAssets.filter((asset) => asset.type === 'script');
+const entryScriptAssets = scriptAssets.filter((asset) => /^assets\/index-[A-Za-z0-9_-]+\.js$/.test(asset.path));
+if (scriptAssets.length > 0 && entryScriptAssets.length !== 1) {
+  throw new Error(`Expected exactly one Demo entry script, found ${entryScriptAssets.length}.`);
+}
 const alternateLinks = alternates ?? currentTopic?.alternates ?? [];
+const defaultAlternatePath = xDefaultPath ?? currentTopic?.xDefaultPath ?? '/en/demo/';
 ---
 
 <!doctype html>
@@ -26,14 +31,14 @@ const alternateLinks = alternates ?? currentTopic?.alternates ?? [];
     <meta property="og:image" content="https://foliole.app/assets/brand/foliole-app-icon.svg">
     <link rel="canonical" href={canonicalUrl}>
     {alternateLinks.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={new URL(alternate.path, Astro.site).toString()} />)}
-    <link rel="alternate" hreflang="x-default" href={new URL('/demo/', Astro.site).toString()}>
+    <link rel="alternate" hreflang="x-default" href={new URL(defaultAlternatePath, Astro.site).toString()}>
     <link rel="icon" href="/assets/brand/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="/styles.css?v=000020">
     {styleAssets.map((asset) => <link rel="stylesheet" href={`/assets/demo/${asset.path}`} />)}
-    {scriptAssets.map((asset) => <script type="module" src={`/assets/demo/${asset.path}`}></script>)}
+    {entryScriptAssets.map((asset) => <script type="module" src={`/assets/demo/${asset.path}`}></script>)}
   </head>
   <body class="demo-body">
     <main aria-label="Foliole Demo" class="foliole-demo-runtime">
