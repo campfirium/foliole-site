@@ -4,7 +4,7 @@ const { title, description, topics, topic, runtime, canonicalPath, alternates, x
 const allTopics = topics ?? [];
 const currentTopic = topic ?? allTopics[0];
 const pageTitle = title === 'Foliole Demo' ? title : `${title} - Foliole Demo`;
-const pageDescription = description ?? currentTopic?.description ?? 'Try Foliole with a guided Demo workspace.';
+const pageDescription = description ?? currentTopic?.description ?? "Try Foliole's core incremental reading flow in your browser.";
 const pagePath = canonicalPath ?? currentTopic?.canonicalPath ?? '/en/demo/';
 const canonicalUrl = new URL(pagePath, Astro.site).toString();
 const runtimeAssets = runtime?.assets ?? [];
