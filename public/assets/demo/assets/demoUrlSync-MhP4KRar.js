@@ -1,0 +1,1 @@
+import{i as e,n as t,r as n,t as r}from"./demoUrlSync-9TLiVl3c.js";export{r as demoPathSegmentFromLocale,t as installDemoUrlSync,n as resolveDemoLanguagePreferenceFromPath,e as syncDemoUrlToNode};
