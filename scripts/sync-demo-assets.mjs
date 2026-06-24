@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = path.resolve(process.env.FOLIOLE_DEMO_DIST ?? path.join(root, '..', 'foliole', 'dist', 'demo'));
 const targetDir = path.join(root, 'public', 'assets', 'demo');
+const targetManifestPath = path.join(targetDir, 'demo-manifest.json');
 
 function assertRelativeAssetPath(value) {
   if (typeof value !== 'string' || !value.startsWith('assets/') || value.includes('..') || path.isAbsolute(value)) {
@@ -47,6 +48,14 @@ async function readSourceManifest() {
   return manifest;
 }
 
+async function shouldUseCommittedDemoAssets() {
+  if (process.env.GITHUB_PAGES !== 'true') return false;
+  if (process.env.FOLIOLE_DEMO_DIST) return false;
+  if (!(await pathExists(targetManifestPath))) return false;
+  console.log('[demo:sync] using committed Demo assets for GitHub Pages build');
+  return true;
+}
+
 async function validateSourceArtifact(manifest) {
   if (!(await pathExists(path.join(sourceDir, manifest.runtime.entry)))) {
     throw new Error(`Missing Demo runtime entry: ${manifest.runtime.entry}`);
@@ -64,6 +73,8 @@ async function validateSourceArtifact(manifest) {
 }
 
 async function main() {
+  if (await shouldUseCommittedDemoAssets()) return;
+
   const manifest = await readSourceManifest();
   await validateSourceArtifact(manifest);
   await rm(targetDir, { recursive: true, force: true });
