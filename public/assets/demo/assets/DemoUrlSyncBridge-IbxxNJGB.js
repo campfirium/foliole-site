@@ -1,1 +1,0 @@
-import{r as e}from"./chunk-QTnfLwEv.js";import{t}from"./react-3y62w7UC.js";import{n}from"./LocalizationProvider-zl1IK5jR.js";import{r}from"./workspaceStore-zTapSFcI.js";import{i,t as a}from"./demoUrlSync-9TLiVl3c.js";var o=e(t(),1);function s(){let{locale:e}=n(),t=r(e=>e.activeNodeId);return(0,o.useEffect)(()=>{i(t,a(e))},[t,e]),null}export{s as DemoUrlSyncBridge};
