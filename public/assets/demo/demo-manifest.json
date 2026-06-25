@@ -1,7 +1,7 @@
 {
   "contractVersion": 3,
-  "generatedAt": "2026-06-25T01:57:34.755Z",
-  "buildHash": "sha256:957868c80010d7c0b11457060182d01af98d853b70d73c64fac4882592ce4432",
+  "generatedAt": "2026-06-25T02:06:19.037Z",
+  "buildHash": "sha256:2b4c5a0b3b82c76674f821389ff624d65c900c9b249950bdcd8f5a9bf57581de",
   "publishedLocales": [
     {
       "locale": "en",
@@ -160,14 +160,15 @@
             {
               "heading": "Highlight: Extract the Essence",
               "body": [
-                "Select the text you want to extract. The floating toolbar will appear.\nUse Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
+                "Select the text you want to extract. The floating toolbar will appear.",
+                "Use Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
               ]
             }
           ],
           "summary": "Select the text you want to extract. The floating toolbar will appear.",
           "demoPath": "/en/demo/",
           "xDefaultPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
-          "contentHash": "sha256:1298dc4e7468440c48ca0bf63324ef099190880aba06904d8df52726395f3de8"
+          "contentHash": "sha256:69adf3a4fb84e7b11c703d5eb36fb9e74cf6883b8f7a1a4722680fd35228b08f"
         },
         {
           "slug": "welcome-to-foliole.cloze-create-a-test-item",
@@ -448,14 +449,21 @@
             {
               "heading": "What the Foliole Demo Is For",
               "body": [
-                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.\nMaybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.\nMaybe you are new to incremental reading and still not sure whether it fits you.\nTo make Foliole easier to experience directly, we built this online demo.\nNo installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.\nThe online demo provides simulated dates so you can quickly experience Foliole's material scheduling. The settings panel includes a Desktop Settings Preview: this panel shows the full desktop settings, so you can understand Foliole’s feature structure. Changes there do not affect the online demo.\nThe online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.\nThe online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
+                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+                "Maybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.",
+                "Maybe you are new to incremental reading and still not sure whether it fits you.",
+                "To make Foliole easier to experience directly, we built this online demo.",
+                "No installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.",
+                "The online demo provides simulated dates so you can quickly experience Foliole's material scheduling. The settings panel includes a Desktop Settings Preview: this panel shows the full desktop settings, so you can understand Foliole’s feature structure. Changes there do not affect the online demo.",
+                "The online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.",
+                "The online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
               ]
             }
           ],
           "summary": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
           "demoPath": "/en/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
-          "contentHash": "sha256:a256fde8d81906af7ed08d840b2f067862fe7d0a71ee65b15fb718ba598a791f"
+          "contentHash": "sha256:9535b19fef833ef8b6702521c0099a1e574e259356b4b3406d8fc8cce0056255"
         }
       ]
     },
@@ -886,14 +894,21 @@
             {
               "heading": "在线体验 Foliole",
               "body": [
-                "也许你是 SuperMemo 的老用户，想看看 Foliole 有什么不同。\n也许你正重度使用 Obsidian 等阅读和笔记工具，希望材料不止于阅读和标注。\n也许你只是第一次听说渐进阅读，还不确定它适不适合自己。\n为了让你更直观地体验 Foliole，我们专门构建了这套在线体验版。\n无需安装，打开网页即可直接体验。你可以在这里阅读 Foliole Guides（后续会持续更新），也可以导入自己的 Markdown 文档，进行渐进阅读的核心流程操作。\n在线体验版提供了模拟日期功能，方便你快速体验 Foliole 的材料调度。设置面板中的「桌面端设置预览」展示桌面版的完整设置，方便了解 Foliole 的功能结构。这里的调整不会影响在线体验版。\n在线体验版将数据保存在浏览器本地，请勿作为唯一备份。它也不具备桌面版的多项核心功能，包括 PDF / EPUB / 图片阅览、外部文档库、搜索增强、Obsidian 集成、Readwise Reader 集成、Markdown 镜像、局域网同步等。\n在线体验版会随着桌面端继续更新，也可能出现与桌面端不同的问题。可以通过左侧功能区入口直接提交反馈，也欢迎在 GitHub 关注项目进展、提交问题或参与交流。"
+                "也许你是 SuperMemo 的老用户，想看看 Foliole 有什么不同。",
+                "也许你正重度使用 Obsidian 等阅读和笔记工具，希望材料不止于阅读和标注。",
+                "也许你只是第一次听说渐进阅读，还不确定它适不适合自己。",
+                "为了让你更直观地体验 Foliole，我们专门构建了这套在线体验版。",
+                "无需安装，打开网页即可直接体验。你可以在这里阅读 Foliole Guides（后续会持续更新），也可以导入自己的 Markdown 文档，进行渐进阅读的核心流程操作。",
+                "在线体验版提供了模拟日期功能，方便你快速体验 Foliole 的材料调度。设置面板中的「桌面端设置预览」展示桌面版的完整设置，方便了解 Foliole 的功能结构。这里的调整不会影响在线体验版。",
+                "在线体验版将数据保存在浏览器本地，请勿作为唯一备份。它也不具备桌面版的多项核心功能，包括 PDF / EPUB / 图片阅览、外部文档库、搜索增强、Obsidian 集成、Readwise Reader 集成、Markdown 镜像、局域网同步等。",
+                "在线体验版会随着桌面端继续更新，也可能出现与桌面端不同的问题。可以通过左侧功能区入口直接提交反馈，也欢迎在 GitHub 关注项目进展、提交问题或参与交流。"
               ]
             }
           ],
           "summary": "也许你是 SuperMemo 的老用户，想看看 Foliole 有什么不同。",
           "demoPath": "/zh-hans/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
-          "contentHash": "sha256:23effe398d7385d0d543e3dcf96a8faa9c860936e8d000f13aa4d5e223314719"
+          "contentHash": "sha256:158a6c0ef5ccad01a8c0d172ab70db1b4c104a5a4625245deed2af90c869abfc"
         }
       ]
     },
@@ -1036,14 +1051,15 @@
             {
               "heading": "Highlight: Extract the Essence",
               "body": [
-                "Select the text you want to extract. The floating toolbar will appear.\nUse Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
+                "Select the text you want to extract. The floating toolbar will appear.",
+                "Use Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
               ]
             }
           ],
           "summary": "Select the text you want to extract. The floating toolbar will appear.",
           "demoPath": "/zh-hant/demo/",
           "xDefaultPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
-          "contentHash": "sha256:1298dc4e7468440c48ca0bf63324ef099190880aba06904d8df52726395f3de8"
+          "contentHash": "sha256:69adf3a4fb84e7b11c703d5eb36fb9e74cf6883b8f7a1a4722680fd35228b08f"
         },
         {
           "slug": "welcome-to-foliole.cloze-create-a-test-item",
@@ -1324,14 +1340,21 @@
             {
               "heading": "What the Foliole Demo Is For",
               "body": [
-                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.\nMaybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.\nMaybe you are new to incremental reading and still not sure whether it fits you.\nTo make Foliole easier to experience directly, we built this online demo.\nNo installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.\nThe online demo provides simulated dates so you can quickly experience Foliole's material scheduling. The settings panel includes a Desktop Settings Preview: this panel shows the full desktop settings, so you can understand Foliole’s feature structure. Changes there do not affect the online demo.\nThe online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.\nThe online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
+                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+                "Maybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.",
+                "Maybe you are new to incremental reading and still not sure whether it fits you.",
+                "To make Foliole easier to experience directly, we built this online demo.",
+                "No installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.",
+                "The online demo provides simulated dates so you can quickly experience Foliole's material scheduling. The settings panel includes a Desktop Settings Preview: this panel shows the full desktop settings, so you can understand Foliole’s feature structure. Changes there do not affect the online demo.",
+                "The online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.",
+                "The online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
               ]
             }
           ],
           "summary": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
           "demoPath": "/zh-hant/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
-          "contentHash": "sha256:a256fde8d81906af7ed08d840b2f067862fe7d0a71ee65b15fb718ba598a791f"
+          "contentHash": "sha256:9535b19fef833ef8b6702521c0099a1e574e259356b4b3406d8fc8cce0056255"
         }
       ]
     },
@@ -1474,14 +1497,15 @@
             {
               "heading": "Highlight: Extract the Essence",
               "body": [
-                "Select the text you want to extract. The floating toolbar will appear.\nUse Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
+                "Select the text you want to extract. The floating toolbar will appear.",
+                "Use Highlight there, or press Alt + Z, to highlight the passage and create a new child Topic."
               ]
             }
           ],
           "summary": "Select the text you want to extract. The floating toolbar will appear.",
           "demoPath": "/ja/demo/",
           "xDefaultPath": "/en/guides/welcome-to-foliole.highlight-extract-the-essence/",
-          "contentHash": "sha256:1298dc4e7468440c48ca0bf63324ef099190880aba06904d8df52726395f3de8"
+          "contentHash": "sha256:69adf3a4fb84e7b11c703d5eb36fb9e74cf6883b8f7a1a4722680fd35228b08f"
         },
         {
           "slug": "welcome-to-foliole.cloze-create-a-test-item",
@@ -1762,14 +1786,21 @@
             {
               "heading": "What the Foliole Demo Is For",
               "body": [
-                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.\nMaybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.\nMaybe you are new to incremental reading and still not sure whether it fits you.\nTo make Foliole easier to experience directly, we built this online demo.\nNo installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.\nThe online demo provides simulated dates so you can quickly experience Foliole's material scheduling. The settings panel includes a Desktop Settings Preview: this panel shows the full desktop settings, so you can understand Foliole’s feature structure. Changes there do not affect the online demo.\nThe online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.\nThe online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
+                "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
+                "Maybe you use Obsidian or other reading and note-taking tools heavily, and want your material to go beyond reading and highlighting.",
+                "Maybe you are new to incremental reading and still not sure whether it fits you.",
+                "To make Foliole easier to experience directly, we built this online demo.",
+                "No installation is required. Open the page and start trying it in your browser. You can read the Foliole Guides here, which will continue to be updated over time, or import your own Markdown documents and work through the core incremental reading flow.",
+                "The online demo provides simulated dates so you can quickly experience Foliole's material scheduling. The settings panel includes a Desktop Settings Preview: this panel shows the full desktop settings, so you can understand Foliole’s feature structure. Changes there do not affect the online demo.",
+                "The online demo stores data locally in your browser, so please do not treat it as your only backup. It also does not include many core desktop features, including PDF / EPUB / image viewing, external document libraries, enhanced search, Obsidian integration, Readwise Reader integration, Markdown mirrors, LAN sync, and more.",
+                "The online demo will continue to update alongside the desktop app, and it may have issues that differ from the desktop version. You can submit feedback directly from the left sidebar, and you are also welcome to follow the project, report issues, or join the discussion on GitHub."
               ]
             }
           ],
           "summary": "Maybe you are a longtime SuperMemo user and want to see how Foliole is different.",
           "demoPath": "/ja/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
-          "contentHash": "sha256:a256fde8d81906af7ed08d840b2f067862fe7d0a71ee65b15fb718ba598a791f"
+          "contentHash": "sha256:9535b19fef833ef8b6702521c0099a1e574e259356b4b3406d8fc8cce0056255"
         }
       ]
     }
@@ -1994,7 +2025,7 @@
         "type": "script"
       },
       {
-        "path": "assets/demoContent-xN4w_SLF.js",
+        "path": "assets/demoContent-uGVah8g4.js",
         "type": "script"
       },
       {
@@ -2018,7 +2049,7 @@
         "type": "script"
       },
       {
-        "path": "assets/demoRuntimeController-CL7evjVF.js",
+        "path": "assets/demoRuntimeController-lVu_kxRH.js",
         "type": "script"
       },
       {
@@ -2026,23 +2057,23 @@
         "type": "script"
       },
       {
-        "path": "assets/demoUrlSync-Bk0bGzfY.js",
+        "path": "assets/demoUrlSync-B6UqB6wH.js",
         "type": "script"
       },
       {
-        "path": "assets/demoUrlSync-CJoSDsZv.js",
+        "path": "assets/demoUrlSync-D_At7BDn.js",
         "type": "script"
       },
       {
-        "path": "assets/DemoUrlSyncBridge-BG0pjjJa.js",
+        "path": "assets/DemoUrlSyncBridge-m3nRw2aY.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-3zw8Fq4G.js",
+        "path": "assets/demoWorkspaceSnapshot-BH_cruB0.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-CaVIS_Qz.js",
+        "path": "assets/demoWorkspaceSnapshot-DxG8sOLl.js",
         "type": "script"
       },
       {
@@ -2146,7 +2177,7 @@
         "type": "script"
       },
       {
-        "path": "assets/index-C2ubQKqf.js",
+        "path": "assets/index-DOdczY96.js",
         "type": "script"
       },
       {
