@@ -1,7 +1,7 @@
 {
   "contractVersion": 3,
-  "generatedAt": "2026-06-25T02:06:19.037Z",
-  "buildHash": "sha256:2b4c5a0b3b82c76674f821389ff624d65c900c9b249950bdcd8f5a9bf57581de",
+  "generatedAt": "2026-06-25T02:38:51.686Z",
+  "buildHash": "sha256:5c0b57b72a74e067dcf34d8a86c5fcd815a29f7e4bec759d824a6c594a77c2cf",
   "publishedLocales": [
     {
       "locale": "en",
@@ -2029,11 +2029,11 @@
         "type": "script"
       },
       {
-        "path": "assets/demoExternalFolderProvider-BPvnhKAM.js",
+        "path": "assets/demoExternalFolderProvider-CilrM37x.js",
         "type": "script"
       },
       {
-        "path": "assets/demoLocalStorage-BfpLpgGz.js",
+        "path": "assets/demoLocalStorage-CYg88Ugc.js",
         "type": "script"
       },
       {
@@ -2049,7 +2049,7 @@
         "type": "script"
       },
       {
-        "path": "assets/demoRuntimeController-lVu_kxRH.js",
+        "path": "assets/demoRuntimeController-CJacF50L.js",
         "type": "script"
       },
       {
@@ -2069,11 +2069,11 @@
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-BH_cruB0.js",
+        "path": "assets/demoWorkspaceSnapshot-BTIJT9Sf.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-DxG8sOLl.js",
+        "path": "assets/demoWorkspaceSnapshot-Dig9mk_A.js",
         "type": "script"
       },
       {
@@ -2177,7 +2177,7 @@
         "type": "script"
       },
       {
-        "path": "assets/index-DOdczY96.js",
+        "path": "assets/index-C5X9mk1Y.js",
         "type": "script"
       },
       {
