@@ -1,9 +1,13 @@
-import { cp, mkdir, readFile, rm } from 'node:fs/promises';
+import { chmod, cp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const sourceDir = path.resolve(process.env.FOLIOLE_DEMO_DIST ?? path.join(root, '..', 'foliole', 'dist', 'demo'));
+const sourceCandidates = [
+  process.env.FOLIOLE_DEMO_DIST,
+  path.join(root, '..', 'foliole', 'dist', 'demo'),
+  '/mnt/d/C/foliole/dist/demo'
+].filter(Boolean);
 const targetDir = path.join(root, 'public', 'assets', 'demo');
 const targetManifestPath = path.join(targetDir, 'demo-manifest.json');
 
@@ -24,14 +28,23 @@ async function pathExists(filePath) {
 }
 
 async function readSourceManifest() {
-  const manifestPath = path.join(sourceDir, 'demo-manifest.json');
-  let manifest;
-  try {
-    manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
-  } catch (error) {
-    throw new Error(`Unable to read Demo manifest at ${manifestPath}: ${error.message}`);
+  const errors = [];
+  for (const candidate of sourceCandidates) {
+    const sourceDir = path.resolve(candidate);
+    const manifestPath = path.join(sourceDir, 'demo-manifest.json');
+    try {
+      return {
+        manifest: JSON.parse(await readFile(manifestPath, 'utf8')),
+        sourceDir
+      };
+    } catch (error) {
+      errors.push(`${manifestPath}: ${error.message}`);
+    }
   }
+  throw new Error(`Unable to read Demo manifest from any source:\n${errors.join('\n')}`);
+}
 
+function validateManifest(manifest) {
   if (manifest.contractVersion !== 3) {
     throw new Error(`Unsupported Demo manifest contractVersion: ${manifest.contractVersion}`);
   }
@@ -44,8 +57,9 @@ async function readSourceManifest() {
   if (!Array.isArray(manifest.localePublishPacks) || manifest.localePublishPacks.length === 0) {
     throw new Error('Demo manifest must include locale publish packs.');
   }
-
-  return manifest;
+  if (!Array.isArray(manifest.publishedLocales) || manifest.publishedLocales.length === 0) {
+    throw new Error('Demo manifest must include published locales.');
+  }
 }
 
 async function shouldUseCommittedDemoAssets() {
@@ -56,7 +70,7 @@ async function shouldUseCommittedDemoAssets() {
   return true;
 }
 
-async function validateSourceArtifact(manifest) {
+async function validateSourceArtifact(sourceDir, manifest) {
   if (!(await pathExists(path.join(sourceDir, manifest.runtime.entry)))) {
     throw new Error(`Missing Demo runtime entry: ${manifest.runtime.entry}`);
   }
@@ -75,11 +89,24 @@ async function validateSourceArtifact(manifest) {
 async function main() {
   if (await shouldUseCommittedDemoAssets()) return;
 
-  const manifest = await readSourceManifest();
-  await validateSourceArtifact(manifest);
+  const { manifest, sourceDir } = await readSourceManifest();
+  validateManifest(manifest);
+  await validateSourceArtifact(sourceDir, manifest);
   await rm(targetDir, { recursive: true, force: true });
   await mkdir(path.dirname(targetDir), { recursive: true });
   await cp(sourceDir, targetDir, { recursive: true });
+  await normalizeFileModes(targetDir);
+}
+
+async function normalizeFileModes(dir) {
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    const entryPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      await normalizeFileModes(entryPath);
+    } else if (entry.isFile()) {
+      await chmod(entryPath, 0o644);
+    }
+  }
 }
 
 main().catch((error) => {

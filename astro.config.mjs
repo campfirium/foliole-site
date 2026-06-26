@@ -75,6 +75,10 @@ export default defineConfig({
       },
       namespaces: {
         xhtml: true
+      },
+      filter: (page) => {
+        const pathname = new URL(page).pathname;
+        return pathname !== '/demo/' && pathname !== '/guide/' && pathname !== '/guides/' && !pathname.startsWith('/guides/');
       }
     }),
     preserveRootPublishedAssets()
