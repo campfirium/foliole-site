@@ -780,8 +780,7 @@ h1 {
   pointer-events: none;
 }
 
-:root[data-theme-mode="system"][data-theme="light"] .theme-icon-light,
-:root[data-theme-mode="system"][data-theme="dark"] .theme-icon-dark,
+:root[data-theme-mode="system"] .theme-icon-system,
 :root[data-theme-mode="light"] .theme-icon-light,
 :root[data-theme-mode="dark"] .theme-icon-dark {
   display: block;
