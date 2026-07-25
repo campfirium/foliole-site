@@ -13,15 +13,16 @@
   "hero": {
     "title": "Faire que la lecture aille vraiment jusqu'au bout",
     "subtitle": "Une application accessible de lecture incrémentale",
-    "cta": "Télécharger l'alpha Windows",
+    "downloadMacos": "Télécharger l’Alpha macOS",
+    "downloadWindows": "Télécharger l’Alpha Windows",
+    "sourcePrefix": "Programmes d’installation hébergés sur",
+    "sourceLink": "GitHub Releases",
     "actionsLabel": "Liens de téléchargement et de code source",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Disponibilité prévue des plateformes",
-    "windows": "L'alpha Windows est ouverte aux tests",
-    "android": "L'alpha Android est attendue autour de juillet",
-    "apple": "Les builds alpha pour macOS et iOS sont attendues autour d'août"
+    "mobile": "La version Alpha pour iOS et la version Alpha pour Android sont prévues en août"
   },
   "video": {
     "demo": "Démo",

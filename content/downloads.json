@@ -1,0 +1,14 @@
+{
+  "version": "0.7.0",
+  "tag": "v0.7.0",
+  "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.0",
+  "allReleasesUrl": "https://github.com/campfirium/foliole/releases",
+  "macos": {
+    "assetName": "Foliole-0.7.0-mac-arm64.dmg",
+    "url": "https://github.com/campfirium/foliole/releases/download/v0.7.0/Foliole-0.7.0-mac-arm64.dmg"
+  },
+  "windows": {
+    "assetName": "Foliole-Setup-0.7.0-win-x64.exe",
+    "url": "https://github.com/campfirium/foliole/releases/download/v0.7.0/Foliole-Setup-0.7.0-win-x64.exe"
+  }
+}

@@ -282,6 +282,17 @@ h1 {
   background: var(--primary-hover);
 }
 
+.button.platform-download:not(.primary) {
+  border-color: var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.button.platform-download:not(.primary):hover,
+.button.platform-download:not(.primary):focus-visible {
+  border-color: var(--focus);
+}
+
 :root[data-theme="dark"] .button.primary {
   background: #143b44;
   border-color: rgba(252, 246, 225, 0.18);
@@ -346,6 +357,34 @@ h1 {
 .release-platform span {
   color: var(--muted);
   font-weight: 430;
+}
+
+.download-source,
+.platform-status-line {
+  width: 100%;
+  color: var(--muted);
+}
+
+.download-source {
+  margin-top: 0.1rem;
+  font-size: clamp(0.86rem, 0.92vw, 1rem);
+}
+
+.download-source a {
+  color: inherit;
+  font-weight: 650;
+  text-underline-offset: 0.16em;
+}
+
+.download-source a:hover,
+.download-source a:focus-visible {
+  color: var(--ink);
+}
+
+.platform-status-line {
+  margin-top: clamp(0.65rem, 1vw, 1rem);
+  font-size: clamp(1rem, 1.08vw, 1.14rem);
+  font-weight: 500;
 }
 
 .hero-shot {

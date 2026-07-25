@@ -5,6 +5,7 @@ const root = process.cwd();
 const siteUrl = 'https://foliole.app';
 const languagePreferenceKey = 'foliole-language-manual';
 const demoManifestPath = path.join(root, 'public', 'assets', 'demo', 'demo-manifest.json');
+const downloadsPath = path.join(root, 'content', 'downloads.json');
 const demoFallbackLocale = 'en';
 const demoSiteLocaleMap = new Map([
   ['zh-hans', 'zh-hans']
@@ -74,6 +75,10 @@ async function readDemoManifest() {
   } catch {
     return null;
   }
+}
+
+async function readDownloads() {
+  return JSON.parse(await readFile(downloadsPath, 'utf8'));
 }
 
 function demoLocale(locale) {
@@ -177,6 +182,7 @@ export async function renderHomePage(localeId) {
 
   const template = await readFile(path.join(root, 'templates', 'page.html'), 'utf8');
   const demoManifest = await readDemoManifest();
+  const downloads = await readDownloads();
   const contentEntries = await Promise.all(locales.map(async (entry) => [entry.id, await readContent(entry)]));
   const contents = Object.fromEntries(contentEntries);
   const reference = contents.en;
@@ -193,6 +199,9 @@ export async function renderHomePage(localeId) {
       ogLocale: locale.ogLocale,
       demoHref: demoHref(locale, demoManifest),
       guidesHref: guidesHref(locale, demoManifest),
+      macosDownloadHref: downloads.macos.url,
+      windowsDownloadHref: downloads.windows.url,
+      releaseHref: downloads.releaseUrl,
       alternates: renderAlternateLinks(),
       languageMenu: renderLanguageMenu(locale),
       localeRedirectScript: renderLocaleRedirectScript(locale),

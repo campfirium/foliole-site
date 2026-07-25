@@ -13,15 +13,16 @@
   "hero": {
     "title": "让阅读真正完成",
     "subtitle": "一款现代的渐进阅读软件",
-    "cta": "下载 Windows Alpha",
+    "downloadMacos": "下载 macOS Alpha",
+    "downloadWindows": "下载 Windows Alpha",
+    "sourcePrefix": "安装文件托管于",
+    "sourceLink": "GitHub Releases",
     "actionsLabel": "下载与源码链接",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "即将支持的平台",
-    "windows": "Windows alpha 已开放测试",
-    "android": "Android alpha 预计在 7 月左右发布",
-    "apple": "macOS 和 iOS alpha 预计在 8 月左右发布"
+    "mobile": "iOS Alpha 与 Android Alpha 预计 8 月推出"
   },
   "video": {
     "demo": "演示视频",

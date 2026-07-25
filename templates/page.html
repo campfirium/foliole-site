@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=000020">
+    <link rel="stylesheet" href="/styles.css?v=000021">
 {{{page.localeRedirectScript}}}
   </head>
   <body>
@@ -83,10 +83,13 @@
             <h1 id="hero-title">{{hero.title}}</h1>
             <p class="hero-subtitle">{{hero.subtitle}}</p>
             <div class="hero-actions" aria-label="{{hero.actionsLabel}}">
-              <a class="button primary" href="https://github.com/campfirium/foliole/releases">{{hero.cta}}</a>
-              <div class="release-note" aria-label="{{release.label}}">
-                <span class="release-platform"><span>{{release.android}}</span></span>
-                <span class="release-platform"><span>{{release.apple}}</span></span>
+              <a class="button platform-download" href="{{page.macosDownloadHref}}" data-platform-download="macos">{{hero.downloadMacos}}</a>
+              <a class="button platform-download" href="{{page.windowsDownloadHref}}" data-platform-download="windows">{{hero.downloadWindows}}</a>
+              <div class="download-source">
+                <span>{{hero.sourcePrefix}} <a href="{{page.releaseHref}}">{{hero.sourceLink}}</a></span>
+              </div>
+              <div class="platform-status-line" aria-label="{{release.label}}">
+                <span>{{release.mobile}}</span>
               </div>
             </div>
           </div>
@@ -213,6 +216,22 @@
 
     {{{page.themeConfig}}}
     <script>
+      (function () {
+        var platformText = [
+          navigator.userAgentData && navigator.userAgentData.platform,
+          navigator.platform,
+          navigator.userAgent
+        ].filter(Boolean).join(' ').toLowerCase();
+        var platform = platformText.indexOf('win') >= 0
+          ? 'windows'
+          : platformText.indexOf('mac') >= 0
+            ? 'macos'
+            : 'other';
+        document.querySelectorAll('[data-platform-download]').forEach(function (link) {
+          link.classList.toggle('primary', link.dataset.platformDownload === platform);
+        });
+      })();
+
       (function () {
         var themeModes = ['system', 'light', 'dark'];
         var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;

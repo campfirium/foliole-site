@@ -13,15 +13,16 @@
   "hero": {
     "title": "Lesen wirklich abschließen",
     "subtitle": "Eine zugängliche App für inkrementelles Lesen",
-    "cta": "Windows Alpha herunterladen",
+    "downloadMacos": "macOS Alpha herunterladen",
+    "downloadWindows": "Windows Alpha herunterladen",
+    "sourcePrefix": "Installationsdateien auf",
+    "sourceLink": "GitHub Releases",
     "actionsLabel": "Download- und Quellcode-Links",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Geplante Plattformverfügbarkeit",
-    "windows": "Die Windows-Alpha ist zum Testen geöffnet",
-    "android": "Die Android-Alpha wird etwa im Juli erwartet",
-    "apple": "Alpha-Builds für macOS und iOS werden etwa im August erwartet"
+    "mobile": "iOS-Alpha und Android-Alpha werden im August erwartet"
   },
   "video": {
     "demo": "Demo-Clip",

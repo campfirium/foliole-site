@@ -13,15 +13,16 @@
   "hero": {
     "title": "Make reading actually complete",
     "subtitle": "An approachable incremental reading app",
-    "cta": "Download Windows Alpha",
+    "downloadMacos": "Download macOS Alpha",
+    "downloadWindows": "Download Windows Alpha",
+    "sourcePrefix": "Installers hosted on",
+    "sourceLink": "GitHub Releases",
     "actionsLabel": "Download and source links",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Upcoming platform availability",
-    "windows": "Windows alpha is open for testing",
-    "android": "Android alpha is expected around July",
-    "apple": "macOS and iOS alpha builds are expected around August"
+    "mobile": "iOS Alpha and Android Alpha expected in August"
   },
   "video": {
     "demo": "Demo Clip",
