@@ -1,14 +1,14 @@
 {
-  "version": "0.7.2",
-  "tag": "v0.7.2",
-  "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.2",
+  "version": "0.7.3",
+  "tag": "v0.7.3",
+  "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.3",
   "allReleasesUrl": "https://github.com/campfirium/foliole/releases",
   "macos": {
-    "assetName": "Foliole-macOS-arm64-0.7.2.dmg",
-    "url": "https://github.com/campfirium/foliole/releases/download/v0.7.2/Foliole-macOS-arm64-0.7.2.dmg"
+    "assetName": "Foliole-macOS-arm64-0.7.3.dmg",
+    "url": "https://github.com/campfirium/foliole/releases/download/v0.7.3/Foliole-macOS-arm64-0.7.3.dmg"
   },
   "windows": {
-    "assetName": "Foliole-Windows-x64-0.7.2.exe",
-    "url": "https://github.com/campfirium/foliole/releases/download/v0.7.2/Foliole-Windows-x64-0.7.2.exe"
+    "assetName": "Foliole-Windows-x64-0.7.3.exe",
+    "url": "https://github.com/campfirium/foliole/releases/download/v0.7.3/Foliole-Windows-x64-0.7.3.exe"
   }
 }
