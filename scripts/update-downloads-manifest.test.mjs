@@ -3,45 +3,39 @@ import test from 'node:test';
 
 import { createDownloadsManifest } from './update-downloads-manifest.mjs';
 
-function asset(name) {
-  return { name, browser_download_url: `https://example.test/${name}` };
+function available(platform, version, asset) {
+  const tag = `v${version}`;
+  return {
+    architectures: [platform === 'macos' ? 'arm64' : 'x64'],
+    asset,
+    channel: 'github-release',
+    releaseUrl: `https://github.com/campfirium/foliole/releases/tag/${tag}`,
+    status: 'available',
+    tag,
+    url: `https://github.com/campfirium/foliole/releases/download/${tag}/${asset}`,
+    version
+  };
 }
 
-test('creates a manifest from current legacy installer names', () => {
+test('preserves independent public versions and exact assets for each platform', () => {
   const manifest = createDownloadsManifest({
-    draft: false,
-    tag_name: 'v0.7.0',
-    html_url: 'https://github.com/campfirium/foliole/releases/tag/v0.7.0',
-    assets: [
-      asset('Foliole-0.7.0-mac-arm64.dmg'),
-      asset('Foliole-Setup-0.7.0-win-x64.exe'),
-      asset('latest.yml')
-    ]
+    schemaVersion: 1,
+    productVersion: '0.8.2',
+    allReleasesUrl: 'https://github.com/campfirium/foliole/releases',
+    platforms: {
+      macos: available('macos', '0.8.1', 'Foliole-macOS-arm64-0.8.1.dmg'),
+      windows: available('windows', '0.8.2', 'Foliole-Windows-x64-0.8.2.exe')
+    }
   });
 
-  assert.equal(manifest.version, '0.7.0');
-  assert.equal(manifest.macos.assetName, 'Foliole-0.7.0-mac-arm64.dmg');
-  assert.equal(manifest.windows.assetName, 'Foliole-Setup-0.7.0-win-x64.exe');
+  assert.equal(manifest.platforms.macos.version, '0.8.1');
+  assert.equal(manifest.platforms.windows.version, '0.8.2');
 });
 
-test('prefers the public asset naming contract for future releases', () => {
-  const manifest = createDownloadsManifest({
-    draft: false,
-    tag_name: 'v0.8.0',
-    html_url: 'https://github.com/campfirium/foliole/releases/tag/v0.8.0',
-    assets: [asset('Foliole-macOS-arm64-0.8.0.dmg'), asset('Foliole-Windows-x64-0.8.0.exe')]
-  });
-
-  assert.equal(manifest.macos.assetName, 'Foliole-macOS-arm64-0.8.0.dmg');
-  assert.equal(manifest.windows.assetName, 'Foliole-Windows-x64-0.8.0.exe');
-});
-
-test('rejects draft releases and ambiguous installers', () => {
-  assert.throws(() => createDownloadsManifest({ draft: true }), /must be public/u);
+test('rejects missing, mismatched, or non-public download links', () => {
+  assert.throws(() => createDownloadsManifest({ schemaVersion: 1, platforms: { windows: { status: 'available' } } }), /is required/u);
   assert.throws(() => createDownloadsManifest({
-    draft: false,
-    tag_name: 'v0.8.0',
-    html_url: 'https://example.test/release',
-    assets: [asset('Foliole-mac-arm64-a.dmg'), asset('Foliole-mac-arm64-b.dmg'), asset('Foliole-win-x64.exe')]
-  }), /Expected one macOS installer/u);
+    schemaVersion: 1,
+    platforms: { windows: { ...available('windows', '0.8.2', 'Foliole.exe'), url: 'https://example.test/Foliole.exe' } }
+  }), /exact Foliole Release asset/u);
 });

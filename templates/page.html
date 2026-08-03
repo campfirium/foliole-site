@@ -95,8 +95,8 @@
             <h1 id="hero-title">{{hero.title}}</h1>
             <p class="hero-subtitle">{{hero.subtitle}}</p>
             <div class="hero-actions" aria-label="{{hero.actionsLabel}}">
-              <a class="button platform-download" href="{{page.macosDownloadHref}}" data-platform-download="macos">{{hero.downloadMacos}}</a>
-              <a class="button platform-download" href="{{page.windowsDownloadHref}}" data-platform-download="windows">{{hero.downloadWindows}}</a>
+              <a class="button platform-download" href="{{page.macosDownloadHref}}" data-platform-download="macos">{{hero.downloadMacos}} · v{{page.macosDownloadVersion}}</a>
+              <a class="button platform-download" href="{{page.windowsDownloadHref}}" data-platform-download="windows">{{hero.downloadWindows}} · v{{page.windowsDownloadVersion}}</a>
               <div class="download-source">
                 <span>{{hero.sourcePrefix}} <a href="{{page.releaseHref}}">{{hero.sourceLink}}</a></span>
               </div>

@@ -2,81 +2,57 @@ import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-const defaultRepository = 'campfirium/foliole';
+const defaultDirectoryUrl = 'https://campfirium.github.io/foliole/releases/downloads.json';
 const defaultOutput = 'content/downloads.json';
+const trustedDownloadPrefix = 'https://github.com/campfirium/foliole/releases/download/';
 
 function argumentValue(name) {
   const index = process.argv.indexOf(name);
   return index >= 0 ? process.argv[index + 1] : undefined;
 }
 
-function versionFromTag(tag) {
-  const version = String(tag || '').replace(/^v/u, '');
-  if (!/^\d+\.\d+\.\d+(?:[-+].+)?$/u.test(version)) {
-    throw new Error(`Unsupported release tag: ${tag}`);
+function validateAvailablePlatform(platform, id) {
+  for (const field of ['asset', 'channel', 'releaseUrl', 'tag', 'url', 'version']) {
+    if (typeof platform[field] !== 'string' || !platform[field]) throw new Error(`${id}.${field} is required`);
   }
-  return version;
-}
-
-function findAsset(assets, preferredNames, fallbackPattern, platform) {
-  const preferred = preferredNames.map((name) => assets.find((asset) => asset.name === name)).find(Boolean);
-  if (preferred) return preferred;
-
-  const candidates = assets.filter((asset) => fallbackPattern.test(asset.name));
-  if (candidates.length !== 1) {
-    throw new Error(`Expected one ${platform} installer, found ${candidates.length}`);
+  if (!platform.url.startsWith(trustedDownloadPrefix) || !platform.url.endsWith(`/${platform.asset}`)) {
+    throw new Error(`${id}.url must identify its exact Foliole Release asset`);
   }
-  return candidates[0];
+  if (platform.tag !== `v${platform.version}` || !platform.url.includes(`/download/${platform.tag}/`)) {
+    throw new Error(`${id} version, tag, and download URL must match`);
+  }
+  return platform;
 }
 
-export function createDownloadsManifest(release) {
-  if (!release || release.draft) throw new Error('Release must be public');
-  const version = versionFromTag(release.tag_name);
-  const assets = Array.isArray(release.assets) ? release.assets : [];
-  const macos = findAsset(
-    assets,
-    [`Foliole-macOS-arm64-${version}.dmg`, `Foliole-${version}-mac-arm64.dmg`],
-    /foliole.*(?:macos|mac).*\.dmg$/iu,
-    'macOS'
-  );
-  const windows = findAsset(
-    assets,
-    [`Foliole-Windows-x64-${version}.exe`, `Foliole-Setup-${version}-win-x64.exe`],
-    /foliole.*(?:windows|win).*\.exe$/iu,
-    'Windows'
-  );
-
-  return {
-    version,
-    tag: release.tag_name,
-    releaseUrl: release.html_url,
-    allReleasesUrl: `https://github.com/${defaultRepository}/releases`,
-    macos: { assetName: macos.name, url: macos.browser_download_url },
-    windows: { assetName: windows.name, url: windows.browser_download_url }
-  };
+export function createDownloadsManifest(directory) {
+  if (directory?.schemaVersion !== 1 || !directory.platforms || typeof directory.platforms !== 'object') {
+    throw new Error('Foliole platform download directory is invalid');
+  }
+  const platforms = Object.fromEntries(Object.entries(directory.platforms).map(([id, platform]) => {
+    if (!platform || !['available', 'retired', 'unavailable'].includes(platform.status)) {
+      throw new Error(`${id}.status is invalid`);
+    }
+    return [id, platform.status === 'available' ? validateAvailablePlatform(platform, id) : platform];
+  }));
+  return { ...directory, platforms };
 }
 
-async function fetchRelease(repository, tag) {
-  const endpoint = tag
-    ? `https://api.github.com/repos/${repository}/releases/tags/${encodeURIComponent(tag)}`
-    : `https://api.github.com/repos/${repository}/releases/latest`;
-  const headers = { Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
-  if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
-  const response = await fetch(endpoint, { headers });
-  if (!response.ok) throw new Error(`GitHub release request failed: ${response.status}`);
+async function fetchDirectory(url) {
+  if (url !== defaultDirectoryUrl) throw new Error('Only the verified Foliole platform download directory is allowed');
+  const response = await fetch(url, { headers: { Accept: 'application/json' } });
+  if (!response.ok) throw new Error(`Foliole download directory request failed: ${response.status}`);
   return response.json();
 }
 
 async function main() {
-  const repository = argumentValue('--repository') || defaultRepository;
   const output = path.resolve(argumentValue('--output') || defaultOutput);
-  const releaseFile = argumentValue('--release-file');
-  const release = releaseFile
-    ? JSON.parse(await readFile(path.resolve(releaseFile), 'utf8'))
-    : await fetchRelease(repository, argumentValue('--tag'));
-  const manifest = createDownloadsManifest(release);
+  const directoryFile = argumentValue('--directory-file');
+  const directory = directoryFile
+    ? JSON.parse(await readFile(path.resolve(directoryFile), 'utf8'))
+    : await fetchDirectory(argumentValue('--directory-url') || defaultDirectoryUrl);
+  const manifest = createDownloadsManifest(directory);
   await writeFile(output, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
-  console.log(`[downloads] ${manifest.tag}: ${manifest.macos.assetName}, ${manifest.windows.assetName}`);
+  console.log(`[downloads] product=${manifest.productVersion} platforms=${Object.keys(manifest.platforms).join(',')}`);
 }
 
 if (pathToFileURL(process.argv[1]).href === import.meta.url) {

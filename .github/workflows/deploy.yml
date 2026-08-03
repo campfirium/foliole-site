@@ -7,8 +7,8 @@ on:
     types: [foliole-release-published]
   workflow_dispatch:
     inputs:
-      release_tag:
-        description: Optional Foliole release tag; leave empty to use the latest public release
+      directory_url:
+        description: Optional verified Foliole platform download directory URL
         required: false
         type: string
 
@@ -35,20 +35,13 @@ jobs:
           node-version: 22
           cache: npm
       - name: Update published download manifest
-        if: github.event_name == 'repository_dispatch' || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
+        if: github.event_name == 'repository_dispatch' || (github.event_name == 'workflow_dispatch' && inputs.directory_url != '')
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ github.event.client_payload.tag || inputs.release_tag }}
+          DIRECTORY_URL: ${{ github.event.client_payload.directory_url || inputs.directory_url }}
         run: |
-          if [ -n "$RELEASE_TAG" ]; then
-            node scripts/update-downloads-manifest.mjs --tag "$RELEASE_TAG"
-          else
-            node scripts/update-downloads-manifest.mjs
-          fi
+          node scripts/update-downloads-manifest.mjs --directory-url "$DIRECTORY_URL"
       - name: Commit published download manifest
-        if: github.event_name == 'repository_dispatch' || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
-        env:
-          RELEASE_TAG: ${{ github.event.client_payload.tag || inputs.release_tag }}
+        if: github.event_name == 'repository_dispatch' || (github.event_name == 'workflow_dispatch' && inputs.directory_url != '')
         run: |
           if git diff --quiet -- content/downloads.json; then
             echo "Download manifest is already current."
@@ -57,7 +50,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content/downloads.json
-          git commit -m "chore: update downloads for ${RELEASE_TAG:-latest}"
+          product_version="$(node -p "require('./content/downloads.json').productVersion")"
+          git commit -m "chore: update platform downloads for ${product_version}"
           git push origin HEAD:main
       - name: Install dependencies
         run: npm ci

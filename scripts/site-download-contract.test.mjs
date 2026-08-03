@@ -8,12 +8,14 @@ test('homepage links directly to both versioned installers', async () => {
   assert.match(template, /data-platform-download="windows"/u);
   assert.match(template, /\{\{page\.macosDownloadHref\}\}/u);
   assert.match(template, /\{\{page\.windowsDownloadHref\}\}/u);
+  assert.match(template, /\{\{page\.macosDownloadVersion\}\}/u);
+  assert.match(template, /\{\{page\.windowsDownloadVersion\}\}/u);
 });
 
 test('deploy workflow updates downloads only from explicit release events', async () => {
   const workflow = await readFile('.github/workflows/deploy.yml', 'utf8');
   assert.match(workflow, /types: \[foliole-release-published\]/u);
   assert.doesNotMatch(workflow, /schedule:/u);
-  assert.match(workflow, /node scripts\/update-downloads-manifest\.mjs --tag/u);
+  assert.match(workflow, /node scripts\/update-downloads-manifest\.mjs --directory-url/u);
   assert.match(workflow, /git push origin HEAD:main/u);
 });
