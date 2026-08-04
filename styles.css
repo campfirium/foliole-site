@@ -622,14 +622,18 @@ h1 {
 .recommended-download:hover,
 .recommended-download:focus-visible { background: var(--primary-hover); }
 
-.download-platform-list { margin-top: clamp(3.5rem, 7vh, 5rem); }
+.download-platform-list {
+  width: max-content;
+  max-width: 100%;
+  margin: clamp(3.5rem, 7vh, 5rem) auto 0;
+}
 
 .download-platform-row {
   min-height: 84px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: 170px max-content;
   align-items: center;
-  gap: 0;
+  gap: 64px;
   border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
 }
 
@@ -1156,7 +1160,7 @@ h1 {
     padding-top: calc(var(--header-h) + 3.25rem);
   }
 
-  .download-platform-list { margin-top: 2.9rem; }
+  .download-platform-list { width: 100%; margin-top: 2.9rem; }
   .download-platform-row { grid-template-columns: 92px minmax(0, 1fr); gap: 0.9rem; }
   .download-platform-action { grid-column: 2; }
   .download-platform-action { align-items: flex-start; gap: 0.55rem; }
