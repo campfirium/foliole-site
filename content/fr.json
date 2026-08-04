@@ -62,7 +62,7 @@
     },
     "materials": {
       "title": "Rassembler les supports de lecture",
-      "body": "Foliole gère des supports de lecture provenant de sources variées, qu'il s'agisse de fichiers locaux, de documents web, de notes gérées dans Obsidian ou de contenus exportés depuis Readwise Reader",
+      "body": "Foliole gère des supports de lecture provenant de sources variées, qu'il s'agisse de fichiers locaux, de documents web, de notes gérées dans Obsidian, de contenus exportés depuis Readwise Reader ou de texte sélectionné dans d’autres applications",
       "imageAlt": "Foliole document list and reading sources."
     },
     "external": {
@@ -74,6 +74,16 @@
       "title": "Prise en charge des contenus complexes",
       "body": "Foliole prend en charge Markdown, PDF, EPUB, les formules LaTeX, les blocs de code et d'autres besoins de rendu de contenu",
       "imageAlt": "Foliole complex content reading view."
+    },
+    "agentWorkflows": {
+      "title": "Flux de travail en ligne de commande et avec des agents",
+      "body": "Permet au Terminal et aux agents locaux de lire, écrire et organiser des contenus dans Foliole, tandis que Foliole Aide intègre Codex directement à l’application en utilisant le quota inclus dans votre abonnement ChatGPT",
+      "imageAlt": "Foliole Aide working with materials in the desktop app."
+    },
+    "publish": {
+      "title": "Publier des thèmes en évolution",
+      "body": "Transforme les thèmes en évolution en contenus que vous pouvez continuer à mettre à jour sur votre propre site, WordPress ou Discourse",
+      "imageAlt": "Foliole publishing settings for an evolving website."
     }
   },
   "ack": {

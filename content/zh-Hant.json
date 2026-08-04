@@ -62,7 +62,7 @@
     },
     "materials": {
       "title": "匯聚閱讀材料",
-      "body": "可集中處理各種來源的閱讀材料，無論是本地檔案、網頁文件，還是 Obsidian 管理的筆記、Readwise Reader 匯出的材料",
+      "body": "可集中處理各種來源的閱讀材料，無論是本地檔案、網頁文件、Obsidian 管理的筆記、Readwise Reader 匯出的材料，還是從其他應用程式中收集的選取文字",
       "imageAlt": "Foliole document list and reading sources."
     },
     "external": {
@@ -74,6 +74,16 @@
       "title": "支援複雜材料",
       "body": "支援 Markdown、PDF、EPUB 等檔案格式，以及數學公式（LaTeX）、程式碼區塊等內容渲染",
       "imageAlt": "Foliole complex content reading view."
+    },
+    "agentWorkflows": {
+      "title": "命令列與 Agent 工作流程",
+      "body": "終端機和本機 Agent 可以讀取、寫入和整理 Foliole 中的資料；Foliole Aide 則讓你直接在應用程式中使用 Codex，並使用 ChatGPT 方案內含的 Codex 額度",
+      "imageAlt": "Foliole Aide working with materials in the desktop app."
+    },
+    "publish": {
+      "title": "發布持續演進的主題",
+      "body": "將持續演進的主題發布為可以不斷更新的內容，可用於自己的網站、WordPress 或 Discourse",
+      "imageAlt": "Foliole publishing settings for an evolving website."
     }
   },
   "ack": {

@@ -62,7 +62,7 @@
     },
     "materials": {
       "title": "Lesematerialien zusammenführen",
-      "body": "Foliole verarbeitet Lesematerialien aus unterschiedlichen Quellen zentral, ob lokale Dateien, Webdokumente, in Obsidian verwaltete Notizen oder aus Readwise Reader exportierte Materialien",
+      "body": "Foliole verarbeitet Lesematerialien aus unterschiedlichen Quellen zentral, ob lokale Dateien, Webdokumente, in Obsidian verwaltete Notizen, aus Readwise Reader exportierte Materialien oder in anderen Apps ausgewählter Text",
       "imageAlt": "Foliole document list and reading sources."
     },
     "external": {
@@ -74,6 +74,16 @@
       "title": "Unterstützung für komplexe Inhalte",
       "body": "Foliole unterstützt Markdown, PDF, EPUB, LaTeX-Formeln, Codeblöcke und weitere Anforderungen an die Inhaltsdarstellung",
       "imageAlt": "Foliole complex content reading view."
+    },
+    "agentWorkflows": {
+      "title": "Kommandozeilen- und Agent-Workflows",
+      "body": "Terminal und lokale Agents können Materialien in Foliole lesen, schreiben und organisieren, während Foliole Aide Codex direkt in die App bringt und dabei das im ChatGPT-Tarif enthaltene Codex-Kontingent nutzt",
+      "imageAlt": "Foliole Aide working with materials in the desktop app."
+    },
+    "publish": {
+      "title": "Sich weiterentwickelnde Themen veröffentlichen",
+      "body": "Macht sich weiterentwickelnde Themen zu Inhalten, die sich auf der eigenen Website, in WordPress oder Discourse fortlaufend aktualisieren lassen",
+      "imageAlt": "Foliole publishing settings for an evolving website."
     }
   },
   "ack": {

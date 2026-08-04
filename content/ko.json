@@ -62,7 +62,7 @@
     },
     "materials": {
       "title": "읽기 자료 통합",
-      "body": "로컬 파일, 웹 문서, Obsidian에서 관리하는 노트, Readwise Reader에서 내보낸 자료 등 다양한 출처의 읽기 자료를 한곳에서 다룰 수 있습니다",
+      "body": "로컬 파일, 웹 문서, Obsidian에서 관리하는 노트, Readwise Reader에서 내보낸 자료, 다른 앱에서 선택한 텍스트 등 다양한 출처의 읽기 자료를 한곳에서 다룰 수 있습니다",
       "imageAlt": "Foliole document list and reading sources."
     },
     "external": {
@@ -74,6 +74,16 @@
       "title": "복잡한 콘텐츠 지원",
       "body": "Markdown, PDF, EPUB, LaTeX 수식, 코드 블록 등 다양한 콘텐츠 렌더링 요구를 지원합니다",
       "imageAlt": "Foliole complex content reading view."
+    },
+    "agentWorkflows": {
+      "title": "명령줄 및 Agent 워크플로",
+      "body": "Terminal과 로컬 Agent가 Foliole의 자료를 읽고, 쓰고, 정리할 수 있습니다. Foliole Aide에서는 ChatGPT 요금제에 포함된 Codex 사용량으로 앱 안에서 Codex를 직접 사용할 수 있습니다",
+      "imageAlt": "Foliole Aide working with materials in the desktop app."
+    },
+    "publish": {
+      "title": "계속 발전하는 주제 게시",
+      "body": "계속 발전하는 주제를 내 사이트, WordPress 또는 Discourse에서 계속 업데이트할 수 있는 콘텐츠로 게시합니다",
+      "imageAlt": "Foliole publishing settings for an evolving website."
     }
   },
   "ack": {

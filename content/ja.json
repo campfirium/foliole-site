@@ -62,7 +62,7 @@
     },
     "materials": {
       "title": "読書素材をひとつに集約",
-      "body": "ローカルファイル、Web ドキュメント、Obsidian で管理しているノート、Readwise Reader からエクスポートした素材など、さまざまな出所の読書素材をまとめて扱えます",
+      "body": "ローカルファイル、Web ドキュメント、Obsidian で管理しているノート、Readwise Reader からエクスポートした素材、他のアプリで選択したテキストなど、さまざまな出所の読書素材をまとめて扱えます",
       "imageAlt": "Foliole document list and reading sources."
     },
     "external": {
@@ -74,6 +74,16 @@
       "title": "複雑なコンテンツへの対応",
       "body": "Markdown、PDF、EPUB、LaTeX 数式、コードブロックなど、さまざまなコンテンツ表示の要件に対応します",
       "imageAlt": "Foliole complex content reading view."
+    },
+    "agentWorkflows": {
+      "title": "コマンドラインと Agent のワークフロー",
+      "body": "Terminal やローカル Agent から Foliole の素材を読み取り、書き込み、整理できます。Foliole Aide では、ChatGPT プランに含まれる Codex 利用枠を使って、アプリ内で Codex を直接利用できます",
+      "imageAlt": "Foliole Aide working with materials in the desktop app."
+    },
+    "publish": {
+      "title": "更新を重ねるテーマを公開",
+      "body": "更新を重ねるテーマを、自分のサイト、WordPress、Discourse で継続的に更新できるコンテンツとして公開できます",
+      "imageAlt": "Foliole publishing settings for an evolving website."
     }
   },
   "ack": {
