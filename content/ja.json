@@ -18,14 +18,14 @@
     "downloadWindows": "Windows",
     "downloadLinux": "Linux",
     "linuxQualifier": "試験版",
-    "availability": "macOS、Windows、Linux で利用できます。",
+    "availability": "macOS、Windows、Linux（実験版）の alpha を利用できます。",
     "choosePlatform": "別のプラットフォームを選択",
     "actionsLabel": "デスクトップ版ダウンロード",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "今後のプラットフォーム提供予定",
-    "mobile": "iOS と Android は 8 月公開予定です。",
+    "mobile": "Android と iOS 版は 8 月に公開予定です。",
     "expected": "8 月公開予定"
   },
   "video": {

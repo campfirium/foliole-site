@@ -18,14 +18,14 @@
     "downloadWindows": "Windows",
     "downloadLinux": "Linux",
     "linuxQualifier": "Sperimentale",
-    "availability": "Disponibile per macOS, Windows e Linux.",
+    "availability": "Le versioni alpha sono disponibili per macOS, Windows e Linux (sperimentale).",
     "choosePlatform": "Scegli un'altra piattaforma",
     "actionsLabel": "Download desktop",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Disponibilità prevista per piattaforma",
-    "mobile": "iOS e Android sono previsti ad agosto.",
+    "mobile": "Le versioni per Android e iOS sono previste ad agosto.",
     "expected": "Previsto ad agosto"
   },
   "video": {

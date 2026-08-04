@@ -18,14 +18,14 @@
     "downloadWindows": "Windows",
     "downloadLinux": "Linux",
     "linuxQualifier": "Экспериментальная",
-    "availability": "Доступно для macOS, Windows и Linux.",
+    "availability": "Альфа-версии доступны для macOS, Windows и Linux (экспериментальная версия).",
     "choosePlatform": "Выбрать другую платформу",
     "actionsLabel": "Загрузки для компьютера",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Ожидаемая доступность платформ",
-    "mobile": "Версии для iOS и Android ожидаются в августе.",
+    "mobile": "Версии для Android и iOS ожидаются в августе.",
     "expected": "Ожидается в августе"
   },
   "video": {

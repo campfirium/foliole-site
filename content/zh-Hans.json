@@ -18,14 +18,14 @@
     "downloadWindows": "Windows",
     "downloadLinux": "Linux",
     "linuxQualifier": "实验版",
-    "availability": "支持 macOS、Windows 和 Linux。",
+    "availability": "macOS、Windows 和 Linux（实验版）的 alpha 版本现已开放测试。",
     "choosePlatform": "选择其他平台",
     "actionsLabel": "桌面端下载",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "即将支持的平台",
-    "mobile": "iOS 与 Android 预计 8 月推出。",
+    "mobile": "Android 和 iOS 版本预计于 8 月发布。",
     "expected": "预计 8 月推出"
   },
   "video": {
