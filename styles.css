@@ -347,7 +347,7 @@ h1 {
 .option-primary { color: var(--ink); font-weight: 540; }
 .option-secondary { color: var(--muted); font-weight: 450; }
 .download-availability { display: grid; gap: 0.45rem; margin-top: 1.55rem; }
-.download-availability p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.45; font-weight: 560; white-space: nowrap; }
+.download-availability p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.45; font-weight: 450; white-space: nowrap; }
 
 .button {
   min-height: clamp(44px, 3.25vw, 58px);
@@ -1068,6 +1068,7 @@ h1 {
     gap: 0.45rem 1rem;
     height: var(--header-h);
     padding: 0.72rem 1rem 0.82rem;
+    border-bottom: 0;
   }
 
   .header-left {
@@ -1236,7 +1237,7 @@ h1 {
   .header-left {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     gap: clamp(0.9rem, 2.2vw, 1.2rem);
     width: auto;
   }
@@ -1246,6 +1247,14 @@ h1 {
   .utility-nav {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .brand {
+    align-items: baseline;
+  }
+
+  .brand-icon {
+    align-self: center;
   }
 
   nav {
