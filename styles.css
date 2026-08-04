@@ -1220,6 +1220,50 @@ h1 {
   }
 }
 
+/* ===== COMPACT SINGLE-ROW HEADER ===== */
+@media (min-width: 601px) and (max-width: 760px) {
+  :root {
+    --header-h: 4.75rem;
+  }
+
+  .site-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(0.9rem, 2.2vw, 1.2rem);
+    width: auto;
+  }
+
+  .brand,
+  .primary-nav,
+  .utility-nav {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  nav {
+    font-size: 0.95rem;
+  }
+
+  .primary-nav {
+    width: auto;
+    gap: clamp(0.75rem, 2vw, 1rem);
+  }
+
+  .utility-nav {
+    justify-self: auto;
+    gap: 0.55rem;
+    z-index: auto;
+  }
+}
+
 /* ===== SMALL MOBILE ===== */
 @media (max-width: 480px) {
   h1 { font-size: clamp(2rem, 8.5vw, 2.8rem); white-space: normal; }
