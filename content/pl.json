@@ -13,16 +13,20 @@
   "hero": {
     "title": "Spraw, aby czytanie naprawdę prowadziło do ukończenia",
     "subtitle": "Przystępna aplikacja do czytania inkrementalnego",
-    "downloadMacos": "Pobierz wersję Alpha dla macOS",
-    "downloadWindows": "Pobierz wersję Alpha dla Windows",
-    "sourcePrefix": "Instalatory są hostowane w",
-    "sourceLink": "GitHub Releases",
-    "actionsLabel": "Linki do pobrania i kodu źródłowego",
+    "downloadTitle": "Pobierz Foliole Alpha",
+    "downloadMacos": "macOS",
+    "downloadWindows": "Windows",
+    "downloadLinux": "Linux",
+    "linuxQualifier": "Eksperymentalna",
+    "availability": "Dostępne dla macOS, Windows i Linux.",
+    "choosePlatform": "Wybierz inną platformę",
+    "actionsLabel": "Pliki do pobrania na komputer",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Planowana dostępność platform",
-    "mobile": "Wersja Alpha dla iOS i wersja Alpha dla Androida są planowane na sierpień"
+    "mobile": "Wersje na iOS i Androida są planowane na sierpień.",
+    "expected": "Planowane na sierpień"
   },
   "video": {
     "demo": "Demo",

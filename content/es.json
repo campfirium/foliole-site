@@ -13,16 +13,20 @@
   "hero": {
     "title": "Haz que la lectura llegue realmente a completarse",
     "subtitle": "Una app accesible de lectura incremental",
-    "downloadMacos": "Descargar Alpha para macOS",
-    "downloadWindows": "Descargar Alpha para Windows",
-    "sourcePrefix": "Instaladores alojados en",
-    "sourceLink": "GitHub Releases",
-    "actionsLabel": "Enlaces de descarga y código fuente",
+    "downloadTitle": "Descargar Foliole Alpha",
+    "downloadMacos": "macOS",
+    "downloadWindows": "Windows",
+    "downloadLinux": "Linux",
+    "linuxQualifier": "Experimental",
+    "availability": "Disponible para macOS, Windows y Linux.",
+    "choosePlatform": "Elegir otra plataforma",
+    "actionsLabel": "Descargas de escritorio",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Disponibilidad prevista por plataforma",
-    "mobile": "La versión Alpha para iOS y la versión Alpha para Android están previstas para agosto"
+    "mobile": "iOS y Android están previstos para agosto.",
+    "expected": "Previsto para agosto"
   },
   "video": {
     "demo": "Demo",

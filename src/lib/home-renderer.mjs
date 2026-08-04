@@ -28,8 +28,13 @@ export const locales = [
 
 const localeById = new Map(locales.map((locale) => [locale.id, locale]));
 
-function pageUrl(locale) {
-  return locale.path ? `${siteUrl}/${locale.path}/` : `${siteUrl}/`;
+function routePath(locale, page = 'home') {
+  const prefix = locale.path ? `/${locale.path}` : '';
+  return page === 'download' ? `${prefix}/download/` : `${prefix}/`;
+}
+
+function pageUrl(locale, page = 'home') {
+  return `${siteUrl}${routePath(locale, page)}`;
 }
 
 function relativeUrl(fromLocale, toLocale) {
@@ -94,23 +99,24 @@ function guidesHref(locale, manifest) {
   return pack?.topics?.[0]?.canonicalPath ?? `/${demoLocale(locale)}/guides/`;
 }
 
-function renderLanguageMenu(currentLocale) {
+function renderLanguageMenu(currentLocale, page = 'home') {
   return locales.map((locale) => {
     const current = locale.id === currentLocale.id ? ' aria-current="page"' : '';
-    return `<a href="${escapeHtml(relativeUrl(currentLocale, locale))}" role="menuitem"${current}>${escapeHtml(locale.name)}</a>`;
+    const href = page === 'download' ? routePath(locale, page) : relativeUrl(currentLocale, locale);
+    return `<a href="${escapeHtml(href)}" role="menuitem"${current}>${escapeHtml(locale.name)}</a>`;
   }).join('\n                    ');
 }
 
-function renderAlternateLinks() {
+function renderAlternateLinks(page = 'home') {
   const links = locales.map((locale) =>
-    `<link rel="alternate" hreflang="${escapeHtml(locale.hreflang)}" href="${escapeHtml(pageUrl(locale))}">`
+    `<link rel="alternate" hreflang="${escapeHtml(locale.hreflang)}" href="${escapeHtml(pageUrl(locale, page))}">`
   );
-  links.push(`<link rel="alternate" hreflang="x-default" href="${siteUrl}/">`);
+  links.push(`<link rel="alternate" hreflang="x-default" href="${pageUrl(localeById.get('en'), page)}">`);
   return links.join('\n    ');
 }
 
 function renderThemeConfig(content) {
-  return `<script>window.FOLIOLE_PAGE_COPY=${JSON.stringify({ theme: content.theme })};</script>`;
+  return `<script>window.FOLIOLE_PAGE_COPY=${JSON.stringify({ download: content.nav.download, theme: content.theme })};</script>`;
 }
 
 function renderLocaleRedirectScript(locale) {
@@ -176,11 +182,12 @@ function renderTemplate(template, values) {
     });
 }
 
-export async function renderHomePage(localeId) {
+async function renderPage(localeId, page) {
   const locale = localeById.get(localeId);
   if (!locale) throw new Error(`Unknown locale: ${localeId}`);
 
-  const template = await readFile(path.join(root, 'templates', 'page.html'), 'utf8');
+  const templateName = page === 'download' ? 'download.html' : 'page.html';
+  const template = await readFile(path.join(root, 'templates', templateName), 'utf8');
   const demoManifest = await readDemoManifest();
   const downloads = await readDownloads();
   const contentEntries = await Promise.all(locales.map(async (entry) => [entry.id, await readContent(entry)]));
@@ -195,19 +202,27 @@ export async function renderHomePage(localeId) {
     ...contents[locale.id],
     page: {
       htmlLang: locale.htmlLang,
-      url: pageUrl(locale),
+      url: pageUrl(locale, page),
+      homeHref: routePath(locale),
+      downloadHref: routePath(locale, 'download'),
       ogLocale: locale.ogLocale,
       demoHref: demoHref(locale, demoManifest),
       guidesHref: guidesHref(locale, demoManifest),
       macosDownloadHref: downloads.platforms.macos.url,
-      macosDownloadVersion: downloads.platforms.macos.version,
       windowsDownloadHref: downloads.platforms.windows.url,
-      windowsDownloadVersion: downloads.platforms.windows.version,
-      releaseHref: downloads.allReleasesUrl,
-      alternates: renderAlternateLinks(),
-      languageMenu: renderLanguageMenu(locale),
+      linuxDownloadHref: downloads.platforms.linux.url,
+      alternates: renderAlternateLinks(page),
+      languageMenu: renderLanguageMenu(locale, page),
       localeRedirectScript: renderLocaleRedirectScript(locale),
       themeConfig: renderThemeConfig(contents[locale.id])
     }
   });
+}
+
+export function renderHomePage(localeId) {
+  return renderPage(localeId, 'home');
+}
+
+export function renderDownloadPage(localeId) {
+  return renderPage(localeId, 'download');
 }

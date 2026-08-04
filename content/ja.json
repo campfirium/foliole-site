@@ -13,16 +13,20 @@
   "hero": {
     "title": "読書を本当に完了できるものにする",
     "subtitle": "親しみやすいインクリメンタルリーディングアプリです",
-    "downloadMacos": "macOS Alpha をダウンロード",
-    "downloadWindows": "Windows Alpha をダウンロード",
-    "sourcePrefix": "インストーラーの提供元:",
-    "sourceLink": "GitHub Releases",
-    "actionsLabel": "ダウンロードとソースへのリンク",
+    "downloadTitle": "Foliole Alpha をダウンロード",
+    "downloadMacos": "macOS",
+    "downloadWindows": "Windows",
+    "downloadLinux": "Linux",
+    "linuxQualifier": "試験版",
+    "availability": "macOS、Windows、Linux で利用できます。",
+    "choosePlatform": "別のプラットフォームを選択",
+    "actionsLabel": "デスクトップ版ダウンロード",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "今後のプラットフォーム提供予定",
-    "mobile": "iOS Alpha と Android Alpha は 8 月公開予定"
+    "mobile": "iOS と Android は 8 月公開予定です。",
+    "expected": "8 月公開予定"
   },
   "video": {
     "demo": "デモ",

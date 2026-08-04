@@ -13,16 +13,20 @@
   "hero": {
     "title": "Make reading actually complete",
     "subtitle": "An approachable incremental reading app",
-    "downloadMacos": "Download macOS Alpha",
-    "downloadWindows": "Download Windows Alpha",
-    "sourcePrefix": "Installers hosted on",
-    "sourceLink": "GitHub Releases",
-    "actionsLabel": "Download and source links",
+    "downloadTitle": "Download Foliole Alpha",
+    "downloadMacos": "macOS",
+    "downloadWindows": "Windows",
+    "downloadLinux": "Linux",
+    "linuxQualifier": "Experimental",
+    "availability": "Available for macOS, Windows, and Linux.",
+    "choosePlatform": "Choose another platform",
+    "actionsLabel": "Desktop downloads",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Upcoming platform availability",
-    "mobile": "iOS Alpha and Android Alpha expected in August"
+    "mobile": "iOS and Android expected in August.",
+    "expected": "Expected in August"
   },
   "video": {
     "demo": "Demo Clip",

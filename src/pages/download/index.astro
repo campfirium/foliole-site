@@ -1,0 +1,7 @@
+---
+import { renderDownloadPage } from '../../lib/home-renderer.mjs';
+
+const html = await renderDownloadPage('en');
+---
+
+<Fragment set:html={html} />

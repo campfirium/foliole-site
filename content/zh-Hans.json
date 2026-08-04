@@ -13,16 +13,20 @@
   "hero": {
     "title": "让阅读真正完成",
     "subtitle": "一款现代的渐进阅读软件",
-    "downloadMacos": "下载 macOS Alpha",
-    "downloadWindows": "下载 Windows Alpha",
-    "sourcePrefix": "安装文件托管于",
-    "sourceLink": "GitHub Releases",
-    "actionsLabel": "下载与源码链接",
+    "downloadTitle": "下载 Foliole Alpha",
+    "downloadMacos": "macOS",
+    "downloadWindows": "Windows",
+    "downloadLinux": "Linux",
+    "linuxQualifier": "实验版",
+    "availability": "支持 macOS、Windows 和 Linux。",
+    "choosePlatform": "选择其他平台",
+    "actionsLabel": "桌面端下载",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "即将支持的平台",
-    "mobile": "iOS Alpha 与 Android Alpha 预计 8 月推出"
+    "mobile": "iOS 与 Android 预计 8 月推出。",
+    "expected": "预计 8 月推出"
   },
   "video": {
     "demo": "演示视频",

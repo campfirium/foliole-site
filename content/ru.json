@@ -13,16 +13,20 @@
   "hero": {
     "title": "Доводите чтение до настоящего завершения",
     "subtitle": "Доступное приложение для инкрементального чтения",
-    "downloadMacos": "Скачать Alpha для macOS",
-    "downloadWindows": "Скачать Alpha для Windows",
-    "sourcePrefix": "Установщики размещены в",
-    "sourceLink": "GitHub Releases",
-    "actionsLabel": "Ссылки для загрузки и исходного кода",
+    "downloadTitle": "Скачать Foliole Alpha",
+    "downloadMacos": "macOS",
+    "downloadWindows": "Windows",
+    "downloadLinux": "Linux",
+    "linuxQualifier": "Экспериментальная",
+    "availability": "Доступно для macOS, Windows и Linux.",
+    "choosePlatform": "Выбрать другую платформу",
+    "actionsLabel": "Загрузки для компьютера",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Ожидаемая доступность платформ",
-    "mobile": "Alpha-версии для iOS и для Android ожидаются в августе"
+    "mobile": "Версии для iOS и Android ожидаются в августе.",
+    "expected": "Ожидается в августе"
   },
   "video": {
     "demo": "Демо",

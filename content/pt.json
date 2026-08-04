@@ -13,16 +13,20 @@
   "hero": {
     "title": "Faça a leitura realmente chegar ao fim",
     "subtitle": "Um app acessível de leitura incremental",
-    "downloadMacos": "Transferir Alpha para macOS",
-    "downloadWindows": "Transferir Alpha para Windows",
-    "sourcePrefix": "Instaladores alojados no",
-    "sourceLink": "GitHub Releases",
-    "actionsLabel": "Links de download e código-fonte",
+    "downloadTitle": "Transferir Foliole Alpha",
+    "downloadMacos": "macOS",
+    "downloadWindows": "Windows",
+    "downloadLinux": "Linux",
+    "linuxQualifier": "Experimental",
+    "availability": "Disponível para macOS, Windows e Linux.",
+    "choosePlatform": "Escolher outra plataforma",
+    "actionsLabel": "Downloads para desktop",
     "imageAlt": "Foliole desktop app showing a document library, reading pane, and scheduling panel."
   },
   "release": {
     "label": "Disponibilidade prevista por plataforma",
-    "mobile": "A versão Alpha para iOS e a versão Alpha para Android estão previstas para agosto"
+    "mobile": "iOS e Android estão previstos para agosto.",
+    "expected": "Previsto para agosto"
   },
   "video": {
     "demo": "Demo",

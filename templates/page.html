@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=000021">
+    <link rel="stylesheet" href="/styles.css?v=000023">
 {{{page.localeRedirectScript}}}
   </head>
   <body>
@@ -40,14 +40,14 @@
         <div class="hero-shell">
           <header class="site-header">
             <div class="header-left">
-              <a class="brand" href="/" aria-label="Foliole home">
-                <img src="/assets/brand/foliole-app-icon.svg" alt="" class="brand-icon">
+              <a class="brand" href="{{page.homeHref}}" aria-label="Foliole home">
+                <span class="brand-icon" aria-hidden="true"></span>
                 <span>Foliole</span>
               </a>
               <nav class="primary-nav" aria-label="{{nav.mainLabel}}">
                 <a href="{{page.demoHref}}">Demo</a>
                 <a href="{{page.guidesHref}}">Guides</a>
-                <a href="https://github.com/campfirium/foliole/releases">Download</a>
+                <a href="{{page.downloadHref}}">{{nav.download}}</a>
                 <a href="https://github.com/campfirium/foliole">GitHub</a>
               </nav>
             </div>
@@ -94,14 +94,33 @@
           <div class="hero-copy">
             <h1 id="hero-title">{{hero.title}}</h1>
             <p class="hero-subtitle">{{hero.subtitle}}</p>
-            <div class="hero-actions" aria-label="{{hero.actionsLabel}}">
-              <a class="button platform-download" href="{{page.macosDownloadHref}}" data-platform-download="macos">{{hero.downloadMacos}} · v{{page.macosDownloadVersion}}</a>
-              <a class="button platform-download" href="{{page.windowsDownloadHref}}" data-platform-download="windows">{{hero.downloadWindows}} · v{{page.windowsDownloadVersion}}</a>
-              <div class="download-source">
-                <span>{{hero.sourcePrefix}} <a href="{{page.releaseHref}}">{{hero.sourceLink}}</a></span>
+            <div class="hero-download" aria-label="{{hero.actionsLabel}}">
+              <div class="split-download">
+                <a class="download-main" href="{{page.macosDownloadHref}}" data-recommended-download="macos">
+                  <span class="download-title">{{hero.downloadTitle}}</span>
+                  <span class="download-requirement">macOS 12+ · Apple silicon</span>
+                </a>
+                <button class="download-toggle" type="button" aria-label="{{hero.choosePlatform}}" aria-expanded="false" aria-controls="platform-menu">
+                  <span class="download-chevron" aria-hidden="true"></span>
+                </button>
+                <div class="download-menu" id="platform-menu" hidden>
+                  <a class="download-option" href="{{page.macosDownloadHref}}" data-platform-download="macos" data-requirement="macOS 12+ · Apple silicon">
+                    <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.7 12.3c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.7-1.7-3.2-1.7-1.4-.1-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 6.9 1.2 9.2.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7 1.3 0 1.7.7 3 .7 1.3 0 2.1-1.1 2.9-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.8-1.1-2.8-3.7Zm-2.2-6.5c.6-.8 1.1-1.9 1-3-.9 0-2 .6-2.7 1.3-.6.7-1.1 1.8-1 2.9 1 .1 2-.5 2.7-1.2Z"></path></svg>
+                    <span class="option-copy"><span class="option-primary">macOS 12+</span><span class="option-secondary">Apple silicon</span></span>
+                  </a>
+                  <a class="download-option" href="{{page.windowsDownloadHref}}" data-platform-download="windows" data-requirement="Windows 64-bit (Intel / AMD)">
+                    <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4.5 11 3.4v8H3v-7Zm9-1.2L21 2v9.4h-9V3.3ZM3 12.5h8v8L3 19.4v-6.9Zm9 0h9V22l-9-1.3v-8.2Z"></path></svg>
+                    <span class="option-copy"><span class="option-primary">Windows</span><span class="option-secondary">64-bit (Intel / AMD)</span></span>
+                  </a>
+                  <a class="download-option" href="{{page.linuxDownloadHref}}" data-platform-download="linux" data-requirement="Linux DEB 64-bit ({{hero.linuxQualifier}})">
+                    <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"></rect><path d="m7 9 2.5 2.5L7 14m5 0h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="option-copy"><span class="option-primary">Linux DEB</span><span class="option-secondary">64-bit ({{hero.linuxQualifier}})</span></span>
+                  </a>
+                </div>
               </div>
-              <div class="platform-status-line" aria-label="{{release.label}}">
-                <span>{{release.mobile}}</span>
+              <div class="download-availability">
+                <p>{{hero.availability}}</p>
+                <p>{{release.mobile}}</p>
               </div>
             </div>
           </div>
@@ -238,9 +257,40 @@
           ? 'windows'
           : platformText.indexOf('mac') >= 0
             ? 'macos'
-            : 'other';
-        document.querySelectorAll('[data-platform-download]').forEach(function (link) {
-          link.classList.toggle('primary', link.dataset.platformDownload === platform);
+            : platformText.indexOf('android') < 0 && (platformText.indexOf('linux') >= 0 || platformText.indexOf('x11') >= 0)
+              ? 'linux'
+              : 'macos';
+        var recommended = document.querySelector('[data-recommended-download]');
+        var selected = document.querySelector('[data-platform-download="' + platform + '"]');
+        var requirement = document.querySelector('.download-requirement');
+        if (recommended && selected) {
+          recommended.href = selected.href;
+          recommended.dataset.recommendedDownload = platform;
+          if (requirement) requirement.textContent = selected.dataset.requirement;
+        }
+      })();
+
+      (function () {
+        var toggle = document.querySelector('.download-toggle');
+        var menu = document.querySelector('.download-menu');
+        if (!toggle || !menu) return;
+
+        function closeMenu(restoreFocus) {
+          menu.hidden = true;
+          toggle.setAttribute('aria-expanded', 'false');
+          if (restoreFocus) toggle.focus();
+        }
+
+        toggle.addEventListener('click', function () {
+          var opening = toggle.getAttribute('aria-expanded') !== 'true';
+          menu.hidden = !opening;
+          toggle.setAttribute('aria-expanded', String(opening));
+        });
+        document.addEventListener('click', function (event) {
+          if (!event.target.closest('.split-download')) closeMenu(false);
+        });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && !menu.hidden) closeMenu(true);
         });
       })();
 

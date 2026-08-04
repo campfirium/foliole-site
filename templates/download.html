@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="{{page.htmlLang}}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{nav.download}} Foliole</title>
+    <meta name="description" content="{{meta.description}}">
+    <meta property="og:title" content="{{nav.download}} Foliole">
+    <meta property="og:description" content="{{meta.ogDescription}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{page.url}}">
+    <meta property="og:locale" content="{{page.ogLocale}}">
+    <meta property="og:image" content="https://foliole.app/assets/brand/foliole-app-icon.svg">
+    <link rel="canonical" href="{{page.url}}">
+    {{{page.alternates}}}
+    <link rel="icon" href="/assets/brand/favicon.png" type="image/png">
+    <script>
+      (function () {
+        var mode = 'system';
+        try {
+          var saved = localStorage.getItem('foliole-theme');
+          if (saved === 'light' || saved === 'dark' || saved === 'system') mode = saved;
+        } catch (error) {}
+        var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.themeMode = mode;
+        document.documentElement.dataset.theme = mode === 'dark' || (mode === 'system' && systemDark) ? 'dark' : 'light';
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="/styles.css?v=000023">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-left">
+        <a class="brand" href="{{page.homeHref}}" aria-label="Foliole home">
+          <span class="brand-icon" aria-hidden="true"></span>
+          <span>Foliole</span>
+        </a>
+        <nav class="primary-nav" aria-label="{{nav.mainLabel}}">
+          <a href="{{page.demoHref}}">Demo</a>
+          <a href="{{page.guidesHref}}">Guides</a>
+          <a href="{{page.downloadHref}}" aria-current="page">{{nav.download}}</a>
+          <a href="https://github.com/campfirium/foliole">GitHub</a>
+        </nav>
+      </div>
+      <nav class="utility-nav" aria-label="{{nav.utilityLabel}}">
+        <button class="theme-button" type="button" aria-label="{{theme.system}}" title="{{theme.system}}" data-theme-toggle>
+          <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path></svg>
+          <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2m2.34-7.07-1.41 1.41M6.34 17.66l-1.41 1.41m0-14.14 1.41 1.41m11.32 11.32 1.41 1.41"></path></svg>
+          <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6.8 6.8 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+        </button>
+        <div class="language-picker">
+          <button class="language-button" type="button" aria-label="{{nav.languageLabel}}" aria-expanded="false" aria-controls="language-menu">
+            <svg class="language-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"></path></svg>
+            <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="language-menu" id="language-menu" role="menu" hidden>
+              {{{page.languageMenu}}}
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="downloads-main">
+      <a class="recommended-download" href="{{page.macosDownloadHref}}" data-recommended-download="macos">
+        <span>{{nav.download}} macOS</span>
+      </a>
+
+      <div class="download-platform-list" aria-label="{{hero.actionsLabel}}">
+        <div class="download-platform-row">
+          <div class="download-platform-name">macOS</div>
+          <a class="download-platform-action" href="{{page.macosDownloadHref}}" data-platform-download="macos">
+            <span class="download-circle-arrow" aria-hidden="true">↓</span>
+            <span class="download-action-copy"><span class="download-action-primary">DMG</span><span class="download-action-secondary">12+ · Apple silicon</span></span>
+          </a>
+        </div>
+        <div class="download-platform-row">
+          <div class="download-platform-name">Windows</div>
+          <a class="download-platform-action" href="{{page.windowsDownloadHref}}" data-platform-download="windows">
+            <span class="download-circle-arrow" aria-hidden="true">↓</span>
+            <span class="download-action-copy"><span class="download-action-primary">EXE</span><span class="download-action-secondary">64-bit (Intel / AMD)</span></span>
+          </a>
+        </div>
+        <div class="download-platform-row">
+          <div class="download-platform-name">Linux</div>
+          <a class="download-platform-action" href="{{page.linuxDownloadHref}}" data-platform-download="linux">
+            <span class="download-circle-arrow" aria-hidden="true">↓</span>
+            <span class="download-action-copy"><span class="download-action-primary">DEB</span><span class="download-action-secondary">64-bit ({{hero.linuxQualifier}})</span></span>
+          </a>
+        </div>
+        <div class="download-platform-row">
+          <div class="download-platform-name">iOS</div>
+          <div class="download-upcoming"><span class="download-upcoming-icon" aria-hidden="true"><svg viewBox="0 0 30 30"><circle cx="15" cy="15" r="13.5"></circle><path d="M15 8.5v7l4.5 2.7"></path></svg></span><span>{{release.expected}}</span></div>
+        </div>
+        <div class="download-platform-row">
+          <div class="download-platform-name">Android</div>
+          <div class="download-upcoming"><span class="download-upcoming-icon" aria-hidden="true"><svg viewBox="0 0 30 30"><circle cx="15" cy="15" r="13.5"></circle><path d="M15 8.5v7l4.5 2.7"></path></svg></span><span>{{release.expected}}</span></div>
+        </div>
+      </div>
+    </main>
+
+    {{{page.themeConfig}}}
+    <script>
+      (function () {
+        var platformText = [navigator.userAgentData && navigator.userAgentData.platform, navigator.platform, navigator.userAgent].filter(Boolean).join(' ').toLowerCase();
+        var platform = platformText.indexOf('win') >= 0
+          ? 'windows'
+          : platformText.indexOf('mac') >= 0
+            ? 'macos'
+            : platformText.indexOf('android') < 0 && (platformText.indexOf('linux') >= 0 || platformText.indexOf('x11') >= 0)
+              ? 'linux'
+              : 'macos';
+        var recommended = document.querySelector('[data-recommended-download]');
+        var selected = document.querySelector('[data-platform-download="' + platform + '"]');
+        if (recommended && selected) {
+          recommended.href = selected.href;
+          recommended.dataset.recommendedDownload = platform;
+          recommended.firstElementChild.textContent = (window.FOLIOLE_PAGE_COPY.download || 'Download') + ' ' + selected.closest('.download-platform-row').querySelector('.download-platform-name').textContent;
+        }
+      })();
+
+      (function () {
+        var themeModes = ['system', 'light', 'dark'];
+        var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+        var button = document.querySelector('[data-theme-toggle]');
+        var themeCopy = (window.FOLIOLE_PAGE_COPY || {}).theme || {};
+        function storedTheme() { var saved = localStorage.getItem('foliole-theme'); return themeModes.indexOf(saved) >= 0 ? saved : 'system'; }
+        function themeLabel(mode) { return mode === 'light' ? themeCopy.light : mode === 'dark' ? themeCopy.dark : themeCopy.system; }
+        function applyTheme(mode) {
+          var effective = mode === 'system' && media && media.matches ? 'dark' : mode === 'dark' ? 'dark' : 'light';
+          document.documentElement.dataset.themeMode = mode;
+          document.documentElement.dataset.theme = effective;
+          if (button) { button.setAttribute('aria-label', themeLabel(mode)); button.setAttribute('title', themeLabel(mode)); }
+        }
+        if (button) button.addEventListener('click', function () { var current = document.documentElement.dataset.themeMode; var next = themeModes[(themeModes.indexOf(current) + 1) % themeModes.length]; localStorage.setItem('foliole-theme', next); applyTheme(next); });
+        if (media) { var onChange = function () { if (storedTheme() === 'system') applyTheme('system'); }; if (media.addEventListener) media.addEventListener('change', onChange); else if (media.addListener) media.addListener(onChange); }
+        applyTheme(storedTheme());
+      })();
+
+      (function () {
+        var picker = document.querySelector('.language-picker');
+        if (!picker) return;
+        var button = picker.querySelector('.language-button');
+        var menu = picker.querySelector('.language-menu');
+        function closeMenu() { menu.hidden = true; button.setAttribute('aria-expanded', 'false'); }
+        button.addEventListener('click', function () { var opening = button.getAttribute('aria-expanded') !== 'true'; menu.hidden = !opening; button.setAttribute('aria-expanded', String(opening)); });
+        document.addEventListener('click', function (event) { if (!picker.contains(event.target)) closeMenu(); });
+        document.addEventListener('keydown', function (event) { if (event.key === 'Escape') closeMenu(); });
+      })();
+    </script>
+  </body>
+</html>
