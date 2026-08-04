@@ -1237,7 +1237,7 @@ h1 {
   .header-left {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     gap: clamp(0.9rem, 2.2vw, 1.2rem);
     width: auto;
   }
@@ -1250,14 +1250,19 @@ h1 {
   }
 
   .brand {
-    align-items: center;
+    align-items: flex-end;
   }
 
   .brand span:not(.brand-icon) {
-    transform: none;
+    transform: translateY(-4px);
+  }
+
+  .brand-icon {
+    align-self: center;
   }
 
   .primary-nav a {
+    align-items: flex-end;
     padding-top: 0;
   }
 
@@ -1268,12 +1273,28 @@ h1 {
   .primary-nav {
     width: auto;
     gap: clamp(0.75rem, 2vw, 1rem);
+    transform: translateY(-1.8px);
   }
 
   .utility-nav {
+    height: 44px;
+    align-items: flex-end;
     justify-self: auto;
     gap: 0.55rem;
     z-index: auto;
+  }
+
+  .theme-button,
+  .language-button {
+    align-items: flex-end;
+  }
+
+  .theme-button {
+    transform: translateY(2px);
+  }
+
+  .language-button {
+    transform: translateY(1px);
   }
 }
 
