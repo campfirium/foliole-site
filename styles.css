@@ -20,6 +20,7 @@
   --control-border-hover: rgba(82, 122, 60, 0.28);
   --menu-bg: rgba(251, 251, 248, 0.96);
   --menu-shadow: 0 28px 72px rgba(31, 48, 39, 0.18);
+  --download-divider: rgba(255, 255, 255, 0.34);
   --header-bg: rgba(242, 240, 234, 0.88);
   --header-border: rgba(216, 210, 200, 0.76);
   --image-filter: none;
@@ -52,6 +53,7 @@
   --control-border-hover: rgba(26, 151, 213, 0.34);
   --menu-bg: rgba(20, 59, 68, 0.97);
   --menu-shadow: 0 24px 56px rgba(0, 20, 26, 0.36);
+  --download-divider: rgba(252, 246, 225, 0.14);
   --header-bg: rgba(0, 43, 54, 0.9);
   --header-border: rgba(49, 87, 97, 0.76);
   --image-filter: brightness(0.48) sepia(0.12) saturate(0.68) hue-rotate(144deg) contrast(0.92);
@@ -277,7 +279,7 @@ h1 {
 .download-toggle {
   display: grid;
   place-items: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.34);
+  border-left: 1px solid var(--download-divider);
   border-radius: 0 8px 8px 0;
   cursor: pointer;
 }
