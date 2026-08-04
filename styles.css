@@ -1237,7 +1237,7 @@ h1 {
   .header-left {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     gap: clamp(0.9rem, 2.2vw, 1.2rem);
     width: auto;
   }
@@ -1250,11 +1250,15 @@ h1 {
   }
 
   .brand {
-    align-items: baseline;
+    align-items: center;
   }
 
-  .brand-icon {
-    align-self: center;
+  .brand span:not(.brand-icon) {
+    transform: none;
+  }
+
+  .primary-nav a {
+    padding-top: 0;
   }
 
   nav {
