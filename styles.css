@@ -8,16 +8,17 @@
   --paper: #fbfbf8;
   --panel: #e7e2d9;
   --line: #d8d2c8;
-  --primary: #527a3c;
-  --primary-hover: #3f6030;
+  --brand: #8da56d;
+  --primary: #5f7847;
+  --primary-hover: #53683f;
   --primary-contrast: #ffffff;
-  --primary-soft: #8da56d;
+  --primary-soft: var(--brand);
   --highlight: #d4b45f;
-  --focus: rgba(82, 122, 60, 0.45);
+  --focus: rgba(141, 165, 109, 0.5);
   --control-bg: rgba(251, 251, 248, 0);
-  --control-bg-hover: rgba(82, 122, 60, 0.08);
+  --control-bg-hover: rgba(141, 165, 109, 0.1);
   --control-border: transparent;
-  --control-border-hover: rgba(82, 122, 60, 0.28);
+  --control-border-hover: rgba(141, 165, 109, 0.34);
   --menu-bg: rgba(251, 251, 248, 0.96);
   --menu-shadow: 0 28px 72px rgba(31, 48, 39, 0.18);
   --download-divider: rgba(255, 255, 255, 0.34);
@@ -34,29 +35,29 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --ink: #fcf6e1;
-  --muted: #c4c3b5;
-  --faint: #7f928f;
-  --surface: #002b36;
-  --paper: #143b44;
-  --panel: #21454e;
-  --line: #315761;
-  --primary: #143b44;
-  --primary-hover: #21454e;
-  --primary-contrast: #fcf6e1;
-  --primary-soft: #1a97d5;
-  --highlight: #f2f481;
-  --focus: rgba(26, 151, 213, 0.5);
-  --control-bg: rgba(236, 233, 223, 0);
-  --control-bg-hover: rgba(236, 233, 223, 0.08);
+  --ink: #f2f0e8;
+  --muted: #b2b7b0;
+  --faint: #7f8781;
+  --surface: #232522;
+  --paper: #232524;
+  --panel: #2b2e2c;
+  --line: #3b3f3c;
+  --primary: #5f7847;
+  --primary-hover: #53683f;
+  --primary-contrast: #ffffff;
+  --primary-soft: var(--brand);
+  --highlight: #d4b45f;
+  --focus: rgba(141, 165, 109, 0.55);
+  --control-bg: rgba(242, 240, 232, 0);
+  --control-bg-hover: rgba(242, 240, 232, 0.07);
   --control-border: transparent;
-  --control-border-hover: rgba(26, 151, 213, 0.34);
-  --menu-bg: rgba(20, 59, 68, 0.97);
-  --menu-shadow: 0 24px 56px rgba(0, 20, 26, 0.36);
-  --download-divider: rgba(252, 246, 225, 0.14);
-  --header-bg: rgba(0, 43, 54, 0.9);
-  --header-border: rgba(49, 87, 97, 0.76);
-  --image-filter: brightness(0.48) sepia(0.12) saturate(0.68) hue-rotate(144deg) contrast(0.92);
+  --control-border-hover: rgba(141, 165, 109, 0.4);
+  --menu-bg: rgba(35, 37, 36, 0.97);
+  --menu-shadow: 0 24px 56px rgba(0, 0, 0, 0.3);
+  --download-divider: rgba(255, 255, 255, 0.28);
+  --header-bg: rgba(35, 37, 34, 0.92);
+  --header-border: rgba(59, 63, 60, 0.78);
+  --image-filter: brightness(0.78) saturate(0.8) contrast(0.96);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -138,7 +139,7 @@ nav {
 .brand-icon {
   width: clamp(36px, 2.65vw, 42px);
   height: clamp(36px, 2.65vw, 42px);
-  background: #8da56d;
+  background: var(--brand);
   -webkit-mask: url("/assets/brand/foliole-logo-transparent.png") center / contain no-repeat;
   mask: url("/assets/brand/foliole-logo-transparent.png") center / contain no-repeat;
   flex-shrink: 0;
@@ -246,7 +247,7 @@ h1 {
 }
 
 .hero-download {
-  width: min(470px, 100%);
+  width: min(900px, 100%);
   margin-top: clamp(3rem, 6vh, 4.8rem);
 }
 
@@ -254,6 +255,7 @@ h1 {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 72px;
+  width: min(420px, 100%);
 }
 
 .download-main,
@@ -345,7 +347,7 @@ h1 {
 .option-primary { color: var(--ink); font-weight: 540; }
 .option-secondary { color: var(--muted); font-weight: 450; }
 .download-availability { display: grid; gap: 0.45rem; margin-top: 1.55rem; }
-.download-availability p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.45; font-weight: 560; }
+.download-availability p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.45; font-weight: 560; white-space: nowrap; }
 
 .button {
   min-height: clamp(44px, 3.25vw, 58px);
@@ -382,14 +384,14 @@ h1 {
 }
 
 :root[data-theme="dark"] .button.primary {
-  background: #143b44;
-  border-color: rgba(252, 246, 225, 0.18);
-  color: #fcf6e1;
+  background: var(--primary);
+  border-color: rgba(242, 240, 232, 0.16);
+  color: var(--primary-contrast);
 }
 
 :root[data-theme="dark"] .button.primary:hover,
 :root[data-theme="dark"] .button.primary:focus-visible {
-  background: #21454e;
+  background: var(--primary-hover);
 }
 
 .button.secondary {
@@ -407,7 +409,7 @@ h1 {
 
 :root[data-theme="dark"] .button.secondary:hover,
 :root[data-theme="dark"] .button.secondary:focus-visible {
-  color: #bddc8d;
+  color: var(--brand);
 }
 
 .release-note {
@@ -471,9 +473,9 @@ h1 {
 }
 
 :root[data-theme="dark"] .hero-shot {
-  border-color: rgba(252, 246, 225, 0.14);
-  background: #143b44;
-  box-shadow: 0 18px 46px rgba(0, 20, 26, 0.34);
+  border-color: rgba(242, 240, 232, 0.12);
+  background: var(--paper);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
 }
 
 .hero-video-link {
@@ -491,7 +493,7 @@ h1 {
 
 :root[data-theme="dark"] .hero-shot img,
 :root[data-theme="dark"] .split-visual img {
-  filter: brightness(0.48) sepia(0.12) saturate(0.68) hue-rotate(144deg) contrast(0.92);
+  filter: var(--image-filter);
 }
 
 .hero-video-link img {
@@ -506,7 +508,7 @@ h1 {
 
 :root[data-theme="dark"] .hero-video-link:hover img,
 :root[data-theme="dark"] .hero-video-link:focus-visible img {
-  filter: brightness(0.54) sepia(0.12) saturate(0.74) hue-rotate(144deg) contrast(0.95);
+  filter: brightness(0.84) saturate(0.88) contrast(0.98);
 }
 
 .hero-video-link::after {
@@ -520,7 +522,7 @@ h1 {
 }
 
 :root[data-theme="dark"] .hero-video-link::after {
-  background: linear-gradient(180deg, transparent 50%, rgba(0, 43, 54, 0.42));
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.42));
 }
 
 .hero-video-link:hover::after,
@@ -585,16 +587,16 @@ h1 {
 }
 
 :root[data-theme="dark"] .hero-play-button {
-  border-color: rgba(252, 246, 225, 0.2);
-  background: rgba(20, 59, 68, 0.9);
-  color: #fcf6e1;
-  box-shadow: 0 14px 34px rgba(0, 20, 26, 0.34);
+  border-color: rgba(242, 240, 232, 0.18);
+  background: rgba(29, 36, 32, 0.92);
+  color: var(--ink);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
 }
 
 :root[data-theme="dark"] .hero-video-link:hover .hero-play-button,
 :root[data-theme="dark"] .hero-video-link:focus-visible .hero-play-button {
-  background: rgba(33, 69, 78, 0.94);
-  box-shadow: 0 16px 38px rgba(0, 20, 26, 0.4);
+  background: rgba(48, 64, 54, 0.96);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.4);
 }
 
 /* ===== DOWNLOAD PAGE ===== */
@@ -793,8 +795,8 @@ h1 {
 }
 
 :root[data-theme="dark"] .split-visual {
-  border-color: rgba(252, 246, 225, 0.13);
-  box-shadow: 0 16px 42px rgba(0, 20, 26, 0.3);
+  border-color: rgba(242, 240, 232, 0.12);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.3);
 }
 
 .split-visual img {
@@ -1030,7 +1032,7 @@ h1 {
 :root[data-theme="dark"] .language-menu a[aria-current="page"],
 :root[data-theme="dark"] .language-menu button[aria-checked="true"] {
   color: var(--primary-soft);
-  background: rgba(26, 151, 213, 0.12);
+  background: rgba(141, 165, 109, 0.14);
 }
 
 /* ===== FOCUS ===== */
@@ -1114,7 +1116,8 @@ h1 {
   }
 
   .hero-download { width: 100%; }
-  .split-download { grid-template-columns: minmax(0, 1fr) 66px; }
+  .split-download { width: 100%; grid-template-columns: minmax(0, 1fr) 66px; }
+  .download-availability p { white-space: normal; }
   .download-main, .download-toggle { min-height: 88px; }
   .download-title { font-size: 1.2rem; }
   .download-requirement { font-size: 0.82rem; }
