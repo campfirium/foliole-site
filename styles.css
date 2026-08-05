@@ -254,13 +254,13 @@ h1 {
 .split-download {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 60px;
-  width: min(360px, 100%);
+  grid-template-columns: minmax(0, 1fr) 52px;
+  width: min(320px, 100%);
 }
 
 .download-main,
 .download-toggle {
-  min-height: 80px;
+  min-height: 70px;
   border: 0;
   background: var(--primary);
   color: var(--primary-contrast);
@@ -271,8 +271,8 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 0.35rem;
-  padding: 0.8rem 1.2rem;
+  gap: 0.125rem;
+  padding: 0.65rem 1rem;
   border-radius: 8px 0 0 8px;
   text-align: left;
   text-decoration: none;
@@ -300,15 +300,15 @@ h1 {
 .download-requirement { font-size: 0.9rem; font-weight: 520; opacity: 0.78; }
 
 .download-chevron {
-  width: 17px;
-  height: 17px;
-  border-right: 3px solid currentColor;
-  border-bottom: 3px solid currentColor;
-  transform: translateY(-4px) rotate(45deg);
+  width: 11px;
+  height: 11px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
   transition: transform 160ms ease;
 }
 
-.download-toggle[aria-expanded="true"] .download-chevron { transform: translateY(4px) rotate(225deg); }
+.download-toggle[aria-expanded="true"] .download-chevron { transform: translateY(2px) rotate(225deg); }
 
 .download-menu {
   position: absolute;
@@ -1136,11 +1136,11 @@ h1 {
   }
 
   .hero-download { width: 100%; }
-  .split-download { width: min(320px, 100%); grid-template-columns: minmax(0, 1fr) 56px; }
+  .split-download { width: min(280px, 100%); grid-template-columns: minmax(0, 1fr) 48px; }
   .download-availability p { white-space: normal; }
-  .download-main, .download-toggle { min-height: 76px; }
-  .download-title { font-size: 1.2rem; }
-  .download-requirement { font-size: 0.82rem; }
+  .download-main, .download-toggle { min-height: 68px; }
+  .download-title { font-size: 1.1rem; }
+  .download-requirement { font-size: 0.8rem; }
   .download-option { padding: 0 1.1rem; }
   .option-copy { flex-wrap: wrap; row-gap: 0.05rem; white-space: normal; }
 
