@@ -979,17 +979,20 @@ h1 {
 
 @media (min-width: 761px) {
   .site-header {
-    padding-top: 6px;
-    padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 6px;
   }
 
   .primary-nav {
     font-size: clamp(1.2rem, 1.2vw, 1.488rem);
   }
 
-  .utility-nav {
-    transform: translateY(12px);
+  .theme-icon,
+  .language-icon,
+  .language-chevron {
+    transform: translateY(8px);
   }
+
 }
 
 .language-menu {
