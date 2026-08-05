@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=000059">
+    <link rel="stylesheet" href="/styles.css?v=000060">
 {{{page.localeRedirectScript}}}
   </head>
   <body>
@@ -390,11 +390,6 @@
         function setOpen(open) {
           picker.classList.toggle('is-open', open);
           button.setAttribute('aria-expanded', String(open));
-          if (open) {
-            var rect = button.getBoundingClientRect();
-            menu.style.top = rect.bottom + 8 + 'px';
-            menu.style.right = Math.max(16, window.innerWidth - rect.right) + 'px';
-          }
           menu.hidden = !open;
         }
 

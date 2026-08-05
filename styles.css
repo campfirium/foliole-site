@@ -993,8 +993,8 @@ h1 {
 }
 
 .language-menu {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: calc(100% + 8px);
   right: 0;
   z-index: 1000;
   pointer-events: auto;
