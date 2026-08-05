@@ -254,13 +254,13 @@ h1 {
 .split-download {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 72px;
-  width: min(420px, 100%);
+  grid-template-columns: minmax(0, 1fr) 60px;
+  width: min(360px, 100%);
 }
 
 .download-main,
 .download-toggle {
-  min-height: 94px;
+  min-height: 80px;
   border: 0;
   background: var(--primary);
   color: var(--primary-contrast);
@@ -272,7 +272,7 @@ h1 {
   align-items: flex-start;
   justify-content: center;
   gap: 0.35rem;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   border-radius: 8px 0 0 8px;
   text-align: left;
   text-decoration: none;
@@ -1136,9 +1136,9 @@ h1 {
   }
 
   .hero-download { width: 100%; }
-  .split-download { width: 100%; grid-template-columns: minmax(0, 1fr) 66px; }
+  .split-download { width: min(320px, 100%); grid-template-columns: minmax(0, 1fr) 56px; }
   .download-availability p { white-space: normal; }
-  .download-main, .download-toggle { min-height: 88px; }
+  .download-main, .download-toggle { min-height: 76px; }
   .download-title { font-size: 1.2rem; }
   .download-requirement { font-size: 0.82rem; }
   .download-option { padding: 0 1.1rem; }
@@ -1238,7 +1238,7 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: clamp(0.9rem, 2.2vw, 1.2rem);
+    gap: clamp(2.25rem, 5.5vw, 3rem);
     width: auto;
   }
 
@@ -1259,6 +1259,7 @@ h1 {
 
   .brand-icon {
     align-self: center;
+    transform: translateY(3.5px) scale(1.2);
   }
 
   .primary-nav a {
@@ -1273,7 +1274,7 @@ h1 {
   .primary-nav {
     width: auto;
     gap: clamp(0.75rem, 2vw, 1rem);
-    transform: translateY(-1.8px);
+    transform: translateY(-5.8px);
   }
 
   .utility-nav {
@@ -1290,11 +1291,23 @@ h1 {
   }
 
   .theme-button {
-    transform: translateY(2px);
+    transform: none;
   }
 
   .language-button {
-    transform: translateY(1px);
+    transform: none;
+  }
+
+  .theme-icon {
+    transform: translateY(-5px);
+  }
+
+  .language-icon {
+    transform: translateY(-6px);
+  }
+
+  .language-chevron {
+    transform: translateY(-8px);
   }
 }
 
