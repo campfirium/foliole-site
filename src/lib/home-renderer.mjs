@@ -90,13 +90,23 @@ function demoLocale(locale) {
   return demoSiteLocaleMap.get(locale.path) ?? demoFallbackLocale;
 }
 
-function demoHref(locale, manifest) {
-  return `/${demoLocale(locale)}/demo/`;
+function demoLanguage(locale) {
+  return locale.id === 'pt' ? 'pt-BR' : locale.id;
 }
 
-function guidesHref(locale, manifest) {
+function withDemoLanguage(pathname, locale) {
+  const language = demoLanguage(locale);
+  return language.toLowerCase() === demoLocale(locale) ? pathname : `${pathname}?lang=${encodeURIComponent(language)}`;
+}
+
+export function demoHref(locale) {
+  return withDemoLanguage(`/${demoLocale(locale)}/demo/`, locale);
+}
+
+export function guidesHref(locale, manifest) {
   const pack = manifest?.localePublishPacks?.find((entry) => entry.locale === demoLocale(locale));
-  return pack?.topics?.[0]?.canonicalPath ?? `/${demoLocale(locale)}/guides/`;
+  const pathname = pack?.topics?.[0]?.canonicalPath ?? `/${demoLocale(locale)}/guides/`;
+  return withDemoLanguage(pathname, locale);
 }
 
 function renderLanguageMenu(currentLocale, page = 'home') {
