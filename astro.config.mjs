@@ -5,8 +5,10 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { locales } from './src/lib/home-renderer.mjs';
+
 const siteUrl = 'https://foliole.app';
-const supportedDemoLocales = new Set(['en', 'zh-hans']);
+const supportedDemoLocales = new Set(locales.map((locale) => locale.path || 'en'));
 
 function isSupportedDemoPath(pathname) {
   const locale = pathname.split('/').filter(Boolean)[0];

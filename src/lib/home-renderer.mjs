@@ -6,10 +6,6 @@ const siteUrl = 'https://foliole.app';
 const languagePreferenceKey = 'foliole-language-manual';
 const demoManifestPath = path.join(root, 'public', 'assets', 'demo', 'demo-manifest.json');
 const downloadsPath = path.join(root, 'content', 'downloads.json');
-const demoFallbackLocale = 'en';
-const demoSiteLocaleMap = new Map([
-  ['zh-hans', 'zh-hans']
-]);
 
 export const locales = [
   { id: 'en', path: '', htmlLang: 'en', hreflang: 'en', ogLocale: 'en_US', name: 'English' },
@@ -86,8 +82,12 @@ async function readDownloads() {
   return JSON.parse(await readFile(downloadsPath, 'utf8'));
 }
 
-function demoLocale(locale) {
-  return demoSiteLocaleMap.get(locale.path) ?? demoFallbackLocale;
+function demoRouteLocale(locale) {
+  return locale.path || 'en';
+}
+
+function demoContentLocale(locale) {
+  return locale.path === 'zh-hans' ? 'zh-hans' : 'en';
 }
 
 function demoLanguage(locale) {
@@ -100,12 +100,13 @@ function withDemoLanguage(pathname, locale) {
 }
 
 export function demoHref(locale) {
-  return withDemoLanguage(`/${demoLocale(locale)}/demo/`, locale);
+  return withDemoLanguage(`/${demoRouteLocale(locale)}/demo/`, locale);
 }
 
 export function guidesHref(locale, manifest) {
-  const pack = manifest?.localePublishPacks?.find((entry) => entry.locale === demoLocale(locale));
-  const pathname = pack?.topics?.[0]?.canonicalPath ?? `/${demoLocale(locale)}/guides/`;
+  const pack = manifest?.localePublishPacks?.find((entry) => entry.locale === demoContentLocale(locale));
+  const slug = pack?.topics?.[0]?.slug ?? '';
+  const pathname = `/${demoRouteLocale(locale)}/guides/${slug ? `${slug}/` : ''}`;
   return withDemoLanguage(pathname, locale);
 }
 

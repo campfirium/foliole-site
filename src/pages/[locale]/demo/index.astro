@@ -1,32 +1,50 @@
 ---
 import DemoShell from '../../../layouts/DemoShell.astro';
 import { getDemoManifest, getDemoPath } from '../../../lib/demo-manifest.mjs';
+import { locales } from '../../../lib/home-renderer.mjs';
 
 export function getStaticPaths() {
-  const supportedDemoLocales = ['en', 'zh-hans'];
-  return supportedDemoLocales.map((locale) => ({
-    params: { locale },
-    props: { locale }
-  }));
+  return locales.map((entry) => {
+    const locale = entry.path || 'en';
+    return {
+      params: { locale },
+      props: { locale, hreflang: entry.hreflang }
+    };
+  });
+}
+
+function routeTopic(topic, locale, hreflang) {
+  return {
+    ...topic,
+    locale,
+    hreflang,
+    canonicalPath: `/${locale}/guides/${topic.slug}/`,
+    demoPath: getDemoPath(locale)
+  };
 }
 
 const manifest = await getDemoManifest();
-const { locale } = Astro.props;
-const supportedDemoLocales = ['en', 'zh-hans'];
-const localePack = manifest.localePublishPacks.find((pack) => pack.locale === locale);
-if (!localePack) throw new Error(`Missing Demo locale pack: ${locale}`);
-const defaultTopic = localePack.topics[0];
+const { locale, hreflang } = Astro.props;
+const localePack = manifest.localePublishPacks.find((pack) => pack.locale === locale) ??
+  manifest.localePublishPacks.find((pack) => pack.locale === 'en');
+if (!localePack) throw new Error(`Missing Demo content fallback: ${locale}`);
+const topics = localePack.topics.map((topic) => routeTopic(topic, locale, hreflang));
+const defaultTopic = topics[0];
+const alternates = locales.map((entry) => ({
+  hreflang: entry.hreflang,
+  path: getDemoPath(entry.path || 'en')
+}));
 ---
 
 <DemoShell
   title="Foliole Demo"
   description={defaultTopic.description}
-  topics={localePack.topics}
+  topics={topics}
   topic={defaultTopic}
   runtime={manifest.runtime}
   canonicalPath={getDemoPath(locale)}
-  alternates={supportedDemoLocales.map((entry) => ({ locale: entry, hreflang: entry === 'zh-hans' ? 'zh-Hans' : 'en', path: getDemoPath(entry) }))}
+  alternates={alternates}
   xDefaultPath="/en/demo/"
-  hreflang={locale === 'zh-hans' ? 'zh-Hans' : 'en'}
+  hreflang={hreflang}
   pageKind="website"
 />

@@ -1,30 +1,50 @@
 ---
 import DemoShell from '../../../layouts/DemoShell.astro';
-import { getDemoManifest, getDemoTopic, getDemoTopics, getSupportedDemoAlternates } from '../../../lib/demo-manifest.mjs';
+import { getDemoManifest, getDemoPath } from '../../../lib/demo-manifest.mjs';
+import { locales } from '../../../lib/home-renderer.mjs';
 
 export async function getStaticPaths() {
-  const topics = await getDemoTopics();
-  return topics.map((topic) => ({
-    params: { locale: topic.locale, slug: topic.slug },
-    props: { topic }
-  }));
+  const manifest = await getDemoManifest();
+  return locales.flatMap((entry) => {
+    const locale = entry.path || 'en';
+    const pack = manifest.localePublishPacks.find((candidate) => candidate.locale === locale) ??
+      manifest.localePublishPacks.find((candidate) => candidate.locale === 'en');
+    if (!pack) throw new Error(`Missing Guide content fallback: ${locale}`);
+    return pack.topics.map((topic) => ({
+      params: { locale, slug: topic.slug },
+      props: { locale, hreflang: entry.hreflang, topic }
+    }));
+  });
 }
 
 const manifest = await getDemoManifest();
-const { topic } = Astro.props;
-const localePack = manifest.localePublishPacks.find((pack) => pack.locale === topic.locale);
-const currentTopic = await getDemoTopic(topic.locale, topic.slug);
-if (!currentTopic || !localePack) throw new Error(`Missing Demo topic: ${topic.locale}/${topic.slug}`);
+const { locale, hreflang, topic } = Astro.props;
+const localePack = manifest.localePublishPacks.find((pack) => pack.locale === locale) ??
+  manifest.localePublishPacks.find((pack) => pack.locale === 'en');
+if (!localePack) throw new Error(`Missing Guide content fallback: ${locale}`);
+const routeTopic = (entry) => ({
+  ...entry,
+  locale,
+  hreflang,
+  canonicalPath: `/${locale}/guides/${entry.slug}/`,
+  demoPath: getDemoPath(locale)
+});
+const topics = localePack.topics.map(routeTopic);
+const currentTopic = routeTopic(topic);
+const alternates = locales.map((entry) => ({
+  hreflang: entry.hreflang,
+  path: `/${entry.path || 'en'}/guides/${topic.slug}/`
+}));
 ---
 
 <DemoShell
   title={currentTopic.title}
   description={currentTopic.description}
-  topics={localePack.topics}
+  topics={topics}
   topic={currentTopic}
   runtime={manifest.runtime}
   canonicalPath={currentTopic.canonicalPath}
-  alternates={getSupportedDemoAlternates(currentTopic)}
-  xDefaultPath={currentTopic.xDefaultPath}
-  hreflang={currentTopic.hreflang}
+  alternates={alternates}
+  xDefaultPath={`/en/guides/${topic.slug}/`}
+  hreflang={hreflang}
 />

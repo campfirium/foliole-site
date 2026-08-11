@@ -108,7 +108,7 @@ export async function getDemoTopic(locale, slug) {
 }
 
 export function getDemoPath(locale) {
-  return supportedDemoLocales.has(locale) ? `/${locale}/demo/` : '/en/demo/';
+  return /^\w{2}(?:-[a-z]+)?$/i.test(locale) ? `/${locale}/demo/` : '/en/demo/';
 }
 
 export function getSupportedDemoAlternates(topic) {

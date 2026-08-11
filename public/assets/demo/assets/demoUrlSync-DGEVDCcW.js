@@ -1,1 +1,0 @@
-import{a as e,i as t,n,o as r,r as i,s as a,t as o}from"./demoUrlSync-fXL3arP0.js";export{o as DEMO_LANGUAGE_QUERY_KEY,n as acceptDemoLanguagePreferenceFromSearch,i as demoPathSegmentFromLocale,t as resolveDemoInitialLanguagePreference,e as resolveDemoLanguagePreferenceFromPath,r as resolveDemoLanguagePreferenceFromSearch,a as syncDemoUrlToNode};
