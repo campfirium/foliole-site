@@ -17,5 +17,7 @@ test('theme control cycles through system, light, and dark modes', async () => {
   const styles = await readFile('styles.css', 'utf8');
 
   assert.match(template, /themeModes\[\(themeModes\.indexOf\(current\) \+ 1\) % themeModes\.length\]/u);
+  assert.doesNotMatch(template, /class="theme-button"[^>]*title=/u);
+  assert.doesNotMatch(template, /setAttribute\('title'/u);
   assert.match(styles, /data-theme-mode="system"\] \.theme-icon-system/u);
 });

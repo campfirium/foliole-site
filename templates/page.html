@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=000061">
+    <link rel="stylesheet" href="/styles.css?v=000062">
 {{{page.localeRedirectScript}}}
   </head>
   <body>
@@ -52,7 +52,7 @@
               </nav>
             </div>
             <nav class="utility-nav" aria-label="{{nav.utilityLabel}}">
-              <button class="theme-button" type="button" aria-label="{{theme.system}}" title="{{theme.system}}" data-theme-toggle>
+              <button class="theme-button" type="button" aria-label="{{theme.system}}" data-theme-toggle>
                 <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="3" y="4" width="18" height="13" rx="2"></rect>
                   <path d="M8 21h8"></path>
@@ -338,7 +338,6 @@
           document.documentElement.dataset.theme = effective;
           if (button) {
             button.setAttribute('aria-label', themeLabel(mode));
-            button.setAttribute('title', themeLabel(mode));
           }
         }
 

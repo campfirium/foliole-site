@@ -986,13 +986,6 @@ h1 {
   .primary-nav {
     font-size: clamp(1.2rem, 1.2vw, 1.488rem);
   }
-
-  .theme-icon,
-  .language-icon,
-  .language-chevron {
-    transform: translateY(8px);
-  }
-
 }
 
 .language-menu {
@@ -1302,7 +1295,7 @@ h1 {
 
   .utility-nav {
     height: 44px;
-    align-items: flex-end;
+    align-items: center;
     justify-self: auto;
     gap: 0.55rem;
     z-index: auto;
@@ -1310,7 +1303,7 @@ h1 {
 
   .theme-button,
   .language-button {
-    align-items: flex-end;
+    align-items: center;
   }
 
   .theme-button {
@@ -1321,17 +1314,6 @@ h1 {
     transform: none;
   }
 
-  .theme-icon {
-    transform: translateY(-5px);
-  }
-
-  .language-icon {
-    transform: translateY(-6px);
-  }
-
-  .language-chevron {
-    transform: translateY(-8px);
-  }
 }
 
 /* ===== SMALL MOBILE ===== */
