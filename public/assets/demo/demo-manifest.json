@@ -1,7 +1,7 @@
 {
   "contractVersion": 3,
-  "generatedAt": "2026-08-11T10:13:16.085Z",
-  "buildHash": "sha256:f9fe005c86503cfb75fe7f08fb30aa33c2965571fb1bcb1895a89b6f1464b49d",
+  "generatedAt": "2026-08-11T10:33:01.454Z",
+  "buildHash": "sha256:4c93db357017ca848b5ea268481e6c40bd7a4c750db311a0c81eed414883f98b",
   "publishedLocales": [
     {
       "locale": "en",
@@ -9741,15 +9741,15 @@
         "type": "style"
       },
       {
-        "path": "assets/App-Y4UOuQ5d.js",
+        "path": "assets/App-CB3Cqa6T.js",
         "type": "script"
       },
       {
-        "path": "assets/appLanguage-CFs3spnb.js",
+        "path": "assets/appLanguage-rWTtn83G.js",
         "type": "script"
       },
       {
-        "path": "assets/appRuntimeCommandRepository-DKVGANWK.js",
+        "path": "assets/appRuntimeCommandRepository-CSn-E0PD.js",
         "type": "script"
       },
       {
@@ -9777,11 +9777,11 @@
         "type": "script"
       },
       {
-        "path": "assets/assistantRuntime-DZa6uzzx.js",
+        "path": "assets/assistantRuntime-BFJLCQwP.js",
         "type": "script"
       },
       {
-        "path": "assets/attachmentResources-BufN1Qdv.js",
+        "path": "assets/attachmentResources-DM0IfPrS.js",
         "type": "script"
       },
       {
@@ -9969,7 +9969,7 @@
         "type": "script"
       },
       {
-        "path": "assets/CommandPalette-CnGMupDq.js",
+        "path": "assets/CommandPalette-uFwK-CCO.js",
         "type": "script"
       },
       {
@@ -10013,15 +10013,15 @@
         "type": "script"
       },
       {
-        "path": "assets/demoExternalFolderProvider-DWrCfDn4.js",
+        "path": "assets/demoExternalFolderProvider-Dftr-e8e.js",
         "type": "script"
       },
       {
-        "path": "assets/demoLocalStorage-nhaUU-id.js",
+        "path": "assets/demoLocalStorage-CozAvC1Q.js",
         "type": "script"
       },
       {
-        "path": "assets/demoMarkdownImport-DAELSuMV.js",
+        "path": "assets/demoMarkdownImport-Ck40N4LL.js",
         "type": "script"
       },
       {
@@ -10033,31 +10033,31 @@
         "type": "script"
       },
       {
-        "path": "assets/demoRuntimeController-BRdJ6yGP.js",
+        "path": "assets/demoRuntimeController-C4pklJy0.js",
         "type": "script"
       },
       {
-        "path": "assets/DemoSettingsPreviewOverlay-CtcwmFMN.js",
+        "path": "assets/DemoSettingsPreviewOverlay-BrRqNOqF.js",
         "type": "script"
       },
       {
-        "path": "assets/demoUrlSync-DVnL3LHf.js",
+        "path": "assets/demoUrlSync-DGEVDCcW.js",
         "type": "script"
       },
       {
-        "path": "assets/demoUrlSync-GdUXfwpL.js",
+        "path": "assets/demoUrlSync-fXL3arP0.js",
         "type": "script"
       },
       {
-        "path": "assets/DemoUrlSyncBridge-2L6ypreK.js",
+        "path": "assets/DemoUrlSyncBridge-BWOoZPNv.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-B2XwM6rb.js",
+        "path": "assets/demoWorkspaceSnapshot-C1KF1ief.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-wJx3WbLr.js",
+        "path": "assets/demoWorkspaceSnapshot-yZNLrsK2.js",
         "type": "script"
       },
       {
@@ -10117,11 +10117,11 @@
         "type": "script"
       },
       {
-        "path": "assets/externalSourceSettingsRepository-oYbTHQnF.js",
+        "path": "assets/externalSourceSettingsRepository-BN-Wo4Gf.js",
         "type": "script"
       },
       {
-        "path": "assets/FeedbackDialog-HlT-2uKP.js",
+        "path": "assets/FeedbackDialog-CE0sLcDy.js",
         "type": "script"
       },
       {
@@ -10149,7 +10149,7 @@
         "type": "script"
       },
       {
-        "path": "assets/GoToNodePalette-DqkcewMW.js",
+        "path": "assets/GoToNodePalette-BRIFqC21.js",
         "type": "script"
       },
       {
@@ -10157,7 +10157,7 @@
         "type": "script"
       },
       {
-        "path": "assets/HelpSearch-BcKp2uyu.js",
+        "path": "assets/HelpSearch-CoyA4R1t.js",
         "type": "script"
       },
       {
@@ -10165,11 +10165,11 @@
         "type": "script"
       },
       {
-        "path": "assets/importSourceWorkspaceSettings-DlbSewTG.js",
+        "path": "assets/importSourceWorkspaceSettings-C5dwjX4D.js",
         "type": "script"
       },
       {
-        "path": "assets/index-Bk24eHep.js",
+        "path": "assets/index-CbLbxUYs.js",
         "type": "script"
       },
       {
@@ -10213,7 +10213,7 @@
         "type": "script"
       },
       {
-        "path": "assets/libraryPathsRuntimeRepository-CkBnbCbF.js",
+        "path": "assets/libraryPathsRuntimeRepository-BlGxP3Ht.js",
         "type": "script"
       },
       {
@@ -10225,7 +10225,7 @@
         "type": "script"
       },
       {
-        "path": "assets/LinkPanelStack-Tmx-MSJP.js",
+        "path": "assets/LinkPanelStack-BoUalSN_.js",
         "type": "script"
       },
       {
@@ -10237,11 +10237,11 @@
         "type": "script"
       },
       {
-        "path": "assets/LocalizationProvider-CySxro4-.js",
+        "path": "assets/LocalizationProvider-BEEbH8GK.js",
         "type": "script"
       },
       {
-        "path": "assets/macOsFontSmoothing-DI8etTza.js",
+        "path": "assets/macOsFontSmoothing-CmsqF8xh.js",
         "type": "script"
       },
       {
@@ -10249,7 +10249,7 @@
         "type": "script"
       },
       {
-        "path": "assets/MarkdownEditor-Bx_3lrYw.js",
+        "path": "assets/MarkdownEditor-BGi0eLK7.js",
         "type": "script"
       },
       {
@@ -10289,11 +10289,11 @@
         "type": "script"
       },
       {
-        "path": "assets/nodeReviewSettings-C6UWeGS5.js",
+        "path": "assets/nodeReviewSettings-B448l1zQ.js",
         "type": "script"
       },
       {
-        "path": "assets/nodeSourceRuntimeRepository-Bvch8L2g.js",
+        "path": "assets/nodeSourceRuntimeRepository-BiHxKMU8.js",
         "type": "script"
       },
       {
@@ -10313,7 +10313,7 @@
         "type": "script"
       },
       {
-        "path": "assets/PdfDocumentSurface-CkRPg9RR.js",
+        "path": "assets/PdfDocumentSurface-D0NzX_F4.js",
         "type": "script"
       },
       {
@@ -10321,7 +10321,7 @@
         "type": "style"
       },
       {
-        "path": "assets/pdfSystemRegistry-A4GN3qtj.js",
+        "path": "assets/pdfSystemRegistry-BCg2z2nx.js",
         "type": "script"
       },
       {
@@ -10397,11 +10397,11 @@
         "type": "script"
       },
       {
-        "path": "assets/ReviewSourceTopicDeleteDialog-CdwetWiZ.js",
+        "path": "assets/ReviewSourceTopicDeleteDialog-C5wOxBrW.js",
         "type": "script"
       },
       {
-        "path": "assets/ReviewTopicDelayPanel-NQ5FcBeY.js",
+        "path": "assets/ReviewTopicDelayPanel-BwiR3jMK.js",
         "type": "script"
       },
       {
@@ -10417,15 +10417,15 @@
         "type": "script"
       },
       {
-        "path": "assets/runtimeExternalNavigation-BDynVicT.js",
+        "path": "assets/runtimeExternalNavigation-BewZIMKY.js",
         "type": "script"
       },
       {
-        "path": "assets/runtimeInvoke-B2PLNSEt.js",
+        "path": "assets/runtimeInvoke-CYqDWVLO.js",
         "type": "script"
       },
       {
-        "path": "assets/runtimeLogging-BkgeJder.js",
+        "path": "assets/runtimeLogging-C0h30p8h.js",
         "type": "script"
       },
       {
@@ -10433,15 +10433,15 @@
         "type": "script"
       },
       {
-        "path": "assets/searchEnhancementSettings-oheRyR7M.js",
+        "path": "assets/searchEnhancementSettings-D4AKkup_.js",
         "type": "script"
       },
       {
-        "path": "assets/SearchPalette-D7fcwiBh.js",
+        "path": "assets/SearchPalette-y_cuFOax.js",
         "type": "script"
       },
       {
-        "path": "assets/SearchResultPreviewPanel-BW4gPnIc.js",
+        "path": "assets/SearchResultPreviewPanel-Vr2fW9Hh.js",
         "type": "script"
       },
       {
@@ -10449,11 +10449,11 @@
         "type": "script"
       },
       {
-        "path": "assets/SettingsPanel-COuGyutn.js",
+        "path": "assets/SettingsPanel-BSF4--yQ.js",
         "type": "script"
       },
       {
-        "path": "assets/shortcutDisplay-DgPdYTgI.js",
+        "path": "assets/shortcutDisplay-CJM7Shgh.js",
         "type": "script"
       },
       {
@@ -10477,7 +10477,7 @@
         "type": "script"
       },
       {
-        "path": "assets/storage-CCmbv5zS.js",
+        "path": "assets/storage-Fml_gj5y.js",
         "type": "script"
       },
       {
@@ -10509,19 +10509,19 @@
         "type": "script"
       },
       {
-        "path": "assets/ui-95OBeZEu.js",
+        "path": "assets/ui-Carfyfyb.js",
         "type": "script"
       },
       {
-        "path": "assets/updateCheck-hsp8aSzd.js",
+        "path": "assets/updateCheck-B1FoyJXZ.js",
         "type": "script"
       },
       {
-        "path": "assets/useFloatingPaletteEscape-y0mSTz7o.js",
+        "path": "assets/useFloatingPaletteEscape-DuRNJ22w.js",
         "type": "script"
       },
       {
-        "path": "assets/useNodeBacklinks-cDrZTEpI.js",
+        "path": "assets/useNodeBacklinks-7spF4lQc.js",
         "type": "script"
       },
       {
@@ -10557,11 +10557,11 @@
         "type": "script"
       },
       {
-        "path": "assets/workspaceMutationRepository-DjmYjngJ.js",
+        "path": "assets/workspaceMutationRepository-BiRavo7p.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceMutationRepository-DLF8hwD2.js",
+        "path": "assets/workspaceMutationRepository-y4Nabwta.js",
         "type": "script"
       },
       {
@@ -10573,27 +10573,27 @@
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarAssistantPanel-C49Fjsy0.js",
+        "path": "assets/WorkspaceRightSidebarAssistantPanel-sf6PJhjw.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarBacklinksPanel-C698pb_I.js",
+        "path": "assets/WorkspaceRightSidebarBacklinksPanel-nB8gX1Wd.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarDevPanel-DIMtBg3Z.js",
+        "path": "assets/WorkspaceRightSidebarDevPanel-DcbUiWEw.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarHighlightsPanel-DRb_Z4J2.js",
+        "path": "assets/WorkspaceRightSidebarHighlightsPanel-DOm63Mlp.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarOutlinePanel-BJSG6ao3.js",
+        "path": "assets/WorkspaceRightSidebarOutlinePanel-X-iXxQnw.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarPerformancePanel-ClWYXosy.js",
+        "path": "assets/WorkspaceRightSidebarPerformancePanel-CJsKuXfv.js",
         "type": "script"
       },
       {
@@ -10601,19 +10601,19 @@
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarReviewQueuePanel-Fel3lSTj.js",
+        "path": "assets/WorkspaceRightSidebarReviewQueuePanel-CVkw6aO0.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceRuntimeMutationResults-DqaSXmZO.js",
+        "path": "assets/workspaceRuntimeMutationResults-BQ453fxh.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceSettingsOverlayContent-CZIv28Kb.js",
+        "path": "assets/WorkspaceSettingsOverlayContent-Cms06Mpf.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceStore-joRgxwDR.js",
+        "path": "assets/workspaceStore-0tOvlFZc.js",
         "type": "script"
       },
       {

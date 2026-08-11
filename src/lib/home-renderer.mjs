@@ -96,7 +96,7 @@ function demoLanguage(locale) {
 
 function withDemoLanguage(pathname, locale) {
   const language = demoLanguage(locale);
-  return language.toLowerCase() === demoLocale(locale) ? pathname : `${pathname}?lang=${encodeURIComponent(language)}`;
+  return `${pathname}?lang=${encodeURIComponent(language)}`;
 }
 
 export function demoHref(locale) {

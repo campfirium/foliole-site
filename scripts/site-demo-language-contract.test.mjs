@@ -12,10 +12,10 @@ const manifest = {
 };
 
 test('website locale links carry Demo interface language on published routes', () => {
-  assert.equal(demoHref(locale('en')), '/en/demo/');
+  assert.equal(demoHref(locale('en')), '/en/demo/?lang=en');
   assert.equal(demoHref(locale('de')), '/en/demo/?lang=de');
   assert.equal(demoHref(locale('pt')), '/en/demo/?lang=pt-BR');
-  assert.equal(demoHref(locale('zh-Hans')), '/zh-hans/demo/');
+  assert.equal(demoHref(locale('zh-Hans')), '/zh-hans/demo/?lang=zh-Hans');
   assert.equal(demoHref(locale('zh-Hant')), '/en/demo/?lang=zh-Hant');
 });
 
@@ -23,6 +23,6 @@ test('Guide links preserve the same language context without inventing content r
   assert.equal(guidesHref(locale('ja'), manifest), '/en/guides/welcome-to-foliole/?lang=ja');
   assert.equal(
     guidesHref(locale('zh-Hans'), manifest),
-    '/zh-hans/guides/welcome-to-foliole/'
+    '/zh-hans/guides/welcome-to-foliole/?lang=zh-Hans'
   );
 });

@@ -1,1 +1,0 @@
-import{a as e,i as t,n,o as r,r as i,t as a}from"./demoUrlSync-DVnL3LHf.js";export{a as DEMO_LANGUAGE_QUERY_KEY,n as demoPathSegmentFromLocale,i as resolveDemoInitialLanguagePreference,t as resolveDemoLanguagePreferenceFromPath,e as resolveDemoLanguagePreferenceFromSearch,r as syncDemoUrlToNode};
