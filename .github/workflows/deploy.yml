@@ -26,6 +26,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAGES: 'true'
+    outputs:
+      artifact_sha256: ${{ steps.pack.outputs.artifact_sha256 }}
+      ready: ${{ steps.pack.outputs.ready }}
+      tree_sha256: ${{ steps.pack.outputs.tree_sha256 }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,10 +45,12 @@ jobs:
         run: |
           node scripts/update-downloads-manifest.mjs --directory-url "$DIRECTORY_URL"
       - name: Commit published download manifest
+        id: manifest
         if: github.event_name == 'repository_dispatch' || (github.event_name == 'workflow_dispatch' && inputs.directory_url != '')
         run: |
           if git diff --quiet -- content/downloads.json; then
             echo "Download manifest is already current."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
@@ -53,18 +59,49 @@ jobs:
           product_version="$(node -p "require('./content/downloads.json').productVersion")"
           git commit -m "chore: update platform downloads for ${product_version}"
           git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Install dependencies
+        if: steps.manifest.outputs.changed != 'true'
         run: npm ci
       - name: Configure Pages
+        if: steps.manifest.outputs.changed != 'true'
         uses: actions/configure-pages@v5
       - name: Build
-        run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        if: steps.manifest.outputs.changed != 'true'
+        run: env -u FOLIOLE_DEMO_DIST npm run build
+      - name: Pack the single deployment artifact
+        id: pack
+        if: steps.manifest.outputs.changed != 'true'
+        run: |
+          tree_sha256="$(
+            cd dist
+            find . -type f -print0 \
+              | LC_ALL=C sort -z \
+              | xargs -0 -r sha256sum \
+              | sha256sum \
+              | cut -d' ' -f1
+          )"
+          tar \
+            --dereference \
+            --hard-dereference \
+            --directory dist \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            .
+          artifact_sha256="$(sha256sum "$RUNNER_TEMP/artifact.tar" | cut -d' ' -f1)"
+          echo "artifact_sha256=${artifact_sha256}" >> "$GITHUB_OUTPUT"
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+          echo "tree_sha256=${tree_sha256}" >> "$GITHUB_OUTPUT"
+      - name: Upload the single deployment artifact
+        if: steps.manifest.outputs.changed != 'true'
+        uses: actions/upload-artifact@v4
         with:
-          path: dist
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
 
   deploy:
+    if: needs.build.outputs.ready == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -74,3 +111,58 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-origin:
+    if: needs.build.outputs.ready == 'true'
+    runs-on: ubuntu-latest
+    needs: build
+    env:
+      VPS_HOST: ${{ vars.FOLIOLE_VPS_HOST }}
+      VPS_PORT: ${{ vars.FOLIOLE_VPS_PORT }}
+      VPS_USER: ${{ vars.FOLIOLE_VPS_USER }}
+    steps:
+      - name: Validate origin configuration
+        run: |
+          test -n "$VPS_HOST"
+          test -n "$VPS_PORT"
+          test -n "$VPS_USER"
+          test -n "${{ needs.build.outputs.artifact_sha256 }}"
+          test -n "${{ needs.build.outputs.tree_sha256 }}"
+      - name: Download the Pages artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: pages-artifact
+      - name: Verify the Pages artifact
+        run: |
+          echo "${{ needs.build.outputs.artifact_sha256 }}  pages-artifact/artifact.tar" \
+            | sha256sum --check --strict
+      - name: Configure the restricted SSH identity
+        env:
+          FOLIOLE_VPS_KNOWN_HOSTS: ${{ secrets.FOLIOLE_VPS_KNOWN_HOSTS }}
+          FOLIOLE_VPS_SSH_KEY: ${{ secrets.FOLIOLE_VPS_SSH_KEY }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$FOLIOLE_VPS_SSH_KEY" > ~/.ssh/foliole_origin
+          printf '%s\n' "$FOLIOLE_VPS_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/foliole_origin ~/.ssh/known_hosts
+          ssh-keygen -y -f ~/.ssh/foliole_origin >/dev/null
+          ssh-keygen -F "[${VPS_HOST}]:${VPS_PORT}" -f ~/.ssh/known_hosts >/dev/null
+      - name: Upload and activate the Pages artifact
+        run: |
+          ssh_opts=(
+            -i ~/.ssh/foliole_origin
+            -o BatchMode=yes
+            -o IdentitiesOnly=yes
+            -o StrictHostKeyChecking=yes
+            -p "$VPS_PORT"
+          )
+          remote="${VPS_USER}@${VPS_HOST}"
+          source_sha="$GITHUB_SHA"
+          tree_sha="${{ needs.build.outputs.tree_sha256 }}"
+          artifact_sha="${{ needs.build.outputs.artifact_sha256 }}"
+          ssh "${ssh_opts[@]}" "$remote" \
+            "upload ${source_sha} ${tree_sha} ${artifact_sha}" \
+            < pages-artifact/artifact.tar
+          ssh "${ssh_opts[@]}" "$remote" "activate ${source_sha} ${tree_sha}"
+          ssh "${ssh_opts[@]}" "$remote" "status"

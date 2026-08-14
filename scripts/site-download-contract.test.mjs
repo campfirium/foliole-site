@@ -36,3 +36,14 @@ test('deploy workflow updates downloads only from explicit release events', asyn
   assert.match(workflow, /node scripts\/update-downloads-manifest\.mjs --directory-url/u);
   assert.match(workflow, /git push origin HEAD:main/u);
 });
+
+test('deploy workflow sends one Pages artifact to Pages and the VPS origin', async () => {
+  const workflow = await readFile('.github/workflows/deploy.yml', 'utf8');
+  assert.equal(workflow.match(/npm run build/gu)?.length, 1);
+  assert.match(workflow, /env -u FOLIOLE_DEMO_DIST npm run build/u);
+  assert.match(workflow, /name: github-pages/u);
+  assert.match(workflow, /actions\/upload-artifact@v4/u);
+  assert.match(workflow, /actions\/download-artifact@v4/u);
+  assert.match(workflow, /pages-artifact\/artifact[.]tar/u);
+  assert.match(workflow, /upload \$\{source_sha\} \$\{tree_sha\} \$\{artifact_sha\}/u);
+});
