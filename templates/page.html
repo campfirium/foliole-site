@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="/styles.css?v=000062">
 {{{page.localeRedirectScript}}}
+    {{{page.analyticsHead}}}
   </head>
   <body>
     <main>
@@ -45,10 +46,10 @@
                 <span>Foliole</span>
               </a>
               <nav class="primary-nav" aria-label="{{nav.mainLabel}}">
-                <a href="{{page.demoHref}}">Demo</a>
-                <a href="{{page.guidesHref}}">Guides</a>
+                <a href="{{page.demoHref}}" data-analytics-target="demo">Demo</a>
+                <a href="{{page.guidesHref}}" data-analytics-target="guides">Guides</a>
                 <a href="{{page.downloadHref}}">Download</a>
-                <a href="https://github.com/campfirium/foliole">GitHub</a>
+                <a href="https://github.com/campfirium/foliole" data-analytics-target="github">GitHub</a>
               </nav>
             </div>
             <nav class="utility-nav" aria-label="{{nav.utilityLabel}}">
@@ -127,6 +128,7 @@
           <a
             class="hero-shot hero-video-link"
             href="https://youtu.be/Cp-EaCVS-Ds"
+            data-analytics-target="demo"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="{{video.aria}}"

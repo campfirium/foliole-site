@@ -130,6 +130,31 @@ function renderThemeConfig(content) {
   return `<script>window.FOLIOLE_PAGE_COPY=${JSON.stringify({ download: content.nav.download, theme: content.theme })};</script>`;
 }
 
+function renderAnalyticsHead(locale, page) {
+  if (page !== 'home' || locale.id !== 'en') {
+    return `<script defer data-domain="foliole.app" data-api="/analytics/event" src="/analytics/script.js"></script>
+    <script defer src="/site-analytics.js"></script>`;
+  }
+
+  return `<script>
+      (function () {
+        if (window.FOLIOLE_LOCALE_REDIRECTED) return;
+        var tracker = document.createElement('script');
+        tracker.defer = true;
+        tracker.async = false;
+        tracker.dataset.domain = 'foliole.app';
+        tracker.dataset.api = '/analytics/event';
+        tracker.src = '/analytics/script.js';
+        document.head.appendChild(tracker);
+        var adapter = document.createElement('script');
+        adapter.defer = true;
+        adapter.async = false;
+        adapter.src = '/site-analytics.js';
+        document.head.appendChild(adapter);
+      })();
+    </script>`;
+}
+
 function renderLocaleRedirectScript(locale) {
   if (locale.id !== 'en') return '';
   const targets = {
@@ -162,15 +187,18 @@ function renderLocaleRedirectScript(locale) {
           var language = String(languages[i]).toLowerCase();
           if (!language) continue;
           if (language.indexOf('zh-hant') === 0 || language.indexOf('zh-tw') === 0 || language.indexOf('zh-hk') === 0 || language.indexOf('zh-mo') === 0) {
+            window.FOLIOLE_LOCALE_REDIRECTED = true;
             window.location.replace(targets['zh-hant']);
             return;
           }
           if (language.indexOf('zh') === 0) {
+            window.FOLIOLE_LOCALE_REDIRECTED = true;
             window.location.replace(targets['zh-hans']);
             return;
           }
           var base = language.split('-')[0];
           if (targets[base]) {
+            window.FOLIOLE_LOCALE_REDIRECTED = true;
             window.location.replace(targets[base]);
             return;
           }
@@ -225,6 +253,7 @@ async function renderPage(localeId, page) {
       alternates: renderAlternateLinks(page),
       languageMenu: renderLanguageMenu(locale, page),
       localeRedirectScript: renderLocaleRedirectScript(locale),
+      analyticsHead: renderAnalyticsHead(locale, page),
       themeConfig: renderThemeConfig(contents[locale.id])
     }
   });

@@ -5,6 +5,7 @@
   "scripts": {
     "build": "node scripts/sync-demo-assets.mjs && astro build",
     "demo:sync": "node scripts/sync-demo-assets.mjs",
+    "test:analytics": "node --test scripts/site-analytics-contract.test.mjs",
     "test:demo-language": "node --test scripts/site-demo-language-contract.test.mjs",
     "test:downloads": "node --test scripts/update-downloads-manifest.test.mjs scripts/site-download-contract.test.mjs scripts/site-theme-contract.test.mjs"
   },
