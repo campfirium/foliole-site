@@ -11,19 +11,19 @@ const manifest = {
   ]
 };
 
-test('website locale links carry Demo interface language on published routes', () => {
-  assert.equal(demoHref(locale('en')), '/en/demo/?lang=en');
-  assert.equal(demoHref(locale('de')), '/de/demo/?lang=de');
-  assert.equal(demoHref(locale('ja')), '/ja/demo/?lang=ja');
-  assert.equal(demoHref(locale('pt')), '/pt/demo/?lang=pt-BR');
-  assert.equal(demoHref(locale('zh-Hans')), '/zh-hans/demo/?lang=zh-Hans');
-  assert.equal(demoHref(locale('zh-Hant')), '/zh-hant/demo/?lang=zh-Hant');
+test('website locale links use canonical Demo routes without redundant language queries', () => {
+  assert.equal(demoHref(locale('en')), '/en/demo/');
+  assert.equal(demoHref(locale('de')), '/de/demo/');
+  assert.equal(demoHref(locale('ja')), '/ja/demo/');
+  assert.equal(demoHref(locale('pt')), '/pt/demo/');
+  assert.equal(demoHref(locale('zh-Hans')), '/zh-hans/demo/');
+  assert.equal(demoHref(locale('zh-Hant')), '/zh-hant/demo/');
 });
 
-test('Guide links preserve the website route while falling back to published content', () => {
-  assert.equal(guidesHref(locale('ja'), manifest), '/ja/guides/welcome-to-foliole/?lang=ja');
+test('Guide links use canonical locale routes while falling back to published content', () => {
+  assert.equal(guidesHref(locale('ja'), manifest), '/ja/guides/welcome-to-foliole/');
   assert.equal(
     guidesHref(locale('zh-Hans'), manifest),
-    '/zh-hans/guides/welcome-to-foliole/?lang=zh-Hans'
+    '/zh-hans/guides/welcome-to-foliole/'
   );
 });

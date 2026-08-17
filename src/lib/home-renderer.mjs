@@ -90,24 +90,14 @@ function demoContentLocale(locale) {
   return locale.path === 'zh-hans' ? 'zh-hans' : 'en';
 }
 
-function demoLanguage(locale) {
-  return locale.id === 'pt' ? 'pt-BR' : locale.id;
-}
-
-function withDemoLanguage(pathname, locale) {
-  const language = demoLanguage(locale);
-  return `${pathname}?lang=${encodeURIComponent(language)}`;
-}
-
 export function demoHref(locale) {
-  return withDemoLanguage(`/${demoRouteLocale(locale)}/demo/`, locale);
+  return `/${demoRouteLocale(locale)}/demo/`;
 }
 
 export function guidesHref(locale, manifest) {
   const pack = manifest?.localePublishPacks?.find((entry) => entry.locale === demoContentLocale(locale));
   const slug = pack?.topics?.[0]?.slug ?? '';
-  const pathname = `/${demoRouteLocale(locale)}/guides/${slug ? `${slug}/` : ''}`;
-  return withDemoLanguage(pathname, locale);
+  return `/${demoRouteLocale(locale)}/guides/${slug ? `${slug}/` : ''}`;
 }
 
 function renderLanguageMenu(currentLocale, page = 'home') {
