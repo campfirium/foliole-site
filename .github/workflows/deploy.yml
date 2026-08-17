@@ -29,6 +29,7 @@ jobs:
     outputs:
       artifact_sha256: ${{ steps.pack.outputs.artifact_sha256 }}
       ready: ${{ steps.pack.outputs.ready }}
+      source_sha: ${{ steps.pack.outputs.source_sha }}
       tree_sha256: ${{ steps.pack.outputs.tree_sha256 }}
     steps:
       - name: Checkout
@@ -61,17 +62,13 @@ jobs:
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Install dependencies
-        if: steps.manifest.outputs.changed != 'true'
         run: npm ci
       - name: Configure Pages
-        if: steps.manifest.outputs.changed != 'true'
         uses: actions/configure-pages@v5
       - name: Build
-        if: steps.manifest.outputs.changed != 'true'
         run: env -u FOLIOLE_DEMO_DIST npm run build
       - name: Pack the single deployment artifact
         id: pack
-        if: steps.manifest.outputs.changed != 'true'
         run: |
           tree_sha256="$(
             cd dist
@@ -88,11 +85,12 @@ jobs:
             -cvf "$RUNNER_TEMP/artifact.tar" \
             .
           artifact_sha256="$(sha256sum "$RUNNER_TEMP/artifact.tar" | cut -d' ' -f1)"
+          source_sha="$(git rev-parse HEAD)"
           echo "artifact_sha256=${artifact_sha256}" >> "$GITHUB_OUTPUT"
           echo "ready=true" >> "$GITHUB_OUTPUT"
+          echo "source_sha=${source_sha}" >> "$GITHUB_OUTPUT"
           echo "tree_sha256=${tree_sha256}" >> "$GITHUB_OUTPUT"
       - name: Upload the single deployment artifact
-        if: steps.manifest.outputs.changed != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
@@ -127,6 +125,7 @@ jobs:
           test -n "$VPS_PORT"
           test -n "$VPS_USER"
           test -n "${{ needs.build.outputs.artifact_sha256 }}"
+          test -n "${{ needs.build.outputs.source_sha }}"
           test -n "${{ needs.build.outputs.tree_sha256 }}"
       - name: Download the Pages artifact
         uses: actions/download-artifact@v4
@@ -158,7 +157,7 @@ jobs:
             -p "$VPS_PORT"
           )
           remote="${VPS_USER}@${VPS_HOST}"
-          source_sha="$GITHUB_SHA"
+          source_sha="${{ needs.build.outputs.source_sha }}"
           tree_sha="${{ needs.build.outputs.tree_sha256 }}"
           artifact_sha="${{ needs.build.outputs.artifact_sha256 }}"
           ssh "${ssh_opts[@]}" "$remote" \

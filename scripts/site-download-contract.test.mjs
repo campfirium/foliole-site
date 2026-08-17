@@ -35,6 +35,7 @@ test('deploy workflow updates downloads only from explicit release events', asyn
   assert.doesNotMatch(workflow, /schedule:/u);
   assert.match(workflow, /node scripts\/update-downloads-manifest\.mjs --directory-url/u);
   assert.match(workflow, /git push origin HEAD:main/u);
+  assert.doesNotMatch(workflow, /if: steps\.manifest\.outputs\.changed != 'true'/u);
 });
 
 test('deploy workflow sends one Pages artifact to Pages and the VPS origin', async () => {
@@ -45,5 +46,8 @@ test('deploy workflow sends one Pages artifact to Pages and the VPS origin', asy
   assert.match(workflow, /actions\/upload-artifact@v4/u);
   assert.match(workflow, /actions\/download-artifact@v4/u);
   assert.match(workflow, /pages-artifact\/artifact[.]tar/u);
+  assert.match(workflow, /source_sha: \$\{\{ steps\.pack\.outputs\.source_sha \}\}/u);
+  assert.match(workflow, /source_sha="\$\(git rev-parse HEAD\)"/u);
+  assert.match(workflow, /source_sha="\$\{\{ needs\.build\.outputs\.source_sha \}\}"/u);
   assert.match(workflow, /upload \$\{source_sha\} \$\{tree_sha\} \$\{artifact_sha\}/u);
 });
