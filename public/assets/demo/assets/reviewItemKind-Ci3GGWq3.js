@@ -1,1 +1,0 @@
-import{r as e}from"./nodeTypes-B8F9QWdR.js";function t(e){return e===`folder`?`none`:e===`topic`?`reading`:e===`item`?`fsrs`:null}function n(n){return n?t(n.kind)||(n.review||n.anchorLink?.kind===`cloze`||e(n)?`fsrs`:`reading`):`none`}function r(e){return n(e)===`fsrs`}function i(e){return n(e)===`reading`}export{r as n,i as r,n as t};
