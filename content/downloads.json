@@ -1,43 +1,43 @@
 {
   "allReleasesUrl": "https://github.com/campfirium/foliole/releases",
-  "productVersion": "0.7.13",
+  "productVersion": "0.7.14",
   "schemaVersion": 1,
   "platforms": {
     "macos": {
       "architectures": [
         "arm64"
       ],
-      "asset": "Foliole-macOS-arm64-0.7.13.dmg",
+      "asset": "Foliole-macOS-arm64-0.7.14.dmg",
       "channel": "github-release",
-      "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.13",
+      "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.14",
       "status": "available",
-      "tag": "v0.7.13",
-      "url": "https://github.com/campfirium/foliole/releases/download/v0.7.13/Foliole-macOS-arm64-0.7.13.dmg",
-      "version": "0.7.13"
+      "tag": "v0.7.14",
+      "url": "https://github.com/campfirium/foliole/releases/download/v0.7.14/Foliole-macOS-arm64-0.7.14.dmg",
+      "version": "0.7.14"
     },
     "windows": {
       "architectures": [
         "x64"
       ],
-      "asset": "Foliole-Windows-x64-0.7.13.exe",
+      "asset": "Foliole-Windows-x64-0.7.14.exe",
       "channel": "github-release",
-      "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.13",
+      "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.14",
       "status": "available",
-      "tag": "v0.7.13",
-      "url": "https://github.com/campfirium/foliole/releases/download/v0.7.13/Foliole-Windows-x64-0.7.13.exe",
-      "version": "0.7.13"
+      "tag": "v0.7.14",
+      "url": "https://github.com/campfirium/foliole/releases/download/v0.7.14/Foliole-Windows-x64-0.7.14.exe",
+      "version": "0.7.14"
     },
     "linux": {
       "architectures": [
         "x64"
       ],
-      "asset": "Foliole-Linux-Experimental-amd64-0.7.13.deb",
+      "asset": "Foliole-Linux-Experimental-amd64-0.7.14.deb",
       "channel": "github-release",
-      "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.13",
+      "releaseUrl": "https://github.com/campfirium/foliole/releases/tag/v0.7.14",
       "status": "available",
-      "tag": "v0.7.13",
-      "url": "https://github.com/campfirium/foliole/releases/download/v0.7.13/Foliole-Linux-Experimental-amd64-0.7.13.deb",
-      "version": "0.7.13"
+      "tag": "v0.7.14",
+      "url": "https://github.com/campfirium/foliole/releases/download/v0.7.14/Foliole-Linux-Experimental-amd64-0.7.14.deb",
+      "version": "0.7.14"
     }
   }
 }
