@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { createDownloadsManifest, downloadAttributes } from './downloads.mjs';
 
 const root = process.cwd();
 const siteUrl = 'https://foliole.app';
@@ -79,7 +80,7 @@ async function readDemoManifest() {
 }
 
 async function readDownloads() {
-  return JSON.parse(await readFile(downloadsPath, 'utf8'));
+  return createDownloadsManifest(JSON.parse(await readFile(downloadsPath, 'utf8')));
 }
 
 function demoRouteLocale(locale) {
@@ -117,7 +118,7 @@ function renderAlternateLinks(page = 'home') {
 }
 
 function renderThemeConfig(content) {
-  return `<script>window.FOLIOLE_PAGE_COPY=${JSON.stringify({ download: content.nav.download, theme: content.theme })};</script>`;
+  return `<script>window.FOLIOLE_PAGE_COPY=${JSON.stringify({ download: content.nav.download, theme: content.theme }).replaceAll('<', '\\u003c')};</script>`;
 }
 
 function renderAnalyticsHead(locale, page) {
@@ -237,9 +238,9 @@ async function renderPage(localeId, page) {
       ogLocale: locale.ogLocale,
       demoHref: demoHref(locale, demoManifest),
       guidesHref: guidesHref(locale, demoManifest),
-      macosDownloadHref: downloads.platforms.macos.url,
-      windowsDownloadHref: downloads.platforms.windows.url,
-      linuxDownloadHref: downloads.platforms.linux.url,
+      macosDownloadAttributes: downloadAttributes(downloads.platforms.macos),
+      windowsDownloadAttributes: downloadAttributes(downloads.platforms.windows),
+      linuxDownloadAttributes: downloadAttributes(downloads.platforms.linux),
       alternates: renderAlternateLinks(page),
       languageMenu: renderLanguageMenu(locale, page),
       localeRedirectScript: renderLocaleRedirectScript(locale),

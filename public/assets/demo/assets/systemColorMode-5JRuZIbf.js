@@ -1,0 +1,1 @@
+import{s as e}from"./runtimeInvoke-BNE9rN_R.js";var t=null;function n(){return t}function r(e){t=e===`dark`||e===`light`?e:null}function i(t){let n=e()?.onSystemColorModeChanged;return n?n(e=>{r(e),t(e)}):null}export{i as n,n as t};

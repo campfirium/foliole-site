@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=000062">
+    <link rel="stylesheet" href="/styles.css?v=000063">
     {{{page.analyticsHead}}}
   </head>
   <body>
@@ -65,28 +65,28 @@
     </header>
 
     <main class="downloads-main">
-      <a class="recommended-download" href="{{page.macosDownloadHref}}" data-recommended-download="macos">
+      <a class="recommended-download" {{{page.macosDownloadAttributes}}} data-recommended-download="macos">
         <span>{{nav.download}} macOS</span>
       </a>
 
       <div class="download-platform-list" aria-label="{{hero.actionsLabel}}">
         <div class="download-platform-row">
           <div class="download-platform-name">macOS</div>
-          <a class="download-platform-action" href="{{page.macosDownloadHref}}" data-platform-download="macos">
+          <a class="download-platform-action" {{{page.macosDownloadAttributes}}} data-platform-download="macos">
             <span class="download-circle-arrow" aria-hidden="true">↓</span>
             <span class="download-action-copy"><span class="download-action-primary">DMG</span><span class="download-action-secondary">12+ · Apple silicon</span></span>
           </a>
         </div>
         <div class="download-platform-row">
           <div class="download-platform-name">Windows</div>
-          <a class="download-platform-action" href="{{page.windowsDownloadHref}}" data-platform-download="windows">
+          <a class="download-platform-action" {{{page.windowsDownloadAttributes}}} data-platform-download="windows">
             <span class="download-circle-arrow" aria-hidden="true">↓</span>
             <span class="download-action-copy"><span class="download-action-primary">EXE</span><span class="download-action-secondary">64-bit (Intel / AMD)</span></span>
           </a>
         </div>
         <div class="download-platform-row">
           <div class="download-platform-name">Linux</div>
-          <a class="download-platform-action" href="{{page.linuxDownloadHref}}" data-platform-download="linux">
+          <a class="download-platform-action" {{{page.linuxDownloadAttributes}}} data-platform-download="linux">
             <span class="download-circle-arrow" aria-hidden="true">↓</span>
             <span class="download-action-copy"><span class="download-action-primary">DEB</span><span class="download-action-secondary">64-bit ({{hero.linuxQualifier}})</span></span>
           </a>
@@ -116,7 +116,13 @@
         var recommended = document.querySelector('[data-recommended-download]');
         var selected = document.querySelector('[data-platform-download="' + platform + '"]');
         if (recommended && selected) {
-          recommended.href = selected.href;
+          if (selected.hasAttribute('href')) {
+            recommended.href = selected.href;
+            recommended.removeAttribute('aria-disabled');
+          } else {
+            recommended.removeAttribute('href');
+            recommended.setAttribute('aria-disabled', 'true');
+          }
           recommended.dataset.recommendedDownload = platform;
           recommended.firstElementChild.textContent = (window.FOLIOLE_PAGE_COPY.download || 'Download') + ' ' + selected.closest('.download-platform-row').querySelector('.download-platform-name').textContent;
         }

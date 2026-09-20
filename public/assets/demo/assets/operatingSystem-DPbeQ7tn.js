@@ -1,0 +1,1 @@
+function e(){if(typeof navigator>`u`)return``;let e=navigator;return[e.userAgentData?.platform,e.platform,e.userAgent].filter(Boolean).join(` `)}function t(t=e()){let n=t.toLowerCase();return n.includes(`mac`)||n.includes(`darwin`)?`macos`:n.includes(`win`)?`windows`:`other`}function n(e){return t(e)===`macos`}export{n as t};

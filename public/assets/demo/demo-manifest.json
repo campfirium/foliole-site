@@ -1,7 +1,7 @@
 {
   "contractVersion": 3,
-  "generatedAt": "2026-08-29T06:52:42.645Z",
-  "buildHash": "sha256:cff8ae118b1facce5f36b681b92fe781dabf74ccf520a206ade87a2daa6a635a",
+  "generatedAt": "2026-09-20T05:43:28.809Z",
+  "buildHash": "sha256:f153d3895433525f944c2d967b66b81a6a0a5eb204bd3bc5ac0893178d07dd30",
   "publishedLocales": [
     {
       "locale": "en",
@@ -856,6 +856,94 @@
           "demoPath": "/en/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:9535b19fef833ef8b6702521c0099a1e574e259356b4b3406d8fc8cce0056255"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/en/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "en",
+          "highlights": [],
+          "locale": "en",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/en/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -1662,6 +1750,94 @@
           "demoPath": "/de/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:aac98e8ac1844a3316d514187e32f606b439565bcc4e76160c044df10bb61d8c"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/de/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "de",
+          "highlights": [],
+          "locale": "de",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/de/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -2468,6 +2644,94 @@
           "demoPath": "/es/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:cf1e33625b1a81a6ae4d57f4f93182f49a71277c43be6ca265e69daa85d05b89"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/es/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "es",
+          "highlights": [],
+          "locale": "es",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/es/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -3274,6 +3538,94 @@
           "demoPath": "/fr/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:dfec6058edf0f9ecf76f48a44c332cd478c39927c26ad240bad00419ca5a9d85"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/fr/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "fr",
+          "highlights": [],
+          "locale": "fr",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/fr/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -4080,6 +4432,94 @@
           "demoPath": "/it/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:921045a49ebd3e55f862bd69031e872307642e1af92986b48e154bb7578db5c0"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/it/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "it",
+          "highlights": [],
+          "locale": "it",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/it/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -4886,6 +5326,94 @@
           "demoPath": "/ja/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:adda23cab55cc289c4cf8d1d320a5d75e5f2bcda497a5d3cb39f514a996ae242"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/ja/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "ja",
+          "highlights": [],
+          "locale": "ja",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/ja/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -5692,6 +6220,94 @@
           "demoPath": "/ko/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:f872012122c92515c17deca4c9dfcaf5bee26c1135c9b989fa416bed027269bf"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/ko/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "ko",
+          "highlights": [],
+          "locale": "ko",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/ko/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -6498,6 +7114,94 @@
           "demoPath": "/pl/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:507246faa5015c44d62b71b818d30b253610f0560375b9e3389e8c448c294b60"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/pl/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "pl",
+          "highlights": [],
+          "locale": "pl",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/pl/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -7304,6 +8008,94 @@
           "demoPath": "/pt/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:5bfe366c7f4ba837025c95e8d4aced2811bf21133f163b478c32f355047010a1"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/pt/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "pt-BR",
+          "highlights": [],
+          "locale": "pt",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/pt/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -8110,6 +8902,94 @@
           "demoPath": "/ru/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:76a11003bc7f8fe66dbe69a63b4d5442169dde60adf19d6d1f67f8e0db6d5106"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/ru/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "ru",
+          "highlights": [],
+          "locale": "ru",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/ru/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     },
@@ -8915,6 +9795,94 @@
           "demoPath": "/zh-hans/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:51cf3f607710c96bab9a16c2667b7d433e1fe2a42318bde60e9b02d1a381ae52"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "从 Readwise Reader 导入",
+          "description": "桌面版提供两种彼此独立的 Readwise 来源。Readwise API 会让 Foliole 直接连接你的 Reader 账号，不需要安装 Obsidian，也不依赖本地导出文件夹。复制 Readwise Token，选择 Readwise API，并在当前负责 Readwise 的桌面主机上完成连接；之后 Foliole 会自动导入，并按你选择的频率检查变化。断开连接、切换来源模式或把 Readwise 交给另一台主机后，旧主机会在继续保存变化前停止。文件夹模式仍适用于使用 Readwise Reader for Obsidian 导出的人，它会读取本地导出，因此对应文件夹必须保持可用。两种模式不会同时运行，也不会自动切换。",
+          "canonicalPath": "/zh-hans/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "zh-Hans",
+          "highlights": [],
+          "locale": "zh-hans",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "从 Readwise Reader 导入",
+              "body": [
+                "桌面版提供两种彼此独立的 Readwise 来源。Readwise API 会让 Foliole 直接连接你的 Reader 账号，不需要安装 Obsidian，也不依赖本地导出文件夹。复制 Readwise Token，选择 Readwise API，并在当前负责 Readwise 的桌面主机上完成连接；之后 Foliole 会自动导入，并按你选择的频率检查变化。断开连接、切换来源模式或把 Readwise 交给另一台主机后，旧主机会在继续保存变化前停止。文件夹模式仍适用于使用 Readwise Reader for Obsidian 导出的人，它会读取本地导出，因此对应文件夹必须保持可用。两种模式不会同时运行，也不会自动切换。"
+              ]
+            }
+          ],
+          "summary": "桌面版提供两种彼此独立的 Readwise 来源。Readwise API 会让 Foliole 直接连接你的 Reader 账号，不需要安装 Obsidian，也不依赖本地导出文件夹。复制 Readwise Token，选择 Readwise API，并在当前负责 Readwise 的桌面主机上完成连接；之后 Foliole 会自动导入，并按你选择的频率检查变化。断开连接、切换来源模式或把 Readwise 交给另一台主机后，旧主机会在继续保存变化前停止。文件夹模式仍适用于使用 Readwise Reader for Obsidian 导出的人，它会读取本地导出，因此对应文件夹必须保持可用。两种模式不会同时运行，也不会自动切换。",
+          "demoPath": "/zh-hans/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:a9995163749d839cb150960c431e213bfe9f3f31b16d4821513affff51abc891"
         }
       ]
     },
@@ -9721,6 +10689,94 @@
           "demoPath": "/zh-hant/demo/",
           "xDefaultPath": "/en/guides/what-the-foliole-demo-is-for/",
           "contentHash": "sha256:4f67d2b757876001be3a337d1f6074ba2b74f68926fa5bbc3bd71cf28313515d"
+        },
+        {
+          "slug": "readwise-reader-import",
+          "title": "Import from Readwise Reader",
+          "description": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "canonicalPath": "/zh-hant/guides/readwise-reader-import/",
+          "alternates": [
+            {
+              "locale": "en",
+              "hreflang": "en",
+              "path": "/en/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "de",
+              "hreflang": "de",
+              "path": "/de/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "es",
+              "hreflang": "es",
+              "path": "/es/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "fr",
+              "hreflang": "fr",
+              "path": "/fr/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "it",
+              "hreflang": "it",
+              "path": "/it/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ja",
+              "hreflang": "ja",
+              "path": "/ja/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ko",
+              "hreflang": "ko",
+              "path": "/ko/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pl",
+              "hreflang": "pl",
+              "path": "/pl/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "pt",
+              "hreflang": "pt-BR",
+              "path": "/pt/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "ru",
+              "hreflang": "ru",
+              "path": "/ru/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hans",
+              "hreflang": "zh-Hans",
+              "path": "/zh-hans/guides/readwise-reader-import/"
+            },
+            {
+              "locale": "zh-hant",
+              "hreflang": "zh-Hant",
+              "path": "/zh-hant/guides/readwise-reader-import/"
+            }
+          ],
+          "hreflang": "zh-Hant",
+          "highlights": [],
+          "locale": "zh-hant",
+          "reviewItems": [],
+          "runtime": {
+            "state": "topic",
+            "topicId": "readwise-reader-import"
+          },
+          "sections": [
+            {
+              "heading": "Import from Readwise Reader",
+              "body": [
+                "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically."
+              ]
+            }
+          ],
+          "summary": "The desktop app offers two separate Readwise sources. Readwise API connects Foliole directly to your Reader account, so it does not require Obsidian or a local export folder. Copy your Readwise token, choose Readwise API, and connect on the desktop host responsible for Readwise. Foliole then imports automatically and checks for changes at the frequency you choose. Disconnecting, changing source mode, or moving Readwise to another host stops the old host before it can save more changes. Folder mode remains available for people who use the Readwise Reader export for Obsidian; it reads that local export and therefore requires its folders to remain available. The two modes never run together or switch automatically.",
+          "demoPath": "/zh-hant/demo/",
+          "xDefaultPath": "/en/guides/readwise-reader-import/",
+          "contentHash": "sha256:260f1c3ecf1b2fb5e2b1a20aecbcf41e6b754c5d29db8742073d74cf9ff2f4af"
         }
       ]
     }
@@ -9741,15 +10797,15 @@
         "type": "style"
       },
       {
-        "path": "assets/App-C2HrlccK.js",
+        "path": "assets/App-CIn7Pmhp.js",
         "type": "script"
       },
       {
-        "path": "assets/appLanguage-CnO6vhcT.js",
+        "path": "assets/appLanguage-DBo54S4r.js",
         "type": "script"
       },
       {
-        "path": "assets/appRuntimeCommandRepository-B0spg2VJ.js",
+        "path": "assets/appRuntimeCommandRepository-BzSyxy06.js",
         "type": "script"
       },
       {
@@ -9773,15 +10829,19 @@
         "type": "script"
       },
       {
-        "path": "assets/assetMarkdownUrl-CLydthbc.js",
+        "path": "assets/assetMarkdownUrl-BSlqUfuB.js",
         "type": "script"
       },
       {
-        "path": "assets/assistantRuntime-Cp6KX8nm.js",
+        "path": "assets/assistantRuntime--FmaR2av.js",
         "type": "script"
       },
       {
-        "path": "assets/attachmentResources-97udYN0A.js",
+        "path": "assets/attachmentResourceRegistry-DV-z-Z-o.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/attachmentResources-BS22UgI_.js",
         "type": "script"
       },
       {
@@ -9969,7 +11029,11 @@
         "type": "script"
       },
       {
-        "path": "assets/CommandPalette-C_PQ6-l9.js",
+        "path": "assets/CommandPalette-DtZ3A_zP.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/companionWorkspaceRuntimeRepository-DDJSvthS.js",
         "type": "script"
       },
       {
@@ -9997,7 +11061,7 @@
         "type": "script"
       },
       {
-        "path": "assets/de-DK2K7NLW.js",
+        "path": "assets/de-Bs6a3Tkc.js",
         "type": "script"
       },
       {
@@ -10005,27 +11069,23 @@
         "type": "script"
       },
       {
-        "path": "assets/definedProps-MtY_LXfK.js",
+        "path": "assets/definedProps-BwLZbG17.js",
         "type": "script"
       },
       {
-        "path": "assets/demoContent-NwD1idQ6.js",
+        "path": "assets/demoContent-PdwJjDmR.js",
         "type": "script"
       },
       {
-        "path": "assets/demoExternalFolderProvider-Bkj3RmU4.js",
+        "path": "assets/demoExternalFolderProvider-Bd_0N7OM.js",
         "type": "script"
       },
       {
-        "path": "assets/demoLocalStorage-CzqAILjE.js",
+        "path": "assets/demoLocalStorage-BjIIPJZK.js",
         "type": "script"
       },
       {
-        "path": "assets/demoMarkdownImport-D79ZaPac.js",
-        "type": "script"
-      },
-      {
-        "path": "assets/DemoOperationNotice-C0vcLfE3.js",
+        "path": "assets/demoMarkdownImport-CLXbLwx3.js",
         "type": "script"
       },
       {
@@ -10037,35 +11097,35 @@
         "type": "script"
       },
       {
-        "path": "assets/demoRuntimeController-CoZT4kBa.js",
+        "path": "assets/demoRuntimeController-D_k0nXjn.js",
         "type": "script"
       },
       {
-        "path": "assets/DemoSettingsPreviewOverlay-DqjRa-El.js",
+        "path": "assets/DemoSettingsPreviewOverlay-DEQIg03q.js",
         "type": "script"
       },
       {
-        "path": "assets/demoUrlSync-CxV28YJf.js",
+        "path": "assets/demoUrlSync-Cj3paLQy.js",
         "type": "script"
       },
       {
-        "path": "assets/demoUrlSync-D2QWcJwY.js",
+        "path": "assets/demoUrlSync-q1z5SPY5.js",
         "type": "script"
       },
       {
-        "path": "assets/DemoUrlSyncBridge-B2KNVH5o.js",
+        "path": "assets/DemoUrlSyncBridge-Dc2NK1uZ.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceReset-DQ9JHu3y.js",
+        "path": "assets/demoWorkspaceReset-DH_BrkXm.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-Bo5HVCd6.js",
+        "path": "assets/demoWorkspaceSnapshot-D0nDwH5r.js",
         "type": "script"
       },
       {
-        "path": "assets/demoWorkspaceSnapshot-CWNJJH1l.js",
+        "path": "assets/demoWorkspaceSnapshot-ttaPnxJQ.js",
         "type": "script"
       },
       {
@@ -10097,7 +11157,7 @@
         "type": "script"
       },
       {
-        "path": "assets/DocumentOutlineLayerModel-DS_52Jeg.js",
+        "path": "assets/DocumentOutlineLayerModel-BkLOtn5a.js",
         "type": "script"
       },
       {
@@ -10109,7 +11169,7 @@
         "type": "script"
       },
       {
-        "path": "assets/es-OqbGZ6PC.js",
+        "path": "assets/es-BUFDP2oC.js",
         "type": "script"
       },
       {
@@ -10125,7 +11185,19 @@
         "type": "script"
       },
       {
-        "path": "assets/FeedbackDialog-BppZKrf8.js",
+        "path": "assets/externalSearchPreviewState-Dka5N7vF.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/externalSearchPreviewState-DS9MGdSF.css",
+        "type": "style"
+      },
+      {
+        "path": "assets/externalSearchRuntimeRepository-DkqXdCzk.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/FeedbackDialog-DH3EBD_H.js",
         "type": "script"
       },
       {
@@ -10133,11 +11205,15 @@
         "type": "script"
       },
       {
-        "path": "assets/folderListOrdering-DTSbC7Qs.js",
+        "path": "assets/folderListOrdering-B3KK24Gk.js",
         "type": "script"
       },
       {
-        "path": "assets/fr-CJfF83m5.js",
+        "path": "assets/folioleMarkdownParser-J8rac2u8.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/fr-Clm-KEAJ.js",
         "type": "script"
       },
       {
@@ -10153,7 +11229,7 @@
         "type": "script"
       },
       {
-        "path": "assets/GoToNodePalette-BveivJdZ.js",
+        "path": "assets/GoToNodePalette-C0jeGCXa.js",
         "type": "script"
       },
       {
@@ -10161,7 +11237,11 @@
         "type": "script"
       },
       {
-        "path": "assets/HelpSearch-57ObP23K.js",
+        "path": "assets/HelpSearch-gPVQMoxY.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/highlightAnnotationPrefixSetting-BjNlN0KD.js",
         "type": "script"
       },
       {
@@ -10169,11 +11249,11 @@
         "type": "script"
       },
       {
-        "path": "assets/importSourceWorkspaceSettings-DgrExtDI.js",
+        "path": "assets/importSourceWorkspaceSettings-BdWCw70P.js",
         "type": "script"
       },
       {
-        "path": "assets/index-yd7mlnOj.js",
+        "path": "assets/index-CLCstE0v.js",
         "type": "script"
       },
       {
@@ -10193,11 +11273,11 @@
         "type": "script"
       },
       {
-        "path": "assets/it-C12ISbl3.js",
+        "path": "assets/it-zvbfehHZ.js",
         "type": "script"
       },
       {
-        "path": "assets/ja-C14IsjNX.js",
+        "path": "assets/ja-DNbBX4jv.js",
         "type": "script"
       },
       {
@@ -10213,11 +11293,11 @@
         "type": "script"
       },
       {
-        "path": "assets/ko-fcvQX6_L.js",
+        "path": "assets/ko-gDMiZrJe.js",
         "type": "script"
       },
       {
-        "path": "assets/libraryPathsRuntimeRepository-CWfCssZd.js",
+        "path": "assets/libraryPathsRuntimeRepository-CZa--0s9.js",
         "type": "script"
       },
       {
@@ -10229,7 +11309,7 @@
         "type": "script"
       },
       {
-        "path": "assets/LinkPanelStack-XvvU_c78.js",
+        "path": "assets/LinkPanelStack-CdtWYP0w.js",
         "type": "script"
       },
       {
@@ -10241,11 +11321,11 @@
         "type": "script"
       },
       {
-        "path": "assets/LocalizationProvider-hzZOklDw.js",
+        "path": "assets/LocalizationProvider-CShk3haj.js",
         "type": "script"
       },
       {
-        "path": "assets/macOsFontSmoothing-CH37UPqm.js",
+        "path": "assets/macOsFontSmoothing-Dsy7Jc82.js",
         "type": "script"
       },
       {
@@ -10253,19 +11333,15 @@
         "type": "script"
       },
       {
-        "path": "assets/MarkdownEditor-CLvT2xZF.js",
-        "type": "script"
-      },
-      {
-        "path": "assets/MarkdownEditor-DS9MGdSF.css",
-        "type": "style"
-      },
-      {
-        "path": "assets/markdownInlineProjection-BcQQVQ5Q.js",
+        "path": "assets/markdownInlineProjection-BBL7Ua52.js",
         "type": "script"
       },
       {
         "path": "assets/mermaid-parser.core-BkA26w9G.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/mermaid.core-Nn8bRkG9.js",
         "type": "script"
       },
       {
@@ -10281,19 +11357,23 @@
         "type": "script"
       },
       {
-        "path": "assets/nodeListLabelProjection-Cp6TYiIX.js",
+        "path": "assets/nodeListLabelProjection-eHzwQm30.js",
         "type": "script"
       },
       {
-        "path": "assets/nodeReviewSettings-BkH0GWFx.js",
+        "path": "assets/nodeReviewSettings-BY_gtXTb.js",
         "type": "script"
       },
       {
-        "path": "assets/nodeSourceRuntimeRepository-DKUpS8id.js",
+        "path": "assets/nodeSourceRuntimeRepository-D6tB0cX0.js",
         "type": "script"
       },
       {
         "path": "assets/nodeTypes-B8F9QWdR.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/operatingSystem-DPbeQ7tn.js",
         "type": "script"
       },
       {
@@ -10309,7 +11389,7 @@
         "type": "script"
       },
       {
-        "path": "assets/PdfDocumentSurface-Dz5z8Hxd.js",
+        "path": "assets/PdfDocumentSurface-B-Qo-IHt.js",
         "type": "script"
       },
       {
@@ -10317,11 +11397,15 @@
         "type": "style"
       },
       {
-        "path": "assets/pdfSystemRegistry-Cm9Sicht.js",
+        "path": "assets/pdfSurfaceRegistration-BLBsicWd.js",
         "type": "script"
       },
       {
         "path": "assets/pegDiagram-VL7TDLO6-D9n_U8XL.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/performanceDiagnosticsProbe-CX6NEEG-.js",
         "type": "script"
       },
       {
@@ -10333,7 +11417,7 @@
         "type": "script"
       },
       {
-        "path": "assets/pl-BE837Zda.js",
+        "path": "assets/pl-C31bTbro.js",
         "type": "script"
       },
       {
@@ -10341,7 +11425,11 @@
         "type": "script"
       },
       {
-        "path": "assets/ptBR-E7PWK8XB.js",
+        "path": "assets/ptBR-DC916bex.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/publicCommandContext-CZBj-Se7.js",
         "type": "script"
       },
       {
@@ -10393,11 +11481,11 @@
         "type": "script"
       },
       {
-        "path": "assets/ReviewSourceTopicDeleteDialog-BenovRDC.js",
+        "path": "assets/ReviewSourceTopicDeleteDialog-C4V_Xb8Y.js",
         "type": "script"
       },
       {
-        "path": "assets/ReviewTopicDelayPanel-Cq-o1np9.js",
+        "path": "assets/ReviewTopicDelayPanel-BUCbU2tL.js",
         "type": "script"
       },
       {
@@ -10409,19 +11497,19 @@
         "type": "script"
       },
       {
-        "path": "assets/ru-CM7poMVv.js",
+        "path": "assets/ru-ygFJGrHw.js",
         "type": "script"
       },
       {
-        "path": "assets/runtimeExternalNavigation-DM_lSt57.js",
+        "path": "assets/runtimeExternalNavigation-BO8zT7xV.js",
         "type": "script"
       },
       {
-        "path": "assets/runtimeInvoke-BNasX_xE.js",
+        "path": "assets/runtimeInvoke-BNE9rN_R.js",
         "type": "script"
       },
       {
-        "path": "assets/runtimeLogging-Dze3OqAU.js",
+        "path": "assets/runtimeLogging-C9ZOwEA2.js",
         "type": "script"
       },
       {
@@ -10429,15 +11517,15 @@
         "type": "script"
       },
       {
-        "path": "assets/searchEnhancementSettings-DUG77BEh.js",
+        "path": "assets/searchEnhancementSettings-DifNOBcS.js",
         "type": "script"
       },
       {
-        "path": "assets/SearchPalette-BieLalOD.js",
+        "path": "assets/SearchPalette-D1OXArWL.js",
         "type": "script"
       },
       {
-        "path": "assets/SearchResultPreviewPanel-Cl-PjBsj.js",
+        "path": "assets/SearchResultPreviewPanel-BSU0OYsf.js",
         "type": "script"
       },
       {
@@ -10445,15 +11533,15 @@
         "type": "script"
       },
       {
-        "path": "assets/SettingsPanel-DRDmbS37.js",
+        "path": "assets/SettingsPanel-D3pvDTpG.js",
         "type": "script"
       },
       {
-        "path": "assets/shortcutDisplay-BUX2gPm4.js",
+        "path": "assets/shortcutDisplay-BC2Un5e3.js",
         "type": "script"
       },
       {
-        "path": "assets/shortcuts-BUx_9sqg.js",
+        "path": "assets/shortcuts-FwhMo0H8.js",
         "type": "script"
       },
       {
@@ -10473,11 +11561,11 @@
         "type": "script"
       },
       {
-        "path": "assets/storage-BJp6kBCB.js",
+        "path": "assets/storage-Boa1JFv6.js",
         "type": "script"
       },
       {
-        "path": "assets/styles-dTRnkZli.css",
+        "path": "assets/styles-D846e8aZ.css",
         "type": "style"
       },
       {
@@ -10489,7 +11577,11 @@
         "type": "script"
       },
       {
-        "path": "assets/systemEntryNames-C6MQzZF_.js",
+        "path": "assets/systemColorMode-5JRuZIbf.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/systemEntryNames-BIyW9lfP.js",
         "type": "script"
       },
       {
@@ -10509,19 +11601,27 @@
         "type": "script"
       },
       {
-        "path": "assets/ui-DFKUJfF3.js",
+        "path": "assets/ui-DqFK8_0Y.js",
         "type": "script"
       },
       {
-        "path": "assets/updateCheck-BDBqSRpm.js",
+        "path": "assets/unifiedPushQueueRules-DnEtKogJ.js",
         "type": "script"
       },
       {
-        "path": "assets/useFloatingPaletteEscape-FSwIyBd4.js",
+        "path": "assets/updateCheck-fRJIRKyv.js",
         "type": "script"
       },
       {
-        "path": "assets/useNodeBacklinks-CXpJIHCD.js",
+        "path": "assets/useDismissibleSurface-BH108EBQ.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/useFloatingPaletteEscape-BLXZOVv-.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/useNodeBacklinks-Df8yBDgh.js",
         "type": "script"
       },
       {
@@ -10553,47 +11653,51 @@
         "type": "script"
       },
       {
-        "path": "assets/workspaceListNode-B2DTjKYo.js",
+        "path": "assets/workspaceListNode-D30R9np4.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceMutationRepository-BeoyQIdg.js",
+        "path": "assets/workspaceMutationRepository-Bbrl10zT.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceMutationRepository-NjdTvl31.js",
+        "path": "assets/workspaceMutationRepository-IKBz7kMj.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceRendererBoundaryDocument-BxhkKpl9.js",
+        "path": "assets/workspaceRendererBoundaryDocument-DI6TtvJT.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceRightSidebarAssistantContext-sXSR_xIZ.js",
+        "path": "assets/workspaceRestoreSession-03WfJguB.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarAssistantPanel-DtAJaO5L.js",
+        "path": "assets/workspaceRightSidebarAssistantContext-DFhtI-LT.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarBacklinksPanel-BBjeY8om.js",
+        "path": "assets/WorkspaceRightSidebarAssistantPanel-rGWx_cD-.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarDevPanel-CPGIspIs.js",
+        "path": "assets/WorkspaceRightSidebarBacklinksPanel-DcvzYw9l.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarHighlightsPanel-CwVJ7F9Y.js",
+        "path": "assets/WorkspaceRightSidebarDevPanel-CgL4xwfp.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarOutlinePanel-B--mJXlc.js",
+        "path": "assets/WorkspaceRightSidebarHighlightsPanel-DMC5DuSA.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarPerformancePanel-CWxoN6Ud.js",
+        "path": "assets/WorkspaceRightSidebarOutlinePanel-CdWVOqNY.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/WorkspaceRightSidebarPerformancePanel-d8_rFhbR.js",
         "type": "script"
       },
       {
@@ -10601,19 +11705,23 @@
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceRightSidebarReviewQueuePanel-DHDi4rM8.js",
+        "path": "assets/WorkspaceRightSidebarReviewQueuePanel-D_gHUqyT.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceRuntimeMutationResults-D8nqb42z.js",
+        "path": "assets/workspaceRuntimeMutationResults-BzhCNc2t.js",
         "type": "script"
       },
       {
-        "path": "assets/WorkspaceSettingsOverlayContent-C_EnJxGz.js",
+        "path": "assets/workspaceRuntimeRepository-CZ7vZiQ0.js",
         "type": "script"
       },
       {
-        "path": "assets/workspaceStore-D0toWTqi.js",
+        "path": "assets/WorkspaceSettingsOverlayContent-CN-6xtwK.js",
+        "type": "script"
+      },
+      {
+        "path": "assets/workspaceStore-BBYgdC1D.js",
         "type": "script"
       },
       {
@@ -10621,11 +11729,11 @@
         "type": "script"
       },
       {
-        "path": "assets/zh-Hant-Vc2Q05lT.js",
+        "path": "assets/zh-Hant-Dp-3dmn-.js",
         "type": "script"
       },
       {
-        "path": "assets/zhHans-DcAsrwu8.js",
+        "path": "assets/zhHans-XemJ3lLv.js",
         "type": "script"
       }
     ]

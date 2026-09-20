@@ -10,7 +10,7 @@
     "test:downloads": "node --test scripts/update-downloads-manifest.test.mjs scripts/site-download-contract.test.mjs scripts/site-theme-contract.test.mjs"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.3",
-    "astro": "^6.4.4"
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "7.3.3"
   }
 }

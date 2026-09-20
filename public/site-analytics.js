@@ -6,7 +6,7 @@
     var link = event.target.closest(
       "a[data-recommended-download], a[data-platform-download], a[data-analytics-target]",
     );
-    if (!link || typeof window.plausible !== "function") return;
+    if (!link || !link.hasAttribute("href") || typeof window.plausible !== "function") return;
 
     var platform =
       link.dataset.recommendedDownload || link.dataset.platformDownload;

@@ -1361,3 +1361,10 @@ h1 {
   white-space: nowrap;
   border: 0;
 }
+
+/* An unavailable installer keeps its label without behaving like a link. */
+a[data-platform-download][aria-disabled="true"],
+a[data-recommended-download][aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.5;
+}
